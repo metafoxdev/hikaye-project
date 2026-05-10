@@ -1,0 +1,105 @@
+[
+    {
+        "id": "romantic_encounter",
+        "name": "Romantik Karşılaşma",
+        "name_en": "Romantic Encounter",
+        "category": "romance",
+        "prompt": "İki kişi tesadüfen bir kafede karşılaşır. Göz göze gelirler ve aralarında bir çekim başlar.",
+        "settings": {
+            "art_style": "realistic",
+            "mood_style": "warm",
+            "scene_count": 7
+        }
+    },
+    {
+        "id": "action_chase",
+        "name": "Aksiyon Takip",
+        "name_en": "Action Chase",
+        "category": "action",
+        "prompt": "Kahraman, düşmanlarından kaçarken şehrin sokaklarında heyecanlı bir kovalamaca yaşar.",
+        "settings": {
+            "art_style": "comic",
+            "mood_style": "dynamic",
+            "camera_style": "action",
+            "scene_count": 10
+        }
+    },
+    {
+        "id": "horror_night",
+        "name": "Korku Gecesi",
+        "name_en": "Horror Night",
+        "category": "horror",
+        "prompt": "Karanlık bir gecede, terk edilmiş bir evde garip sesler duyan bir kişi, korkunun içine çekilir.",
+        "settings": {
+            "art_style": "noir",
+            "mood_style": "horror",
+            "time_of_day": "midnight",
+            "weather": "fog",
+            "scene_count": 8
+        }
+    },
+    {
+        "id": "fantasy_quest",
+        "name": "Fantastik Macera",
+        "name_en": "Fantasy Quest",
+        "category": "fantasy",
+        "prompt": "Genç bir kahraman, efsanevi bir hazineyi bulmak için tehlikeli ormanlardan geçer.",
+        "settings": {
+            "art_style": "3d",
+            "mood_style": "dynamic",
+            "outfit_style": "medieval",
+            "scene_count": 10
+        }
+    },
+    {
+        "id": "scifi_mission",
+        "name": "Uzay Görevi",
+        "name_en": "Space Mission",
+        "category": "scifi",
+        "prompt": "Uzay gemisi mürettebatı, bilinmeyen bir gezegende tehlikeli bir keşif görevi yapar.",
+        "settings": {
+            "art_style": "realistic",
+            "mood_style": "cold",
+            "outfit_style": "scifi",
+            "scene_count": 8
+        }
+    },
+    {
+        "id": "mystery_detective",
+        "name": "Dedektif Hikayesi",
+        "name_en": "Detective Story",
+        "category": "mystery",
+        "prompt": "Bir dedektif, karmaşık bir cinayet vakasını çözmek için ipuçlarını takip eder.",
+        "settings": {
+            "art_style": "noir",
+            "mood_style": "dark",
+            "time_of_day": "night",
+            "weather": "rain",
+            "scene_count": 10
+        }
+    },
+    {
+        "id": "drama_family",
+        "name": "Aile Dramı",
+        "name_en": "Family Drama",
+        "category": "drama",
+        "prompt": "Aile içindeki gizli sırlar ortaya çıktığında, herkesin hayatı değişir.",
+        "settings": {
+            "art_style": "realistic",
+            "mood_style": "warm",
+            "scene_count": 7
+        }
+    },
+    {
+        "id": "comedy_mishap",
+        "name": "Komedi Talihsizlik",
+        "name_en": "Comedy Mishap",
+        "category": "comedy",
+        "prompt": "Bir dizi komik yanlış anlama, karakterimizi eğlenceli durumlara sokar.",
+        "settings": {
+            "art_style": "comic",
+            "mood_style": "dynamic",
+            "scene_count": 6
+        }
+    }
+]

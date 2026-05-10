@@ -1,0 +1,22 @@
+[
+    {
+        "id": "maya",
+        "name": "Doktor Maya",
+        "description": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse.",
+        "avatar": "static/output/avatar_maya_1769883969.png"
+    },
+    {
+        "id": "yaman",
+        "name": "Yaman (Mafya Babası)",
+        "description": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt.",
+        "avatar": "static/output/avatar_yaman_1769875889.png"
+    },
+    {
+        "id": "1769880029103",
+        "name": "Emre 'The Wall' Koruma",
+        "description": "A towering middle-aged man with an imposing, heavy-set physique and a stern, weather-beaten face that radiates intimidation. He has a sharp jawline, deep facial lines, and a perpetual scowl. He is dressed in a high-end, perfectly tailored matte black suit, a crisp white dress shirt, and a black silk tie, looking like an elite bodyguard or mafia enforcer. The lighting is dramatic and cinematic, emphasizing the texture of his suit and the seriousness of his expression, set against a shadowy urban background.",
+        "attributes": {},
+        "created_at": 1769880029,
+        "avatar": "static/output/avatar_1769880029103_1769883907.png"
+    }
+]

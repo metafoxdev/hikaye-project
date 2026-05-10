@@ -1,0 +1,135 @@
+{
+    "app": {
+        "title": "AI Story Illustrator",
+        "subtitle": "Transform your stories into cinematic visual experiences.",
+        "version": "2.0.0"
+    },
+    "nav": {
+        "history": "History",
+        "characters": "Characters",
+        "settings": "Settings",
+        "stats": "Statistics",
+        "templates": "Templates",
+        "help": "Help"
+    },
+    "input": {
+        "placeholder": "Describe your story (use @ to add characters)...",
+        "generate": "Generate Images",
+        "generating": "Generating..."
+    },
+    "settings": {
+        "videoFormat": "Video Format",
+        "resolution": "Resolution",
+        "sceneCount": "Scene Count",
+        "frameDuration": "Frame Duration",
+        "dialogueStyle": "Dialogue Style",
+        "artStyle": "Art Style",
+        "mood": "Mood",
+        "camera": "Camera",
+        "time": "Time of Day",
+        "season": "Season",
+        "weather": "Weather",
+        "outfit": "Outfit",
+        "consistency": "Character Consistency",
+        "transition": "Video Transition",
+        "music": "Background Music"
+    },
+    "values": {
+        "vertical": "Vertical",
+        "horizontal": "Horizontal",
+        "square": "Square",
+        "economic": "Economic",
+        "standard": "Standard",
+        "ultra": "Ultra",
+        "scenes": "Scenes",
+        "seconds": "Seconds",
+        "short": "Short",
+        "detailed": "Detailed",
+        "none": "None",
+        "auto": "Auto",
+        "strict": "Strict",
+        "flexible": "Flexible",
+        "sharp": "Sharp",
+        "smooth": "Smooth"
+    },
+    "artStyles": {
+        "comic": "Comic Book",
+        "realistic": "Cinematic",
+        "anime": "Anime",
+        "noir": "Film Noir",
+        "watercolor": "Watercolor",
+        "3d": "3D Render",
+        "oil": "Oil Painting",
+        "pixel": "Pixel Art",
+        "sketch": "Sketch"
+    },
+    "moods": {
+        "dynamic": "Dynamic",
+        "dark": "Dark",
+        "horror": "Horror",
+        "dreamy": "Dreamy",
+        "warm": "Warm",
+        "cold": "Cold",
+        "romantic": "Romantic",
+        "epic": "Epic"
+    },
+    "music": {
+        "none": "No Music",
+        "romantic": "Romantic",
+        "action": "Action",
+        "horror": "Horror",
+        "epic": "Epic",
+        "sad": "Emotional",
+        "happy": "Happy",
+        "mystery": "Mystery",
+        "tension": "Tension"
+    },
+    "actions": {
+        "regenerate": "Regenerate",
+        "editPrompt": "Edit Prompt",
+        "matchStyle": "Match Style",
+        "download": "Download",
+        "zoom": "Zoom",
+        "delete": "Delete",
+        "add": "Add",
+        "save": "Save",
+        "cancel": "Cancel",
+        "close": "Close",
+        "confirm": "Confirm",
+        "createVideo": "Create Video",
+        "newStory": "New Story",
+        "continue": "Continue",
+        "export": "Export"
+    },
+    "messages": {
+        "loading": "Loading...",
+        "generating": "Generating...",
+        "success": "Success!",
+        "error": "An error occurred",
+        "saved": "Saved",
+        "deleted": "Deleted",
+        "copied": "Copied",
+        "noHistory": "No history yet.",
+        "noCharacters": "No characters yet.",
+        "confirmDelete": "Are you sure you want to delete?",
+        "requiredField": "This field is required",
+        "invalidInput": "Invalid input"
+    },
+    "tooltips": {
+        "regenerate": "Regenerate this scene with the same prompt",
+        "editPrompt": "Edit the prompt and regenerate",
+        "matchStyle": "Generate matching the style of other scenes",
+        "addScene": "Add a new scene after this position",
+        "deleteScene": "Delete this scene"
+    },
+    "tutorial": {
+        "welcome": "Welcome to AI Story Illustrator!",
+        "step1": "Write your story topic",
+        "step2": "Add characters with @",
+        "step3": "Select your settings",
+        "step4": "Click Generate",
+        "step5": "Review and edit scenes",
+        "step6": "Create your video",
+        "gotIt": "Got it!"
+    }
+}

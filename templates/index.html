@@ -1,0 +1,3572 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI ile hikayelerinizi sinematik görsellere dönüştürün">
+    <title>AI Hikaye Resimleyici</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style_addons.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="top-nav">
+            <button class="nav-btn" onclick="openModal('historyModal')"><i class="fas fa-book-open"></i> Geçmiş</button>
+            <button class="nav-btn" onclick="openModal('charactersModal')"><i class="fas fa-users"></i>
+                Karakterler</button>
+            <button class="nav-btn" onclick="openModal('mergeModal')"><i class="fas fa-object-group"></i>
+                Birleştir</button>
+            <button class="nav-btn" onclick="openModal('musicModal')"><i class="fas fa-music"></i> Müzik</button>
+            <button class="nav-btn" onclick="openModal('templatesModal')"><i class="fas fa-clipboard-list"></i>
+                Şablonlar</button>
+            <button class="nav-btn" onclick="openModal('settingsModal')"><i class="fas fa-cog"></i> Ayarlar</button>
+            <button class="nav-btn" onclick="openModal('statsModal')"><i class="fas fa-chart-bar"></i>
+                İstatistik</button>
+            <button class="nav-btn" onclick="toggleLanguage()"><i class="fas fa-globe"></i> <span
+                    id="langIndicator">TR</span></button>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <h1><span class="gradient-text">AI Hikaye Resimleyici</span></h1>
+            <p>Hikayelerinizi sinematik görsel deneyimlere dönüştürün</p>
+        </header>
+
+        <!-- Main Input Card -->
+        <div class="input-card">
+            <div class="form-group" style="position:relative;">
+                <label for="storyInput">Hikaye Konusu</label>
+                <div class="story-input-wrapper">
+                    <div id="storyInputHighlights" class="story-input-highlights"></div>
+                    <textarea id="storyInput" class="story-input-textarea" placeholder="Hikayenizi yazın... (@karakter ile mention ekleyin)"
+                        rows="4"></textarea>
+                </div>
+                <div id="mentionSuggestions" class="mention-dropdown hidden"></div>
+
+                <!-- AI Yardımcıları -->
+                <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;">
+                    <button class="btn-sm secondary-btn" onclick="openSuggestionsModal()" title="AI Hikaye Önerileri">
+                        <i class="fas fa-lightbulb"></i> Öneri Al
+                    </button>
+                    <button class="btn-sm secondary-btn" onclick="enhanceCurrentPrompt()"
+                        title="Promptu AI ile Zenginleştir">
+                        <i class="fas fa-magic"></i> Zenginleştir
+                    </button>
+                </div>
+            </div>
+
+            <div class="quick-settings">
+                <div><label>Video Formatı</label><select id="aspectRatio">
+                        <option value="9:16">Dikey (9:16)</option>
+                        <option value="16:9">Yatay (16:9)</option>
+                        <option value="1:1">Kare (1:1)</option>
+                    </select></div>
+                <div><label>Çözünürlük</label><select id="imageSize">
+                        <option value="1K">Ekonomik (1K)</option>
+                        <option value="2K" selected>Standart (2K)</option>
+                        <option value="4K">Ultra (4K)</option>
+                    </select></div>
+                <div><label>Sahne Sayısı</label><select id="sceneCount">
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="7" selected>7</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select></div>
+                <div><label>Kare Süresi</label><select id="frameDuration">
+                        <option value="3">3s</option>
+                        <option value="5" selected>5s</option>
+                        <option value="7">7s</option>
+                        <option value="10">10s</option>
+                        <option value="15">15s</option>
+                    </select></div>
+                <div><label>Sanat Stili</label><select id="artStyle">
+                        <option value="comic">Çizgi Roman</option>
+                        <option value="realistic" selected>Sinematik</option>
+                        <option value="anime">Anime</option>
+                        <option value="noir">Film Noir</option>
+                        <option value="watercolor">Sulu Boya</option>
+                        <option value="3d">3D</option>
+                    </select></div>
+                <div><label>Atmosfer</label><select id="moodStyle">
+                        <option value="dynamic" selected>Dinamik</option>
+                        <option value="dark">Karanlık</option>
+                        <option value="horror">Korku</option>
+                        <option value="warm">Sıcak</option>
+                        <option value="romantic">Romantik</option>
+                        <option value="epic">Epik</option>
+                    </select></div>
+                <div><label>Kamera</label><select id="cameraStyle">
+                        <option value="balanced" selected>Dengeli</option>
+                        <option value="action">Aksiyon</option>
+                        <option value="dramatic">Dramatik</option>
+                        <option value="intimate">Yakın</option>
+                    </select></div>
+                <div><label>Video Geçişi</label><select id="videoTransition">
+                        <option value="none">Yok</option>
+                        <option value="fade" selected>Yumuşak</option>
+                        <option value="crossfade">Çapraz</option>
+                    </select></div>
+                <div class="toggle-option">
+                    <label class="toggle-switch" for="generateAudio">
+                        <input type="checkbox" id="generateAudio" checked>
+                        <span class="toggle-slider"></span>
+                        <span class="toggle-text">
+                            <i class="fas fa-microphone"></i> Seslendirme
+                        </span>
+                    </label>
+                    <small>Karakter diyaloglarını AI ile seslendir</small>
+                </div>
+                <div class="toggle-option">
+                    <label class="toggle-switch" for="dualFormat">
+                        <input type="checkbox" id="dualFormat">
+                        <span class="toggle-slider"></span>
+                        <span class="toggle-text">
+                            <i class="fas fa-clone"></i> Çift Format
+                        </span>
+                    </label>
+                    <small>Her sahne için 9:16 <strong>+</strong> 16:9 görsel üret</small>
+                </div>
+
+            </div>
+
+            <button id="generateBtn" onclick="generateStory()"><i class="fas fa-palette"></i> Görselleri
+                Oluştur</button>
+        </div>
+
+        <!-- Loading Section -->
+        <div id="loadingSection" class="hidden" style="text-align:center;padding:40px 0;">
+            <div class="loader"></div>
+            <p id="loadingStatus" style="margin-top:20px;color:var(--text-secondary);">Hazırlanıyor...</p>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar" style="width:0%"></div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="hidden">
+            <h2 style="text-align:center;margin-bottom:24px;"><i class="fas fa-film"></i> Oluşturulan Sahneler</h2>
+            <div id="galleryGrid" class="gallery-grid"></div>
+            <div class="video-container" style="text-align:center;">
+                <video id="resultVideo" class="result-video hidden" controls></video>
+                <div id="videoPlaceholder">
+                    <!-- Müzik Seçimi -->
+                    <div class="music-selector" style="margin-bottom:16px;">
+                        <label style="display:block;margin-bottom:8px;color:var(--text-secondary);"><i
+                                class="fas fa-music"></i> Arkaplan Müziği</label>
+                        <div style="display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;">
+                            <select id="videoMusicSelect" class="config-input" style="max-width:250px;">
+                                <option value="">Müzik Yok</option>
+                            </select>
+                            <button class="btn-sm secondary-btn" onclick="previewMusic()" id="previewMusicBtn"
+                                title="Önizle"><i class="fas fa-play" id="previewMusicIcon"></i></button>
+                            <audio id="musicPreviewPlayer" style="display:none;"></audio>
+                        </div>
+                    </div>
+
+                    <!-- Ses Ayarları Accordion -->
+                    <div class="audio-settings-panel" style="margin-bottom:20px;">
+                        <button class="audio-settings-toggle" onclick="toggleAudioSettings()" id="audioSettingsToggle">
+                            <i class="fas fa-sliders-h"></i> Ses Ayarları
+                            <i class="fas fa-chevron-down" id="audioSettingsIcon"
+                                style="margin-left:8px;transition:transform 0.3s;"></i>
+                        </button>
+
+                        <div id="audioSettingsContent" class="audio-settings-content hidden">
+                            <!-- Ana Ses Seviyeleri -->
+                            <div class="settings-row">
+                                <div class="setting-group">
+                                    <label><i class="fas fa-volume-up"></i> Müzik Seviyesi</label>
+                                    <div class="slider-container">
+                                        <input type="range" id="musicVolume" min="0" max="100" value="70"
+                                            oninput="updateSliderLabel('musicVolume', '%')">
+                                        <span class="slider-value" id="musicVolumeLabel">70%</span>
+                                    </div>
+                                </div>
+                                <div class="setting-group">
+                                    <label><i class="fas fa-microphone"></i> Karakter Ses Seviyesi</label>
+                                    <div class="slider-container">
+                                        <input type="range" id="voiceVolume" min="0" max="100" value="100"
+                                            oninput="updateSliderLabel('voiceVolume', '%')">
+                                        <span class="slider-value" id="voiceVolumeLabel">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Audio Ducking Ayarları -->
+                            <div class="ducking-settings"
+                                style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-color);">
+                                <h4 style="margin-bottom:12px;color:var(--text-secondary);font-size:0.9rem;">
+                                    <i class="fas fa-compress-audio"></i> Audio Ducking (Karakter Konuşurken)
+                                </h4>
+                                <div class="settings-row">
+                                    <div class="setting-group">
+                                        <label>Müzik Düşürme</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="duckingLevel" min="-20" max="0" value="-10"
+                                                oninput="updateSliderLabel('duckingLevel', ' dB')">
+                                            <span class="slider-value" id="duckingLevelLabel">-10 dB</span>
+                                        </div>
+                                        <small style="color:var(--text-muted);">Konuşma sırasında müzik ne kadar
+                                            düşsün</small>
+                                    </div>
+                                    <div class="setting-group">
+                                        <label>Geçiş Süresi (Fade)</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="duckingFade" min="0.1" max="2" value="0.5"
+                                                step="0.1" oninput="updateSliderLabel('duckingFade', 's')">
+                                            <span class="slider-value" id="duckingFadeLabel">0.5s</span>
+                                        </div>
+                                        <small style="color:var(--text-muted);">Ses geçişinin yumuşaklığı</small>
+                                    </div>
+                                </div>
+                                <div class="settings-row" style="margin-top:12px;">
+                                    <div class="setting-group">
+                                        <label>Ses Başlangıç Gecikmesi</label>
+                                        <div class="slider-container">
+                                            <input type="range" id="voiceDelay" min="0" max="1" value="0.3" step="0.1"
+                                                oninput="updateSliderLabel('voiceDelay', 's')">
+                                            <span class="slider-value" id="voiceDelayLabel">0.3s</span>
+                                        </div>
+                                        <small style="color:var(--text-muted);">Sahne başladıktan kaç saniye sonra
+                                            konuşma başlasın</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Önizleme -->
+                            <div class="preview-section"
+                                style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border-color);">
+                                <h4 style="margin-bottom:12px;color:var(--text-secondary);font-size:0.9rem;">
+                                    <i class="fas fa-headphones"></i> Ses Önizleme (Video Gibi)
+                                </h4>
+                                <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:12px;">
+                                    Tüm sahne seslerini, müzikle birlikte video sırasında dinleyin
+                                </p>
+
+                                <!-- İlerleme Göstergesi -->
+                                <div id="audioPreviewProgress" class="audio-preview-progress hidden">
+                                    <div class="preview-progress-bar">
+                                        <div class="preview-progress-fill" id="previewProgressFill"></div>
+                                    </div>
+                                    <div class="preview-scene-info">
+                                        <span id="previewCurrentScene">Sahne 1</span>
+                                        <span id="previewTimeInfo">0:00 / 0:00</span>
+                                    </div>
+                                </div>
+
+                                <div
+                                    style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px;">
+                                    <button class="btn-sm" onclick="previewFullAudio()" id="previewFullBtn">
+                                        <i class="fas fa-play" id="previewFullIcon"></i> Tüm Sesleri Önizle
+                                    </button>
+                                    <button class="btn-sm secondary-btn" onclick="stopFullPreview()">
+                                        <i class="fas fa-stop"></i> Durdur
+                                    </button>
+                                    <button class="btn-sm secondary-btn" onclick="resetAudioSettings()">
+                                        <i class="fas fa-undo"></i> Varsayılana Dön
+                                    </button>
+                                </div>
+                                <div id="previewStatus"
+                                    style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-actions" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+                        <button class="btn-primary" onclick="openTimelineModal()" id="timelineBtn">
+                            <i class="fas fa-film"></i> Timeline Önizle
+                        </button>
+                        <button class="btn-primary" onclick="createVideo()" id="createVideoBtn"><i
+                                class="fas fa-video"></i>
+                            Videoyu Oluştur</button>
+                        <button class="secondary-btn regenerate-all-btn" onclick="regenerateAllScenes()"
+                            id="regenerateAllBtn">
+                            <i class="fas fa-sync-alt"></i> Tüm Görselleri Yeniden Oluştur
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap;">
+                <button class="secondary-btn" onclick="continueStory()"><i class="fas fa-plus"></i> Hikayeye Devam
+                    Et</button>
+                <button class="secondary-btn" onclick="exportProject('zip')"><i class="fas fa-file-archive"></i> ZIP
+                    İndir</button>
+                <button class="secondary-btn" onclick="exportProject('json')"><i class="fas fa-save"></i> JSON
+                    Kaydet</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="historyModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('historyModal')">×</span>
+            <h2><i class="fas fa-book-open"></i> Geçmiş</h2><input type="text" id="historySearch" placeholder="Ara..."
+                style="margin-bottom:16px">
+            <div id="historyList" class="history-list"></div>
+        </div>
+    </div>
+    <div id="charactersModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('charactersModal')">×</span>
+            <h2><i class="fas fa-users"></i> Karakterler</h2>
+            <div id="charactersList"></div>
+            <hr style="margin:20px 0;border-color:var(--border-color)">
+            <h3>Yeni Karakter</h3><input id="charName" placeholder="İsim" class="config-input"
+                style="margin:8px 0"><textarea id="charDesc" placeholder="Açıklama" class="config-input"
+                rows="2"></textarea>
+            <div style="margin:8px 0;">
+                <label style="display:block;font-size:0.85rem;margin-bottom:4px;color:var(--text-secondary);">
+                    <i class="fas fa-theater-masks"></i> Başlangıç Duygu Durumu
+                </label>
+                <select id="charEmotion" class="config-input">
+                    <option value="neutral">😐 Nötr</option>
+                    <option value="happy">😊 Mutlu</option>
+                    <option value="sad">😢 Üzgün</option>
+                    <option value="angry">😠 Kızgın</option>
+                    <option value="scared">😨 Korku</option>
+                    <option value="surprised">😲 Şaşkın</option>
+                    <option value="disgusted">🤢 İğrenmiş</option>
+                    <option value="determined">😤 Kararlı</option>
+                    <option value="loving">🥰 Sevgi Dolu</option>
+                    <option value="confused">😕 Kafası Karışık</option>
+                    <option value="tired">😴 Yorgun</option>
+                    <option value="proud">😎 Gururlu</option>
+                </select>
+            </div>
+            <div style="margin:8px 0;">
+                <label style="display:block;font-size:0.85rem;margin-bottom:4px;color:var(--text-secondary);">
+                    <i class="fas fa-images"></i> Referans Görseller (Sınırsız)
+                </label>
+                <input type="file" id="charNewRefs" multiple accept="image/*" class="config-input">
+            </div>
+
+            <div style="display:flex;gap:8px;margin-top:12px"><button class="btn-sm" onclick="addCharacter()"><i
+                        class="fas fa-plus"></i> Ekle</button><button class="btn-sm" onclick="enhanceNewCharacter()"><i
+                        class="fas fa-magic"></i> AI Zenginleştir</button></div>
+        </div>
+    </div>
+
+    <div id="musicModal" class="modal hidden">
+        <div class="modal-content" style="max-width:700px;">
+            <span class="close-btn" onclick="closeModal('musicModal')">×</span>
+            <h2><i class="fas fa-music"></i> Müzik Kitaplığı</h2>
+            <div id="musicList" class="music-list"></div>
+            <hr style="margin:20px 0;border-color:var(--border-color)">
+            <h3>Yeni Müzik Yükle</h3>
+            <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px;">
+                <input type="file" id="musicFileInput" accept=".mp3,.wav,.ogg,.m4a,.aac"
+                    style="flex:1;min-width:200px;">
+                <button class="btn-sm" onclick="uploadMusic()"><i class="fas fa-upload"></i> Yükle</button>
+            </div>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">Desteklenen formatlar: MP3, WAV, OGG,
+                M4A, AAC</p>
+        </div>
+    </div>
+    <div id="templatesModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('templatesModal')">×</span>
+            <h2><i class="fas fa-clipboard-list"></i> Şablonlar</h2>
+            <div id="templatesList"></div>
+        </div>
+    </div>
+
+    <!-- Hikayeleri Birleştir Modal -->
+    <div id="mergeModal" class="modal hidden">
+        <div class="modal-content" style="max-width:900px;">
+            <span class="close-btn" onclick="closeModal('mergeModal')">×</span>
+            <h2><i class="fas fa-object-group"></i> Hikayeleri Birleştir</h2>
+            <p style="color:var(--text-muted);margin-bottom:16px;">
+                <i class="fas fa-info-circle"></i> Birden fazla hikayeyi seçin ve sıralayarak tek bir video haline
+                getirin.
+            </p>
+
+            <div class="merge-container">
+                <!-- Sol Panel - Mevcut Hikayeler -->
+                <div class="merge-panel">
+                    <h4><i class="fas fa-book"></i> Mevcut Hikayeler</h4>
+                    <div id="mergeAvailableList" class="merge-list"></div>
+                </div>
+
+                <!-- Orta Butonlar -->
+                <div class="merge-actions-center">
+                    <button class="btn-sm" onclick="addToMergeQueue()" title="Seçilenleri Ekle">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="btn-sm" onclick="removeFromMergeQueue()" title="Seçilenleri Çıkar">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+
+                <!-- Sağ Panel - Seçilen Hikayeler (Sıralı) -->
+                <div class="merge-panel">
+                    <h4><i class="fas fa-layer-group"></i> Birleştirilecek Hikayeler (Sıra)</h4>
+                    <div id="mergeQueueList" class="merge-list"></div>
+                    <div class="merge-order-btns">
+                        <button class="btn-sm secondary-btn" onclick="moveMergeItem('up')" title="Yukarı Taşı">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
+                        <button class="btn-sm secondary-btn" onclick="moveMergeItem('down')" title="Aşağı Taşı">
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alt Ayarlar -->
+            <div class="merge-settings">
+                <div class="setting-group">
+                    <label>Arkaplan Müziği</label>
+                    <select id="mergeMusicSelect">
+                        <option value="">Müzik Yok</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label>Birleşik Video Adı</label>
+                    <input type="text" id="mergeVideoName" placeholder="Birleşik Hikaye" class="config-input">
+                </div>
+            </div>
+
+            <!-- Önizleme -->
+            <div class="merge-preview">
+                <h4><i class="fas fa-eye"></i> Önizleme</h4>
+                <div id="mergePreviewImages" class="merge-preview-images"></div>
+                <p id="mergePreviewStats" style="color:var(--text-muted);font-size:0.9rem;margin-top:8px;"></p>
+            </div>
+
+            <!-- Oluştur Butonu -->
+            <button class="btn-primary" style="margin-top:20px;" onclick="createMergedVideo()" id="createMergeBtn">
+                <i class="fas fa-video"></i> Birleşik Video Oluştur
+            </button>
+        </div>
+    </div>
+
+    <div id="settingsModal" class="modal hidden">
+        <div class="modal-content" style="max-width:700px;">
+            <span class="close-btn" onclick="closeModal('settingsModal')">×</span>
+            <h2><i class="fas fa-cog"></i> Ayarlar</h2>
+
+            <!-- Sekme Navigasyonu -->
+            <div class="settings-tabs">
+                <button class="settings-tab active" onclick="switchSettingsTab('general')">
+                    <i class="fas fa-sliders-h"></i> Genel
+                </button>
+                <button class="settings-tab" onclick="switchSettingsTab('audio')">
+                    <i class="fas fa-volume-up"></i> Ses Ayarları
+                </button>
+            </div>
+
+            <!-- Genel Ayarlar Sekmesi -->
+            <div id="settingsTabGeneral" class="settings-tab-content">
+                <div class="setting-group" style="margin-bottom: 16px;">
+                    <label><i class="fas fa-key"></i> Gemini API Anahtarı</label>
+                    <input type="password" id="settingsApiKey" class="config-input" placeholder="AI-xxxxxxxxxxxxxxxxxxxxxx (Boş bırakılırsa varsayılan kullanılır)">
+                    <small style="color:var(--text-muted);display:block;margin-top:6px;">Kendi API anahtarınızı girerek limiti kaldırabilirsiniz. Silmek için kutuyu boşaltıp kaydedin.</small>
+                </div>
+                
+                <div class="setting-group">
+                    <label><i class="fas fa-terminal"></i> Sistem Promptu</label>
+                    <textarea id="systemPrompt" class="config-input" rows="5"></textarea>
+                </div>
+            </div>
+
+            <!-- Ses Ayarları Sekmesi -->
+            <div id="settingsTabAudio" class="settings-tab-content hidden">
+                <p style="color:var(--text-muted);margin-bottom:16px;font-size:0.9rem;">
+                    <i class="fas fa-info-circle"></i> Bu ayarlar video oluşturulurken kullanılır. Değişiklikler
+                    otomatik kaydedilir.
+                </p>
+
+                <!-- Ana Ses Seviyeleri -->
+                <div class="settings-section">
+                    <h4><i class="fas fa-music"></i> Ses Seviyeleri</h4>
+                    <div class="settings-row">
+                        <div class="setting-group">
+                            <label>Arkaplan Müzik Seviyesi</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsMusicVolume" min="0" max="100" value="70"
+                                    oninput="updateSettingsSlider('settingsMusicVolume', '%')">
+                                <span class="slider-value" id="settingsMusicVolumeLabel">70%</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Video'daki arkaplan müziğin ses seviyesi</small>
+                        </div>
+                        <div class="setting-group">
+                            <label>Karakter Ses Seviyesi</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsVoiceVolume" min="0" max="100" value="100"
+                                    oninput="updateSettingsSlider('settingsVoiceVolume', '%')">
+                                <span class="slider-value" id="settingsVoiceVolumeLabel">100%</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Karakter seslendirmelerinin ses seviyesi</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Ducking Ayarları -->
+                <div class="settings-section">
+                    <h4><i class="fas fa-compress-alt"></i> Audio Ducking (Otomatik Ses Kısma)</h4>
+                    <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:12px;">
+                        Karakter konuşurken arkaplan müziğin otomatik olarak kısılması.
+                    </p>
+                    <div class="settings-row">
+                        <div class="setting-group">
+                            <label>Müzik Kısma Miktarı (dB)</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsDuckingLevel" min="-30" max="0" value="-10"
+                                    oninput="updateSettingsSlider('settingsDuckingLevel', ' dB')">
+                                <span class="slider-value" id="settingsDuckingLevelLabel">-10 dB</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Konuşma sırasında müzik bu kadar dB düşer (-30 = çok
+                                sessiz, 0 = değişiklik yok)</small>
+                        </div>
+                        <div class="setting-group">
+                            <label>Geçiş Süresi (Fade)</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsDuckingFade" min="0.1" max="2" value="0.5" step="0.1"
+                                    oninput="updateSettingsSlider('settingsDuckingFade', 's')">
+                                <span class="slider-value" id="settingsDuckingFadeLabel">0.5s</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Müzik seviyesinin kısılma/yükselme hızı</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zamanlama Ayarları -->
+                <div class="settings-section">
+                    <h4><i class="fas fa-clock"></i> Zamanlama</h4>
+                    <div class="settings-row">
+                        <div class="setting-group">
+                            <label>Ses Başlangıç Gecikmesi</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsVoiceDelay" min="0" max="2" value="0.3" step="0.1"
+                                    oninput="updateSettingsSlider('settingsVoiceDelay', 's')">
+                                <span class="slider-value" id="settingsVoiceDelayLabel">0.3s</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Sahne başladıktan ne kadar sonra konuşma
+                                başlasın</small>
+                        </div>
+                        <div class="setting-group">
+                            <label>Video Sonu Fade Out</label>
+                            <div class="slider-container">
+                                <input type="range" id="settingsMusicFadeOut" min="0" max="5" value="2" step="0.5"
+                                    oninput="updateSettingsSlider('settingsMusicFadeOut', 's')">
+                                <span class="slider-value" id="settingsMusicFadeOutLabel">2s</span>
+                            </div>
+                            <small style="color:var(--text-muted);">Video sonunda müziğin yavaşça azalma süresi</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Varsayılana Dön Butonu -->
+                <div style="margin-top:20px;text-align:center;">
+                    <button class="btn-sm secondary-btn" onclick="resetAudioSettingsToDefault()">
+                        <i class="fas fa-undo"></i> Varsayılan Ayarlara Dön
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn-sm" style="margin-top:16px" onclick="saveSettings()">Kaydet</button>
+        </div>
+    </div>
+    <div id="statsModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('statsModal')">×</span>
+            <h2><i class="fas fa-chart-bar"></i> İstatistikler</h2>
+            <div id="statsContent"></div>
+        </div>
+    </div>
+    <div id="promptModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('promptModal')">×</span>
+            <h2><i class="fas fa-edit"></i> Prompt Düzenle</h2><textarea id="editPromptText" class="config-input"
+                rows="4"></textarea><button class="btn-primary" style="margin-top:16px"
+                onclick="submitEditedPrompt()">Oluştur</button>
+        </div>
+    </div>
+    <div id="addSceneModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('addSceneModal')">×</span>
+            <h2><i class="fas fa-plus-circle"></i> Yeni Sahne Ekle</h2><textarea id="newScenePrompt"
+                class="config-input" rows="4" placeholder="Yeni sahne için prompt yazın..."></textarea><button
+                class="btn-primary" style="margin-top:16px" onclick="submitAddScene()">Oluştur</button>
+        </div>
+    </div>
+    <div id="continueModal" class="modal hidden">
+        <div class="modal-content"><span class="close-btn" onclick="closeModal('continueModal')">×</span>
+            <h2><i class="fas fa-forward"></i> Hikayeye Devam</h2>
+            <p style="color:var(--text-muted);margin-bottom:12px;font-size:14px;">
+                <i class="fas fa-info-circle"></i> Son sahneden itibaren karakter tutarlılığı korunarak devam edilecek.
+            </p>
+            <textarea id="continuePrompt" class="config-input" rows="4"
+                placeholder="(Opsiyonel) Hikaye nasıl devam etsin? Boş bırakırsanız otomatik devam eder..."></textarea>
+            <select id="continueSceneCount" class="config-input" style="margin-top:12px">
+                <option value="3">3 Sahne</option>
+                <option value="5" selected>5 Sahne</option>
+                <option value="7">7 Sahne</option>
+                <option value="10">10 Sahne</option>
+            </select>
+            <div style="display:flex;gap:12px;margin-top:16px;">
+                <button class="btn-primary" style="flex:1" onclick="submitContinue()">
+                    <i class="fas fa-magic"></i> Otomatik Devam
+                </button>
+                <button class="secondary-btn" style="flex:1" onclick="submitContinue(true)">
+                    <i class="fas fa-pen"></i> Yönlendirmeli Devam
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline Modal -->
+    <div id="timelineModal" class="modal hidden">
+        <div class="modal-content" style="max-width:95%;width:1200px;">
+            <span class="close-btn" onclick="closeModal('timelineModal')">×</span>
+            <h2><i class="fas fa-film"></i> Video Timeline Önizleme</h2>
+            <p style="color:var(--text-muted);margin-bottom:16px;">
+                <i class="fas fa-info-circle"></i> Sahnelerin sürelerini ve sırasını görsel olarak inceleyin.
+            </p>
+
+            <!-- Timeline Görünümü -->
+            <div id="timelineContainer" class="timeline-container">
+                <div id="timelineTrack" class="timeline-track"></div>
+                <div id="timelinePlayhead" class="timeline-playhead" style="left:0;"></div>
+            </div>
+
+            <!-- Zaman Göstergesi -->
+            <div class="timeline-time-markers" id="timelineMarkers"></div>
+
+            <!-- Timeline Bilgileri -->
+            <div class="timeline-info"
+                style="display:flex;justify-content:space-between;margin-top:16px;padding:12px;background:var(--card-bg);border-radius:8px;">
+                <div>
+                    <strong>Toplam Süre:</strong> <span id="timelineTotalDuration">0:00</span>
+                </div>
+                <div>
+                    <strong>Sahne Sayısı:</strong> <span id="timelineSceneCount">0</span>
+                </div>
+                <div>
+                    <strong>Sahne Başına:</strong> <span id="timelinePerScene">0s</span>
+                </div>
+            </div>
+
+            <!-- Timeline Kontrolleri -->
+            <div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap;align-items:center;">
+                <button class="btn-sm" onclick="playTimelinePreview()" id="timelinePlayBtn">
+                    <i class="fas fa-play"></i> Önizle
+                </button>
+                <button class="btn-sm secondary-btn" onclick="stopTimelinePreview()">
+                    <i class="fas fa-stop"></i> Durdur
+                </button>
+                <div style="flex:1;"></div>
+                <label style="display:flex;align-items:center;gap:8px;">
+                    Sahne Süresi:
+                    <select id="timelineFrameDuration" class="config-input" style="width:80px;"
+                        onchange="updateTimelinePreview()">
+                        <option value="3">3s</option>
+                        <option value="5">5s</option>
+                        <option value="7">7s</option>
+                        <option value="10">10s</option>
+                    </select>
+                </label>
+            </div>
+
+            <!-- Sahne Detayları -->
+            <div id="timelineSceneDetails" class="timeline-scene-details"
+                style="margin-top:16px;max-height:200px;overflow-y:auto;"></div>
+        </div>
+    </div>
+
+    <!-- AI Önerileri Modal -->
+    <div id="suggestionsModal" class="modal hidden">
+        <div class="modal-content" style="max-width:800px;">
+            <span class="close-btn" onclick="closeModal('suggestionsModal')">×</span>
+            <h2><i class="fas fa-lightbulb"></i> AI Hikaye Önerileri</h2>
+
+            <!-- Kategori Seçimi -->
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+                <button class="btn-sm suggestion-cat active" data-cat="all"
+                    onclick="loadSuggestions('all')">Tümü</button>
+                <button class="btn-sm suggestion-cat" data-cat="adventure"
+                    onclick="loadSuggestions('adventure')">Macera</button>
+                <button class="btn-sm suggestion-cat" data-cat="romance"
+                    onclick="loadSuggestions('romance')">Romantik</button>
+                <button class="btn-sm suggestion-cat" data-cat="horror"
+                    onclick="loadSuggestions('horror')">Korku</button>
+                <button class="btn-sm suggestion-cat" data-cat="scifi" onclick="loadSuggestions('scifi')">Bilim
+                    Kurgu</button>
+                <button class="btn-sm suggestion-cat" data-cat="fantasy"
+                    onclick="loadSuggestions('fantasy')">Fantastik</button>
+                <button class="btn-sm suggestion-cat" data-cat="comedy"
+                    onclick="loadSuggestions('comedy')">Komedi</button>
+                <button class="btn-sm suggestion-cat" data-cat="drama" onclick="loadSuggestions('drama')">Drama</button>
+            </div>
+
+            <!-- Öneriler Listesi -->
+            <div id="suggestionsList" class="suggestions-list">
+                <p style="text-align:center;color:var(--text-muted);padding:40px;">
+                    <i class="fas fa-spinner fa-spin"></i> Öneriler yükleniyor...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()"><button class="lightbox-close">×</button><img
+            id="lightboxImg" src="" alt=""></div>
+
+    <!-- Context Menu -->
+    <div id="contextMenu" class="context-menu hidden"></div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script>
+        // State
+        let currentResult = null, currentLang = 'tr', locale = {}, characters = [], musicList = [], editingSceneIndex = null, addAfterIndex = null;
+
+        // Auto-Save State
+        let autoSaveEnabled = true;
+        let autoSaveInterval = null;
+        let lastAutoSave = null;
+        let undoStack = [];
+        let redoStack = [];
+        const MAX_UNDO_STACK = 20;
+        const AUTO_SAVE_KEY = 'hikaye_autosave';
+        const DRAFT_KEY = 'hikaye_draft';
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            loadLocale(currentLang);
+            loadCharacters();
+            loadSettings();
+            loadTemplates();
+            loadMusicList();
+            setupMentions();
+            checkTutorial();
+            initAutoSave();
+            checkForDraft();
+        });
+
+        // ========================
+        // OTOMATİK KAYDETME
+        // ========================
+
+        function initAutoSave() {
+            // Her 30 saniyede bir otomatik kaydet
+            autoSaveInterval = setInterval(() => {
+                if (autoSaveEnabled) {
+                    autoSaveDraft();
+                }
+            }, 30000);
+
+            // Sayfa kapatılırken kaydet
+            window.addEventListener('beforeunload', (e) => {
+                autoSaveDraft();
+                // Eğer aktif çalışma varsa uyar
+                if (currentResult && !currentResult.video) {
+                    e.preventDefault();
+                    e.returnValue = 'Kaydedilmemiş değişiklikler var. Çıkmak istediğinize emin misiniz?';
+                }
+            });
+
+            // Input değişikliklerinde taslak kaydet
+            const storyInput = document.getElementById('storyInput');
+            if (storyInput) {
+                storyInput.addEventListener('input', debounce(() => {
+                    saveDraftInput();
+                }, 2000));
+            }
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        function autoSaveDraft() {
+            if (!currentResult) return;
+
+            try {
+                const saveData = {
+                    timestamp: Date.now(),
+                    result: currentResult,
+                    settings: getCurrentSettings()
+                };
+
+                localStorage.setItem(AUTO_SAVE_KEY, JSON.stringify(saveData));
+                lastAutoSave = new Date();
+                console.log('Otomatik kaydedildi:', lastAutoSave.toLocaleTimeString());
+            } catch (e) {
+                console.warn('Otomatik kaydetme hatası:', e);
+            }
+        }
+
+        function saveDraftInput() {
+            const storyInput = document.getElementById('storyInput');
+            if (!storyInput || !storyInput.value.trim()) return;
+
+            try {
+                const draftData = {
+                    timestamp: Date.now(),
+                    input: storyInput.value,
+                    settings: getCurrentSettings()
+                };
+
+                localStorage.setItem(DRAFT_KEY, JSON.stringify(draftData));
+            } catch (e) {
+                console.warn('Taslak kaydetme hatası:', e);
+            }
+        }
+
+        function getCurrentSettings() {
+            return {
+                aspectRatio: document.getElementById('aspectRatio')?.value,
+                imageSize: document.getElementById('imageSize')?.value,
+                sceneCount: document.getElementById('sceneCount')?.value,
+                frameDuration: document.getElementById('frameDuration')?.value,
+                artStyle: document.getElementById('artStyle')?.value,
+                moodStyle: document.getElementById('moodStyle')?.value,
+                cameraStyle: document.getElementById('cameraStyle')?.value,
+                videoTransition: document.getElementById('videoTransition')?.value,
+                generateAudio: document.getElementById('generateAudio')?.checked
+            };
+        }
+
+        function applySettings(settings) {
+            if (!settings) return;
+
+            if (settings.aspectRatio) document.getElementById('aspectRatio').value = settings.aspectRatio;
+            if (settings.imageSize) document.getElementById('imageSize').value = settings.imageSize;
+            if (settings.sceneCount) document.getElementById('sceneCount').value = settings.sceneCount;
+            if (settings.frameDuration) document.getElementById('frameDuration').value = settings.frameDuration;
+            if (settings.artStyle) document.getElementById('artStyle').value = settings.artStyle;
+            if (settings.moodStyle) document.getElementById('moodStyle').value = settings.moodStyle;
+            if (settings.cameraStyle) document.getElementById('cameraStyle').value = settings.cameraStyle;
+            if (settings.videoTransition) document.getElementById('videoTransition').value = settings.videoTransition;
+            if (settings.generateAudio !== undefined) document.getElementById('generateAudio').checked = settings.generateAudio;
+        }
+
+        function checkForDraft() {
+            // Önce otomatik kayıt kontrol et
+            const autoSave = localStorage.getItem(AUTO_SAVE_KEY);
+            if (autoSave) {
+                try {
+                    const data = JSON.parse(autoSave);
+                    const saveTime = new Date(data.timestamp);
+                    const now = new Date();
+                    const hoursDiff = (now - saveTime) / (1000 * 60 * 60);
+
+                    // 24 saatten eski değilse sor
+                    if (hoursDiff < 24 && data.result) {
+                        const timeStr = saveTime.toLocaleString('tr-TR');
+                        if (confirm(`Son oturumdan kalan bir çalışma bulundu (${timeStr}). Devam etmek ister misiniz?`)) {
+                            currentResult = data.result;
+                            if (data.settings) applySettings(data.settings);
+                            displayResults(data.result);
+                            showToast('Önceki çalışma yüklendi!', 'success');
+                            return;
+                        } else {
+                            localStorage.removeItem(AUTO_SAVE_KEY);
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Otomatik kayıt yüklenemedi:', e);
+                }
+            }
+
+            // Taslak kontrol et
+            const draft = localStorage.getItem(DRAFT_KEY);
+            if (draft) {
+                try {
+                    const data = JSON.parse(draft);
+                    const saveTime = new Date(data.timestamp);
+                    const now = new Date();
+                    const hoursDiff = (now - saveTime) / (1000 * 60 * 60);
+
+                    if (hoursDiff < 24 && data.input) {
+                        const timeStr = saveTime.toLocaleString('tr-TR');
+                        if (confirm(`Kaydedilmemiş bir taslak bulundu (${timeStr}). Yüklemek ister misiniz?`)) {
+                            document.getElementById('storyInput').value = data.input;
+                            updateHighlights();
+                            if (data.settings) applySettings(data.settings);
+                            showToast('Taslak yüklendi!', 'info');
+                        } else {
+                            localStorage.removeItem(DRAFT_KEY);
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Taslak yüklenemedi:', e);
+                }
+            }
+        }
+
+        function clearAutoSave() {
+            localStorage.removeItem(AUTO_SAVE_KEY);
+            localStorage.removeItem(DRAFT_KEY);
+            showToast('Otomatik kayıtlar temizlendi', 'info');
+        }
+
+        // ========================
+        // GERİ AL / İLERİ AL
+        // ========================
+
+        function saveToUndoStack() {
+            if (!currentResult) return;
+
+            // Mevcut durumu kaydet
+            const state = JSON.parse(JSON.stringify(currentResult));
+            undoStack.push(state);
+
+            // Stack boyutunu sınırla
+            if (undoStack.length > MAX_UNDO_STACK) {
+                undoStack.shift();
+            }
+
+            // Redo stack'i temizle (yeni işlem yapıldı)
+            redoStack = [];
+        }
+
+        function undo() {
+            if (undoStack.length === 0) {
+                showToast('Geri alınacak işlem yok', 'warning');
+                return;
+            }
+
+            // Mevcut durumu redo stack'e kaydet
+            if (currentResult) {
+                redoStack.push(JSON.parse(JSON.stringify(currentResult)));
+            }
+
+            // Önceki durumu geri yükle
+            currentResult = undoStack.pop();
+            displayResults(currentResult);
+            showToast('Geri alındı', 'info');
+        }
+
+        function redo() {
+            if (redoStack.length === 0) {
+                showToast('İleri alınacak işlem yok', 'warning');
+                return;
+            }
+
+            // Mevcut durumu undo stack'e kaydet
+            if (currentResult) {
+                undoStack.push(JSON.parse(JSON.stringify(currentResult)));
+            }
+
+            // Sonraki durumu yükle
+            currentResult = redoStack.pop();
+            displayResults(currentResult);
+            showToast('İleri alındı', 'info');
+        }
+
+        // Locale
+        async function loadLocale(lang) {
+            try {
+                const res = await fetch(`/locale/${lang}`);
+                if (res.ok) locale = await res.json();
+            } catch (e) { console.error(e); }
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'tr' ? 'en' : 'tr';
+            document.getElementById('langIndicator').textContent = currentLang.toUpperCase();
+            loadLocale(currentLang);
+            showToast(`Dil: ${currentLang.toUpperCase()}`, 'info');
+        }
+
+        // Theme
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme');
+            html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+            document.querySelector('.theme-toggle').textContent = current === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Toast
+        function showToast(msg, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.innerHTML = `<span>${msg}</span>`;
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 4000);
+        }
+
+        // Modal
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            if (id === 'historyModal') loadHistory();
+            if (id === 'statsModal') loadStats();
+        }
+        function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+
+        // Lightbox
+        function openLightbox(src) { document.getElementById('lightboxImg').src = src; document.getElementById('lightbox').classList.remove('hidden'); }
+        function closeLightbox() { document.getElementById('lightbox').classList.add('hidden'); }
+
+        // Generate Story
+        async function generateStory() {
+            const input = document.getElementById('storyInput').value.trim();
+            if (!input) { showToast('Lütfen hikaye konusu girin!', 'error'); return; }
+
+            const btn = document.getElementById('generateBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<div class="btn-loader"></div> Oluşturuluyor...';
+
+            document.getElementById('loadingSection').classList.remove('hidden');
+            document.getElementById('resultsSection').classList.add('hidden');
+
+            const params = {
+                user_input: input,
+                aspect_ratio: document.getElementById('aspectRatio').value,
+                image_size: document.getElementById('imageSize').value,
+                scene_count: parseInt(document.getElementById('sceneCount').value),
+                frame_duration: parseFloat(document.getElementById('frameDuration').value),
+                art_style: document.getElementById('artStyle').value,
+                mood_style: document.getElementById('moodStyle').value,
+                camera_style: document.getElementById('cameraStyle').value,
+                video_transition: document.getElementById('videoTransition').value,
+                generate_audio: document.getElementById('generateAudio').checked,
+                dual_format: document.getElementById('dualFormat').checked   // YENİ
+            };
+
+            try {
+                const response = await fetch('/generate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(params) });
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    const lines = decoder.decode(value).split('\n');
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const data = JSON.parse(line.slice(6));
+                                if (data.progress) document.getElementById('progressBar').style.width = data.progress + '%';
+                                if (data.status) document.getElementById('loadingStatus').textContent = data.status;
+                                if (data.error) { showToast(data.error, 'error'); break; }
+                                if (data.result) { currentResult = data.result; displayResults(data.result); }
+                            } catch (e) { }
+                        }
+                    }
+                }
+            } catch (e) {
+                showToast('Bağlantı hatası!', 'error');
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-palette"></i> Görselleri Oluştur';
+            document.getElementById('loadingSection').classList.add('hidden');
+        }
+
+        // Display Results
+        function displayResults(result) {
+            const grid = document.getElementById('galleryGrid');
+            grid.innerHTML = '';
+            selectedScenes.clear();
+            updateBatchUI();
+
+            result.images.forEach((img, i) => {
+                if (!img) return;
+                const hasAudio = result.audios && result.audios[i];
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.draggable = true;
+                item.dataset.index = i;
+                item.innerHTML = `
+            <label class="scene-checkbox-wrapper">
+                <input type="checkbox" class="scene-checkbox" data-index="${i}" onchange="toggleSceneSelection(${i}, this.checked)">
+                <span class="scene-checkbox-checkmark"></span>
+            </label>
+            <span class="scene-badge">Sahne ${i + 1}${hasAudio ? ' <i class="fas fa-volume-up" style="margin-left:4px;color:#10b981;"></i>' : ''}</span>
+            <div class="scene-actions">
+                <button class="scene-action-btn" onclick="regenerateScene(${i})" title="Görseli Yeniden Oluştur (aynı prompt)"><i class="fas fa-sync-alt"></i></button>
+                <button class="scene-action-btn" onclick="editScenePrompt(${i})" title="Prompt Düzenle"><i class="fas fa-edit"></i></button>
+                <button class="scene-action-btn" onclick="regenerateMatchStyle(${i})" title="Stil Eşleştirmeli Yeniden Oluştur"><i class="fas fa-magic"></i></button>
+                <button class="scene-action-btn" onclick="addSceneAfter(${i})" title="Sonrasına Sahne Ekle"><i class="fas fa-plus"></i></button>
+                <button class="scene-action-btn" onclick="deleteScene(${i})" title="Sahneyi Sil"><i class="fas fa-trash"></i></button>
+                <button class="scene-action-btn" onclick="downloadImage('${img}')" title="Görseli İndir"><i class="fas fa-download"></i></button>
+                ${hasAudio ? `
+                    <button class="scene-action-btn" onclick="playSceneAudio('${result.audios[i]}')" title="Sesi Dinle"><i class="fas fa-play-circle"></i></button>
+                    <button class="scene-action-btn" onclick="regenerateSceneAudio(${i})" title="Seslendirmeyi Yeniden Oluştur"><i class="fas fa-redo-alt" style="color:#f59e0b;"></i></button>
+                ` : ''}
+            </div>
+            <img src="/${img}" alt="Sahne ${i + 1}" onclick="openLightbox('/${img}')">
+            <p>Sahne ${i + 1}</p>
+        `;
+                grid.appendChild(item);
+            });
+
+            setupDragDrop();
+            document.getElementById('resultsSection').classList.remove('hidden');
+            document.getElementById('resultVideo').classList.add('hidden');
+            document.getElementById('videoPlaceholder').classList.remove('hidden');
+        }
+
+        // ========================
+        // TOPLU İŞLEMLER
+        // ========================
+
+        let selectedScenes = new Set();
+        let batchMode = false;
+
+        function toggleSceneSelection(index, checked) {
+            if (checked) {
+                selectedScenes.add(index);
+            } else {
+                selectedScenes.delete(index);
+            }
+            updateBatchUI();
+        }
+
+        function selectAllScenes() {
+            if (!currentResult || !currentResult.images) return;
+
+            currentResult.images.forEach((img, i) => {
+                if (img) selectedScenes.add(i);
+            });
+
+            document.querySelectorAll('.scene-checkbox').forEach(cb => cb.checked = true);
+            updateBatchUI();
+        }
+
+        function deselectAllScenes() {
+            selectedScenes.clear();
+            document.querySelectorAll('.scene-checkbox').forEach(cb => cb.checked = false);
+            updateBatchUI();
+        }
+
+        function updateBatchUI() {
+            const count = selectedScenes.size;
+            let batchBar = document.getElementById('batchActionsBar');
+
+            if (count > 0) {
+                if (!batchBar) {
+                    batchBar = document.createElement('div');
+                    batchBar.id = 'batchActionsBar';
+                    batchBar.className = 'batch-actions-bar';
+                    batchBar.innerHTML = `
+                        <span id="batchCount">0 sahne seçili</span>
+                        <div class="batch-buttons">
+                            <button class="btn-sm" onclick="selectAllScenes()"><i class="fas fa-check-double"></i> Tümünü Seç</button>
+                            <button class="btn-sm secondary-btn" onclick="deselectAllScenes()"><i class="fas fa-times"></i> Seçimi Kaldır</button>
+                            <button class="btn-sm" onclick="batchRegenerate()"><i class="fas fa-sync-alt"></i> Seçilenleri Yeniden Oluştur</button>
+                            <button class="btn-sm" onclick="batchRegenAudio()" style="background:var(--accent);"><i class="fas fa-volume-up"></i> Seçilenleri Seslendir</button>
+                            <button class="btn-sm" onclick="createSelectedVideo()" style="background:var(--primary);"><i class="fas fa-video"></i> Seçilenleri Videolaştır</button>
+                            <button class="btn-sm btn-danger" onclick="batchDelete()"><i class="fas fa-trash"></i> Seçilenleri Sil</button>
+                            <button class="btn-sm secondary-btn" onclick="batchDownload()"><i class="fas fa-download"></i> Seçilenleri İndir</button>
+                        </div>
+                    `;
+                    document.getElementById('resultsSection').insertBefore(batchBar, document.getElementById('galleryGrid'));
+                }
+
+                document.getElementById('batchCount').textContent = `${count} sahne seçili`;
+                batchBar.classList.remove('hidden');
+            } else if (batchBar) {
+                batchBar.classList.add('hidden');
+            }
+        }
+
+        async function createSelectedVideo() {
+            if (selectedScenes.size < 1) {
+                showToast('En az 1 sahne seçmelisiniz!', 'warning');
+                return;
+            }
+
+            const indices = Array.from(selectedScenes).sort((a, b) => a - b);
+
+            // Eğer müzik veya diğer ayarlar gerekiyorsa, kullanıcıya bunları sormak için bir modal açabiliriz 
+            // ya da mevcut video ayarlarını (paneldeki) kullanabiliriz.
+            // Şimdilik mevcut paneldeki ayarları kullanalım ve doğrudan istek atalım.
+            // Kullanıcı zaten panelden ayar yapıp "Video Oluştur" diyebiliyordu.
+            // Burada da aynı ayarları alıp sadece sahneleri filtreleyeceğiz.
+
+            const btn = document.querySelector('button[onclick="createSelectedVideo()"]');
+            const originalContent = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<div class="btn-loader"></div> Videolaştırılıyor...';
+
+            // Önizlemeleri durdur
+            stopMusicPreview();
+            stopAudioPreview();
+
+            // Ses ayarlarını al
+            const audioSettings = getAudioSettings();
+            const selectedMusic = document.getElementById('videoMusicSelect').value;
+
+            const payload = {
+                timestamp: currentResult.timestamp,
+                music_file: selectedMusic || null,
+                audio_settings: audioSettings,
+                selected_scenes: indices,
+                ken_burns_effect: document.getElementById('kenBurnsEffect')?.value || 'none',
+                enable_subtitles: document.getElementById('enableSubtitles')?.checked || false
+            };
+
+            try {
+                const res = await fetch('/create_video', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    document.getElementById('resultVideo').src = '/' + data.video_path;
+                    document.getElementById('resultVideo').classList.remove('hidden');
+                    document.getElementById('videoPlaceholder').classList.add('hidden');
+                    showToast('Seçilen sahnelerden video oluşturuldu!', 'success');
+
+                    // Seçimleri sıfırla
+                    deselectAllScenes();
+                } else {
+                    showToast(data.error || 'Video oluşturulamadı!', 'error');
+                }
+            } catch (e) {
+                showToast('Bağlantı hatası!', 'error');
+                console.error(e);
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = originalContent;
+        }
+
+        async function batchRegenerate() {
+            if (selectedScenes.size === 0) {
+                showToast('Önce sahne seçin!', 'warning');
+                return;
+            }
+
+            if (!confirm(`${selectedScenes.size} sahneyi yeniden oluşturmak istediğinize emin misiniz?`)) return;
+
+            showToast(`${selectedScenes.size} sahne yeniden oluşturuluyor...`, 'info');
+
+            const indices = Array.from(selectedScenes).sort((a, b) => a - b);
+            let completed = 0;
+            let failed = 0;
+
+            for (const idx of indices) {
+                try {
+                    const res = await fetch('/regenerate_scene', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx })
+                    });
+                    const data = await res.json();
+
+                    if (data.success) {
+                        currentResult.images[idx] = data.new_path;
+                        completed++;
+                    } else {
+                        failed++;
+                    }
+                } catch (e) {
+                    failed++;
+                }
+            }
+
+            displayResults(currentResult);
+            showToast(`${completed} sahne yenilendi${failed > 0 ? `, ${failed} başarısız` : ''}`, completed > 0 ? 'success' : 'error');
+        }
+
+        async function batchDelete() {
+            if (selectedScenes.size === 0) {
+                showToast('Önce sahne seçin!', 'warning');
+                return;
+            }
+
+            if (!confirm(`${selectedScenes.size} sahneyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz!`)) return;
+
+            // Undo için kaydet
+            saveToUndoStack();
+
+            const indices = Array.from(selectedScenes).sort((a, b) => b - a); // Büyükten küçüğe sil
+
+            for (const idx of indices) {
+                try {
+                    await fetch('/scene/delete', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx })
+                    });
+
+                    currentResult.images.splice(idx, 1);
+                    if (currentResult.prompts_generated) currentResult.prompts_generated.splice(idx, 1);
+                    if (currentResult.audios) currentResult.audios.splice(idx, 1);
+                } catch (e) {
+                    console.error('Sahne silme hatası:', e);
+                }
+            }
+
+            selectedScenes.clear();
+            displayResults(currentResult);
+            showToast(`${indices.length} sahne silindi`, 'success');
+        }
+
+        function batchDownload() {
+            if (selectedScenes.size === 0) {
+                showToast('Önce sahne seçin!', 'warning');
+                return;
+            }
+
+            const indices = Array.from(selectedScenes);
+            indices.forEach(idx => {
+                if (currentResult.images[idx]) {
+                    downloadImage(currentResult.images[idx]);
+                }
+            });
+
+            showToast(`${indices.length} görsel indiriliyor...`, 'info');
+        }
+
+        async function batchRegenAudio() {
+            if (selectedScenes.size === 0) {
+                showToast('Önce sahne seçin!', 'warning');
+                return;
+            }
+
+            if (!confirm(`${selectedScenes.size} sahnenin sesini yeniden oluşturmak istediğinize emin misiniz?`)) return;
+
+            showToast(`${selectedScenes.size} sahne seslendiriliyor...`, 'info');
+
+            const indices = Array.from(selectedScenes).sort((a, b) => a - b);
+            let completed = 0;
+            let failed = 0;
+
+            for (const idx of indices) {
+                try {
+                    const res = await fetch('/regenerate_audio', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx })
+                    });
+                    const data = await res.json();
+
+                    if (data.success) {
+                        if (!currentResult.audios) currentResult.audios = [];
+                        currentResult.audios[idx] = data.new_audio_path;
+                        completed++;
+                    } else {
+                        failed++;
+                    }
+                } catch (e) {
+                    failed++;
+                }
+            }
+
+            displayResults(currentResult);
+            showToast(`${completed} sahne seslendirildi${failed > 0 ? `, ${failed} başarısız` : ''}`, completed > 0 ? 'success' : 'error');
+        }
+
+        // Drag & Drop
+        function setupDragDrop() {
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                item.addEventListener('dragstart', e => { e.dataTransfer.setData('text/plain', item.dataset.index); item.classList.add('dragging'); });
+                item.addEventListener('dragend', () => item.classList.remove('dragging'));
+                item.addEventListener('dragover', e => { e.preventDefault(); item.classList.add('drag-over'); });
+                item.addEventListener('dragleave', () => item.classList.remove('drag-over'));
+                item.addEventListener('drop', async e => {
+                    e.preventDefault();
+                    item.classList.remove('drag-over');
+                    const fromIdx = parseInt(e.dataTransfer.getData('text/plain'));
+                    const toIdx = parseInt(item.dataset.index);
+                    if (fromIdx !== toIdx) await reorderScenes(fromIdx, toIdx);
+                });
+            });
+        }
+
+        async function reorderScenes(from, to) {
+            const order = currentResult.images.map((_, i) => i);
+            order.splice(to, 0, order.splice(from, 1)[0]);
+
+            const res = await fetch('/scene/reorder', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, new_order: order }) });
+            if (res.ok) {
+                currentResult.images = order.map(i => currentResult.images[i]);
+                currentResult.prompts_generated = order.map(i => currentResult.prompts_generated[i]);
+                displayResults(currentResult);
+                showToast('Sıralama güncellendi!', 'success');
+            }
+        }
+
+        // Scene Actions
+        async function regenerateScene(idx) {
+            showToast('Sahne yeniden oluşturuluyor...', 'info');
+            const res = await fetch('/regenerate_scene', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx }) });
+            const data = await res.json();
+            if (data.success) { currentResult.images[idx] = data.new_path; displayResults(currentResult); showToast('Sahne yenilendi!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        async function regenerateAllScenes() {
+            if (!currentResult || !currentResult.images || currentResult.images.length === 0) {
+                showToast('Yeniden oluşturulacak sahne bulunamadı!', 'error');
+                return;
+            }
+
+            if (!confirm(`Tüm ${currentResult.images.filter(i => i).length} sahneyi yeniden oluşturmak istediğinize emin misiniz? Bu işlem biraz zaman alabilir.`)) {
+                return;
+            }
+
+            const btn = document.getElementById('regenerateAllBtn');
+            btn.disabled = true;
+            const originalText = btn.innerHTML;
+
+            const totalScenes = currentResult.images.filter(i => i).length;
+            let completedScenes = 0;
+            let failedScenes = 0;
+
+            showToast(`${totalScenes} sahne yeniden oluşturuluyor...`, 'info');
+
+            for (let i = 0; i < currentResult.images.length; i++) {
+                if (!currentResult.images[i]) continue;
+
+                btn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${completedScenes + 1}/${totalScenes} İşleniyor...`;
+
+                try {
+                    const res = await fetch('/regenerate_scene', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ timestamp: currentResult.timestamp, index: i })
+                    });
+                    const data = await res.json();
+
+                    if (data.success) {
+                        currentResult.images[i] = data.new_path;
+                        completedScenes++;
+                        displayResults(currentResult);
+                    } else {
+                        failedScenes++;
+                    }
+                } catch (e) {
+                    failedScenes++;
+                }
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = originalText;
+
+            if (failedScenes === 0) {
+                showToast(`Tüm ${completedScenes} sahne başarıyla yeniden oluşturuldu!`, 'success');
+            } else {
+                showToast(`${completedScenes} sahne yenilendi, ${failedScenes} sahne başarısız oldu.`, 'warning');
+            }
+        }
+
+        function editScenePrompt(idx) {
+            editingSceneIndex = idx;
+            document.getElementById('editPromptText').value = currentResult.prompts_generated[idx] || '';
+            openModal('promptModal');
+        }
+
+        async function submitEditedPrompt() {
+            const prompt = document.getElementById('editPromptText').value;
+            closeModal('promptModal');
+            showToast('Oluşturuluyor...', 'info');
+            const res = await fetch('/regenerate_scene_with_prompt', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, index: editingSceneIndex, new_prompt: prompt }) });
+            const data = await res.json();
+            if (data.success) { currentResult.images[editingSceneIndex] = data.new_path; currentResult.prompts_generated[editingSceneIndex] = prompt; displayResults(currentResult); showToast('Sahne güncellendi!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        function addSceneAfter(idx) {
+            addAfterIndex = idx;
+            document.getElementById('newScenePrompt').value = '';
+            openModal('addSceneModal');
+        }
+
+        async function submitAddScene() {
+            const prompt = document.getElementById('newScenePrompt').value;
+            closeModal('addSceneModal');
+            showToast('Sahne ekleniyor...', 'info');
+            const res = await fetch('/scene/add', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, after_index: addAfterIndex, prompt: prompt }) });
+            const data = await res.json();
+            if (data.success) { loadHistory(); showToast('Sahne eklendi! Sayfayı yenileyin.', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        async function deleteScene(idx) {
+            if (!confirm('Bu sahneyi silmek istediğinize emin misiniz?')) return;
+            const res = await fetch('/scene/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx }) });
+            const data = await res.json();
+            if (data.success) { currentResult.images.splice(idx, 1); currentResult.prompts_generated.splice(idx, 1); displayResults(currentResult); showToast('Sahne silindi!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // Video
+        async function createVideo() {
+            const btn = document.getElementById('createVideoBtn');
+            const selectedMusic = document.getElementById('videoMusicSelect').value;
+
+            btn.disabled = true;
+            btn.innerHTML = '<div class="btn-loader"></div>';
+
+            // Önizleme çalıyorsa durdur
+            stopMusicPreview();
+            stopAudioPreview();
+
+            // Ses ayarlarını al
+            const audioSettings = getAudioSettings();
+
+            const payload = {
+                timestamp: currentResult.timestamp,
+                music_file: selectedMusic || null,
+                audio_settings: audioSettings
+            };
+
+            const res = await fetch('/create_video', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            const data = await res.json();
+            btn.disabled = false;
+            btn.innerHTML = '<i class=\"fas fa-video\"></i> Videoyu Oluştur';
+            if (data.success) {
+                document.getElementById('resultVideo').src = '/' + data.video_path;
+                document.getElementById('resultVideo').classList.remove('hidden');
+                document.getElementById('videoPlaceholder').classList.add('hidden');
+                showToast(selectedMusic ? 'Video müzikle oluşturuldu!' : 'Video hazır!', 'success');
+            } else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // ========================
+        // SES AYARLARI
+        // ========================
+
+        // Varsayılan ses ayarları
+        const defaultAudioSettings = {
+            musicVolume: 70,
+            voiceVolume: 100,
+            duckingLevel: -10,
+            duckingFade: 0.5,
+            voiceDelay: 0.3
+        };
+
+        // Slider değerini güncelle
+        function updateSliderLabel(id, suffix) {
+            const slider = document.getElementById(id);
+            const label = document.getElementById(id + 'Label');
+            if (slider && label) {
+                label.textContent = slider.value + suffix;
+            }
+        }
+
+        // Ses ayarları panelini aç/kapa
+        function toggleAudioSettings() {
+            const content = document.getElementById('audioSettingsContent');
+            const icon = document.getElementById('audioSettingsIcon');
+            content.classList.toggle('hidden');
+            icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+
+        // Ses ayarlarını al
+        function getAudioSettings() {
+            return {
+                musicVolume: parseInt(document.getElementById('musicVolume')?.value || defaultAudioSettings.musicVolume) / 100,
+                voiceVolume: parseInt(document.getElementById('voiceVolume')?.value || defaultAudioSettings.voiceVolume) / 100,
+                duckingLevel: parseInt(document.getElementById('duckingLevel')?.value || defaultAudioSettings.duckingLevel),
+                duckingFade: parseFloat(document.getElementById('duckingFade')?.value || defaultAudioSettings.duckingFade),
+                voiceDelay: parseFloat(document.getElementById('voiceDelay')?.value || defaultAudioSettings.voiceDelay)
+            };
+        }
+
+        // Varsayılan ayarlara dön
+        function resetAudioSettings() {
+            document.getElementById('musicVolume').value = defaultAudioSettings.musicVolume;
+            document.getElementById('voiceVolume').value = defaultAudioSettings.voiceVolume;
+            document.getElementById('duckingLevel').value = defaultAudioSettings.duckingLevel;
+            document.getElementById('duckingFade').value = defaultAudioSettings.duckingFade;
+            document.getElementById('voiceDelay').value = defaultAudioSettings.voiceDelay;
+
+            updateSliderLabel('musicVolume', '%');
+            updateSliderLabel('voiceVolume', '%');
+            updateSliderLabel('duckingLevel', ' dB');
+            updateSliderLabel('duckingFade', 's');
+            updateSliderLabel('voiceDelay', 's');
+
+            showToast('Varsayılan ayarlar yüklendi', 'info');
+        }
+
+        // Ses önizleme için Web Audio API
+        let audioContext = null;
+        let musicSource = null;
+        let voiceSource = null;
+        let musicGainNode = null;
+        let voiceGainNode = null;
+        let previewPlaying = false;
+        let duckingInterval = null;
+
+        async function previewAudioMix() {
+            const statusEl = document.getElementById('previewStatus');
+            const selectedMusic = document.getElementById('videoMusicSelect').value;
+
+            // Önce mevcut önizlemeyi durdur
+            stopAudioPreview();
+
+            // Müzik seçili mi kontrol et
+            if (!selectedMusic) {
+                showToast('Önce bir müzik seçin', 'warning');
+                return;
+            }
+
+            // İlk sesli sahneyi bul
+            let voicePath = null;
+            if (currentResult && currentResult.audios) {
+                voicePath = currentResult.audios.find(a => a);
+            }
+
+            if (!voicePath) {
+                showToast('Sesli sahne bulunamadı, sadece müzik dinlenecek', 'info');
+            }
+
+            statusEl.textContent = 'Yükleniyor...';
+
+            try {
+                // Web Audio API context oluştur
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+                // Ses ayarlarını al
+                const settings = getAudioSettings();
+
+                // Müziği yükle
+                const musicResponse = await fetch(`/music/play/${selectedMusic}`);
+                const musicBuffer = await audioContext.decodeAudioData(await musicResponse.arrayBuffer());
+
+                musicSource = audioContext.createBufferSource();
+                musicSource.buffer = musicBuffer;
+                musicSource.loop = true;
+
+                musicGainNode = audioContext.createGain();
+                musicGainNode.gain.value = settings.musicVolume;
+
+                musicSource.connect(musicGainNode);
+                musicGainNode.connect(audioContext.destination);
+
+                // Karakter sesi varsa yükle
+                if (voicePath) {
+                    const voiceResponse = await fetch('/' + voicePath);
+                    const voiceBuffer = await audioContext.decodeAudioData(await voiceResponse.arrayBuffer());
+
+                    voiceSource = audioContext.createBufferSource();
+                    voiceSource.buffer = voiceBuffer;
+
+                    voiceGainNode = audioContext.createGain();
+                    voiceGainNode.gain.value = settings.voiceVolume;
+
+                    voiceSource.connect(voiceGainNode);
+                    voiceGainNode.connect(audioContext.destination);
+
+                    // Audio Ducking simülasyonu
+                    const voiceDuration = voiceBuffer.duration;
+                    const voiceDelay = settings.voiceDelay;
+                    const fadeTime = settings.duckingFade;
+                    const duckedVolume = settings.musicVolume * Math.pow(10, settings.duckingLevel / 20);
+
+                    // Ses başlamadan önce müziği kıs
+                    setTimeout(() => {
+                        if (musicGainNode) {
+                            musicGainNode.gain.linearRampToValueAtTime(duckedVolume, audioContext.currentTime + fadeTime);
+                        }
+                    }, Math.max(0, (voiceDelay - fadeTime) * 1000));
+
+                    // Karakter sesini başlat
+                    setTimeout(() => {
+                        if (voiceSource && audioContext) {
+                            voiceSource.start(0);
+                            statusEl.textContent = 'Karakter konuşuyor... (müzik kısık)';
+                        }
+                    }, voiceDelay * 1000);
+
+                    // Ses bittikten sonra müziği yükselt
+                    setTimeout(() => {
+                        if (musicGainNode && audioContext) {
+                            musicGainNode.gain.linearRampToValueAtTime(settings.musicVolume, audioContext.currentTime + fadeTime);
+                            statusEl.textContent = 'Müzik normal seviyeye döndü';
+                        }
+                    }, (voiceDelay + voiceDuration) * 1000);
+
+                    // Otomatik dur (ses + 3 saniye sonra)
+                    setTimeout(() => {
+                        stopAudioPreview();
+                        statusEl.textContent = 'Önizleme tamamlandı';
+                    }, (voiceDelay + voiceDuration + 3) * 1000);
+                }
+
+                // Müziği başlat
+                musicSource.start(0);
+                previewPlaying = true;
+
+                document.getElementById('previewMixIcon').className = 'fas fa-pause';
+                statusEl.textContent = voicePath ?
+                    `Dinleniyor... (${settings.voiceDelay}s sonra konuşma başlayacak)` :
+                    'Sadece müzik dinleniyor...';
+
+                // 30 saniye sonra otomatik durdur
+                setTimeout(() => {
+                    if (previewPlaying) {
+                        stopAudioPreview();
+                        statusEl.textContent = 'Önizleme süresi doldu';
+                    }
+                }, 30000);
+
+            } catch (e) {
+                console.error('Ses önizleme hatası:', e);
+                statusEl.textContent = 'Hata: ' + e.message;
+                showToast('Ses yüklenemedi', 'error');
+            }
+        }
+
+        function stopAudioPreview() {
+            try {
+                if (musicSource) { musicSource.stop(); musicSource = null; }
+                if (voiceSource) { voiceSource.stop(); voiceSource = null; }
+                if (audioContext) { audioContext.close(); audioContext = null; }
+                if (duckingInterval) { clearInterval(duckingInterval); duckingInterval = null; }
+            } catch (e) { }
+
+            previewPlaying = false;
+            const icon = document.getElementById('previewMixIcon');
+            if (icon) icon.className = 'fas fa-play';
+
+            const statusEl = document.getElementById('previewStatus');
+            if (statusEl && statusEl.textContent.includes('Dinleniyor')) {
+                statusEl.textContent = 'Durduruldu';
+            }
+        }
+
+        // ========================
+        // TAM SES ÖNİZLEME (Video Gibi)
+        // ========================
+
+        let fullPreviewAudioContext = null;
+        let fullPreviewMusicSource = null;
+        let fullPreviewVoiceSources = [];
+        let fullPreviewMusicGain = null;
+        let fullPreviewPlaying = false;
+        let fullPreviewAnimationFrame = null;
+        let fullPreviewStartTime = 0;
+        let fullPreviewTotalDuration = 0;
+
+        async function previewFullAudio() {
+            const statusEl = document.getElementById('previewStatus');
+            const progressContainer = document.getElementById('audioPreviewProgress');
+            const selectedMusic = document.getElementById('videoMusicSelect').value;
+
+            // Önce mevcut önizlemeyi durdur
+            stopFullPreview();
+
+            if (!currentResult || !currentResult.images) {
+                showToast('Önce bir hikaye oluşturun', 'warning');
+                return;
+            }
+
+            const sceneCount = currentResult.images.filter(i => i).length;
+            const frameDuration = currentResult.frame_duration || 5;
+            const settings = getAudioSettings();
+
+            // Sesli sahneleri topla - üst üste binmeyi önle
+            const sceneAudios = [];
+            let lastVoiceEndTime = 0; // Önceki sesin tahmini bitiş zamanı
+
+            if (currentResult.audios) {
+                let sceneIndex = 0;
+                currentResult.images.forEach((img, i) => {
+                    if (img) {
+                        const idealStart = sceneIndex * frameDuration + settings.voiceDelay;
+
+                        // Önceki ses bitmeden yeni sesi başlatma
+                        let startTime = idealStart;
+                        if (lastVoiceEndTime > idealStart && currentResult.audios[i]) {
+                            startTime = lastVoiceEndTime + 0.2; // 0.2 saniye boşluk
+                        }
+
+                        // Tahmini ses süresi (ortalama 3-5 saniye varsayalım)
+                        // Gerçek süre yükleme sırasında hesaplanacak
+                        const estimatedDuration = 4;
+                        if (currentResult.audios[i]) {
+                            lastVoiceEndTime = startTime + estimatedDuration;
+                        }
+
+                        sceneAudios.push({
+                            index: i,
+                            audio: currentResult.audios[i] || null,
+                            startTime: startTime,
+                            sceneIndex: sceneIndex
+                        });
+                        sceneIndex++;
+                    }
+                });
+            }
+
+            fullPreviewTotalDuration = sceneCount * frameDuration;
+
+            statusEl.textContent = 'Önizleme hazırlanıyor...';
+            progressContainer.classList.remove('hidden');
+
+            try {
+                fullPreviewAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+                // Müzik yükle
+                if (selectedMusic) {
+                    const musicResponse = await fetch('/static/music/' + selectedMusic);
+                    const musicBuffer = await fullPreviewAudioContext.decodeAudioData(await musicResponse.arrayBuffer());
+
+                    fullPreviewMusicSource = fullPreviewAudioContext.createBufferSource();
+                    fullPreviewMusicSource.buffer = musicBuffer;
+                    fullPreviewMusicSource.loop = true;
+
+                    fullPreviewMusicGain = fullPreviewAudioContext.createGain();
+                    fullPreviewMusicGain.gain.value = settings.musicVolume;
+
+                    fullPreviewMusicSource.connect(fullPreviewMusicGain);
+                    fullPreviewMusicGain.connect(fullPreviewAudioContext.destination);
+                }
+
+                // Audio Ducking için zamanlayıcılar
+                const duckedVolume = settings.musicVolume * Math.pow(10, settings.duckingLevel / 20);
+                const fadeTime = settings.duckingFade;
+
+                // Önce tüm sesleri yükle ve sürelerini hesapla
+                const loadedAudios = [];
+                for (const scene of sceneAudios) {
+                    if (scene.audio) {
+                        try {
+                            const voiceResponse = await fetch('/' + scene.audio);
+                            const voiceBuffer = await fullPreviewAudioContext.decodeAudioData(await voiceResponse.arrayBuffer());
+                            loadedAudios.push({
+                                ...scene,
+                                buffer: voiceBuffer,
+                                duration: voiceBuffer.duration
+                            });
+                        } catch (e) {
+                            console.warn('Sahne sesi yüklenemedi:', scene.index, e);
+                        }
+                    }
+                }
+
+                // Şimdi zamanlamaları hesapla - üst üste binmeyi önle
+                let lastVoiceEndTime = 0;
+                const voiceSchedule = [];
+
+                loadedAudios.forEach((audio, idx) => {
+                    const idealStart = audio.sceneIndex * frameDuration + settings.voiceDelay;
+
+                    // Önceki ses bitmeden başlatma
+                    let actualStart = idealStart;
+                    if (lastVoiceEndTime > idealStart) {
+                        actualStart = lastVoiceEndTime + 0.2; // 0.2 saniye boşluk
+                        console.log(`Sahne ${audio.index + 1}: Ses geciktirildi (${idealStart.toFixed(1)}s -> ${actualStart.toFixed(1)}s)`);
+                    }
+
+                    lastVoiceEndTime = actualStart + audio.duration;
+
+                    voiceSchedule.push({
+                        ...audio,
+                        actualStart: actualStart
+                    });
+                });
+
+                // Sesleri zamanlanmış şekilde başlat
+                for (const audio of voiceSchedule) {
+                    const voiceSource = fullPreviewAudioContext.createBufferSource();
+                    voiceSource.buffer = audio.buffer;
+
+                    const voiceGain = fullPreviewAudioContext.createGain();
+                    voiceGain.gain.value = settings.voiceVolume;
+
+                    voiceSource.connect(voiceGain);
+                    voiceGain.connect(fullPreviewAudioContext.destination);
+
+                    // Ses başlama zamanı (hesaplanmış)
+                    voiceSource.start(fullPreviewAudioContext.currentTime + audio.actualStart);
+
+                    // Audio Ducking
+                    if (fullPreviewMusicGain) {
+                        const duckStart = audio.actualStart - fadeTime;
+                        const duckEnd = audio.actualStart + audio.duration;
+                        const restoreEnd = duckEnd + fadeTime;
+
+                        // Müziği kıs
+                        fullPreviewMusicGain.gain.setValueAtTime(settings.musicVolume, fullPreviewAudioContext.currentTime + Math.max(0, duckStart));
+                        fullPreviewMusicGain.gain.linearRampToValueAtTime(duckedVolume, fullPreviewAudioContext.currentTime + audio.actualStart);
+
+                        // Müziği geri yükselt
+                        fullPreviewMusicGain.gain.setValueAtTime(duckedVolume, fullPreviewAudioContext.currentTime + duckEnd);
+                        fullPreviewMusicGain.gain.linearRampToValueAtTime(settings.musicVolume, fullPreviewAudioContext.currentTime + restoreEnd);
+                    }
+
+                    fullPreviewVoiceSources.push(voiceSource);
+                }
+
+                // Müziği başlat
+                if (fullPreviewMusicSource) {
+                    fullPreviewMusicSource.start(0);
+                }
+
+                fullPreviewPlaying = true;
+                fullPreviewStartTime = Date.now();
+
+                document.getElementById('previewFullIcon').className = 'fas fa-pause';
+
+                // İlerleme animasyonu
+                updateFullPreviewProgress();
+
+                // Otomatik durdur
+                setTimeout(() => {
+                    if (fullPreviewPlaying) {
+                        stopFullPreview();
+                        statusEl.textContent = 'Önizleme tamamlandı';
+                    }
+                }, fullPreviewTotalDuration * 1000 + 1000);
+
+            } catch (e) {
+                console.error('Tam önizleme hatası:', e);
+                statusEl.textContent = 'Hata: ' + e.message;
+                showToast('Önizleme yüklenemedi', 'error');
+                progressContainer.classList.add('hidden');
+            }
+        }
+
+        function updateFullPreviewProgress() {
+            if (!fullPreviewPlaying) return;
+
+            const elapsed = (Date.now() - fullPreviewStartTime) / 1000;
+            const progress = Math.min(100, (elapsed / fullPreviewTotalDuration) * 100);
+
+            document.getElementById('previewProgressFill').style.width = progress + '%';
+
+            // Mevcut sahneyi hesapla
+            const frameDuration = currentResult?.frame_duration || 5;
+            const currentSceneIdx = Math.floor(elapsed / frameDuration) + 1;
+            const sceneCount = currentResult?.images?.filter(i => i).length || 0;
+
+            document.getElementById('previewCurrentScene').textContent = `Sahne ${Math.min(currentSceneIdx, sceneCount)} / ${sceneCount}`;
+            document.getElementById('previewTimeInfo').textContent = `${formatTime(elapsed)} / ${formatTime(fullPreviewTotalDuration)}`;
+            document.getElementById('previewStatus').textContent = 'Önizleme çalıyor...';
+
+            if (elapsed < fullPreviewTotalDuration) {
+                fullPreviewAnimationFrame = requestAnimationFrame(updateFullPreviewProgress);
+            }
+        }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function stopFullPreview() {
+            try {
+                if (fullPreviewMusicSource) { fullPreviewMusicSource.stop(); fullPreviewMusicSource = null; }
+                fullPreviewVoiceSources.forEach(s => { try { s.stop(); } catch (e) { } });
+                fullPreviewVoiceSources = [];
+                if (fullPreviewAudioContext) { fullPreviewAudioContext.close(); fullPreviewAudioContext = null; }
+                if (fullPreviewAnimationFrame) { cancelAnimationFrame(fullPreviewAnimationFrame); fullPreviewAnimationFrame = null; }
+            } catch (e) { }
+
+            fullPreviewPlaying = false;
+            fullPreviewMusicGain = null;
+
+            const icon = document.getElementById('previewFullIcon');
+            if (icon) icon.className = 'fas fa-play';
+
+            const statusEl = document.getElementById('previewStatus');
+            if (statusEl && statusEl.textContent.includes('çalıyor')) {
+                statusEl.textContent = 'Durduruldu';
+            }
+        }
+
+
+        // Sahne sesini dinle
+        let sceneAudioPlayer = null;
+        function playSceneAudio(audioPath) {
+            // Önce mevcut sesi durdur
+            if (sceneAudioPlayer) {
+                sceneAudioPlayer.pause();
+                sceneAudioPlayer = null;
+            }
+
+            sceneAudioPlayer = new Audio('/' + audioPath);
+            sceneAudioPlayer.play();
+            showToast('Seslendirme oynatılıyor...', 'info');
+
+            sceneAudioPlayer.onended = () => {
+                sceneAudioPlayer = null;
+            };
+        }
+
+        // Continue Story
+        function continueStory() { openModal('continueModal'); }
+
+        async function submitContinue(usePrompt = false) {
+            const promptInput = document.getElementById('continuePrompt').value.trim();
+            const count = parseInt(document.getElementById('continueSceneCount').value);
+
+            // Yönlendirmeli devam seçildiyse ve prompt boşsa uyar
+            if (usePrompt && !promptInput) {
+                showToast('Lütfen hikayenin nasıl devam edeceğini yazın!', 'warning');
+                return;
+            }
+
+            closeModal('continueModal');
+
+            // Kullanıcıya bilgi ver
+            if (promptInput) {
+                showToast('Hikaye yönlendirmenize göre devam ediyor... Karakter tutarlılığı korunacak.', 'info');
+            } else {
+                showToast('Hikaye otomatik devam ediyor... Son sahneden itibaren karakter tutarlılığı korunacak.', 'info');
+            }
+
+            const res = await fetch('/story/continue', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    timestamp: currentResult.timestamp,
+                    continuation_prompt: usePrompt ? promptInput : '',
+                    scene_count: count
+                })
+            });
+            const data = await res.json();
+            if (data.success) {
+                // Mevcut sonuçları güncelle
+                loadFromHistory(currentResult.timestamp);
+                showToast(`Hikaye ${data.new_images.length} yeni sahne ile genişletildi!`, 'success');
+            }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // Export
+        async function exportProject(format) {
+            const res = await fetch('/export', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, format: format }) });
+            const data = await res.json();
+            if (data.success) { window.open('/' + data.file_path, '_blank'); showToast('İndirildi!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // Download
+        function downloadImage(path) { window.open('/download/' + path.split('/').pop(), '_blank'); }
+
+        // History
+        async function loadHistory() {
+            const res = await fetch('/history');
+            const data = await res.json();
+            const list = document.getElementById('historyList');
+            list.innerHTML = data.length ? data.map(h => `
+        <div class="history-item">
+            <div class="history-date">${h.created_at || new Date(h.timestamp * 1000).toLocaleString()}</div>
+            <div class="history-prompt">${h.prompt}</div>
+            <div class="history-controls">
+                <button class="btn-sm" onclick="loadFromHistory(${h.timestamp})">Yükle</button>
+                <button class="btn-sm btn-danger" onclick="deleteHistory(${h.timestamp})">Sil</button>
+            </div>
+        </div>
+    `).join('') : '<p style="color:var(--text-muted)">Henüz geçmiş yok.</p>';
+        }
+
+        function loadFromHistory(timestamp) {
+            fetch('/history').then(r => r.json()).then(data => {
+                const item = data.find(h => h.timestamp === timestamp);
+                if (item) { currentResult = item; displayResults(item); closeModal('historyModal'); }
+            });
+        }
+
+        async function deleteHistory(timestamp) {
+            if (!confirm('Bu kaydı silmek istediğinize emin misiniz?')) return;
+            await fetch('/history/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp }) });
+            loadHistory();
+            showToast('Silindi!', 'success');
+        }
+
+        // Characters
+        async function loadCharacters() {
+            const res = await fetch('/characters');
+            characters = await res.json();
+            renderCharacters();
+        }
+
+        // Duygu emojileri
+        const EMOTION_EMOJI = {
+            neutral: '😐', happy: '😊', sad: '😢', angry: '😠', scared: '😨',
+            surprised: '😲', disgusted: '🤢', determined: '😤', loving: '🥰',
+            confused: '😕', tired: '😴', proud: '😎'
+        };
+        const EMOTION_LABEL = {
+            neutral: 'Nötr', happy: 'Mutlu', sad: 'Üzgün', angry: 'Kızgın', scared: 'Korku',
+            surprised: 'Şaşkın', disgusted: 'İğrenmiş', determined: 'Kararlı', loving: 'Sevgi',
+            confused: 'Kafası Karışık', tired: 'Yorgun', proud: 'Gururlu'
+        };
+
+        function renderCharacters() {
+            const list = document.getElementById('charactersList');
+            if (!characters.length) {
+                list.innerHTML = '<p style="color:var(--text-muted)">Henüz karakter yok.</p>';
+                return;
+            }
+
+            list.innerHTML = characters.map((c, index) => {
+                const emotion = c.emotion || 'neutral';
+                const emojiStr = EMOTION_EMOJI[emotion] || '😐';
+                const labelStr = EMOTION_LABEL[emotion] || emotion;
+
+                const emotionOptions = Object.keys(EMOTION_EMOJI).map(e =>
+                    `<option value="${e}" ${e === emotion ? 'selected' : ''}>${EMOTION_EMOJI[e]} ${EMOTION_LABEL[e]}</option>`
+                ).join('');
+
+                // Referans görseller galerisi
+                const refs = c.reference_images || [];
+                const refGallery = refs.length > 0 ? `
+                    <div class="ref-gallery" style="display:flex;gap:4px;flex-wrap:wrap;margin-top:8px;">
+                        ${refs.map(r => `
+                            <div class="ref-item" style="position:relative;width:40px;height:40px;">
+                                <img src="/${r}" style="width:100%;height:100%;object-fit:cover;border-radius:4px;border:1px solid var(--border-color)">
+                                <span class="ref-delete" data-char-id="${c.id}" data-path="${r}" 
+                                      style="position:absolute;top:-4px;right:-4px;background:rgba(255,0,0,0.8);color:white;border-radius:50%;width:14px;height:14px;font-size:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;">×</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : '';
+
+                return `
+        <div class="character-card" data-index="${index}">
+            <div style="display:flex;gap:12px;">
+                ${c.avatar ? `<img class="character-avatar" src="/${c.avatar}" alt="Avatar">` : '<div class="character-avatar" style="background:var(--bg-lighter);display:flex;align-items:center;justify-content:center;"><i class="fas fa-user"></i></div>'}
+                <div style="flex:1">
+                    <h4 style="margin:0">${escapeHtml(c.name)}
+                        <span style="font-size:1.2rem;margin-left:6px" title="Aktif duygu: ${labelStr}">${emojiStr}</span>
+                    </h4>
+                    <p style="font-size:0.8rem;color:var(--text-secondary);margin:4px 0">${escapeHtml(c.description)}</p>
+                    ${refGallery}
+                    <div style="margin-top:8px;display:flex;gap:6px;align-items:center;">
+                        <label class="btn-sm" style="cursor:pointer;padding:2px 6px;font-size:0.7rem;background:var(--bg-lighter)">
+                            <i class="fas fa-camera"></i> Referans Ekle
+                            <input type="file" class="char-ref-upload" data-id="${c.id}" multiple accept="image/*" style="display:none">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--border-color);padding-top:10px;">
+                <select class="config-input char-emotion-select" data-id="${c.id}" style="font-size:0.75rem;padding:2px 6px;flex:1;min-width:100px;height:28px">
+                    ${emotionOptions}
+                </select>
+                <button class="btn-sm char-emotion-btn" data-id="${c.id}" title="Duyguyu kaydet" style="height:28px;padding:0 8px;font-size:0.75rem">💾 Duygu</button>
+                <button class="btn-sm char-avatar-btn" data-id="${c.id}" style="height:28px;padding:0 8px;font-size:0.75rem">🖼️ Avatar</button>
+                <button class="btn-sm btn-danger char-delete-btn" data-id="${c.id}" style="height:28px;padding:0 8px;font-size:0.75rem">Sil</button>
+            </div>
+        </div>`;
+            }).join('');
+
+
+            list.querySelectorAll('.char-avatar-btn').forEach(btn => {
+                btn.addEventListener('click', () => generateAvatar(btn.dataset.id));
+            });
+            list.querySelectorAll('.char-delete-btn').forEach(btn => {
+                btn.addEventListener('click', () => deleteCharacter(btn.dataset.id));
+            });
+            list.querySelectorAll('.char-emotion-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const sel = list.querySelector(`.char-emotion-select[data-id="${btn.dataset.id}"]`);
+                    if (sel) setCharacterEmotion(btn.dataset.id, sel.value);
+                });
+            });
+
+            // Referans Görsel Yükleme
+            list.querySelectorAll('.char-ref-upload').forEach(input => {
+                input.addEventListener('change', async (e) => {
+                    const charId = input.dataset.id;
+                    const files = e.target.files;
+                    if (!files.length) return;
+
+                    for (const file of files) {
+                        const formData = new FormData();
+                        formData.append('id', charId);
+                        formData.append('file', file);
+                        
+                        try {
+                            const res = await fetch('/characters/reference/upload', {
+                                method: 'POST',
+                                body: formData
+                            });
+                            const result = await res.json();
+                            if (!result.success) throw new Error(result.error);
+                        } catch (err) {
+                            showToast(`Hata: ${err.message}`, 'error');
+                        }
+                    }
+                    loadCharacters(); // Listeyi yenile
+                    showToast('Referanslar yüklendi', 'success');
+                });
+            });
+
+            // Referans Görsel Silme
+            list.querySelectorAll('.ref-delete').forEach(btn => {
+                btn.addEventListener('click', async () => {
+                    const charId = btn.dataset.charId;
+                    const path = btn.dataset.path;
+                    if (!confirm('Bu referans görseli silmek istediğinize emin misiniz?')) return;
+
+                    try {
+                        const res = await fetch('/characters/reference/delete', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ id: charId, path: path })
+                        });
+                        const result = await res.json();
+                        if (result.success) {
+                            loadCharacters();
+                            showToast('Referans silindi', 'success');
+                        }
+                    } catch (err) {
+                        showToast('Hata oluştu', 'error');
+                    }
+                });
+            });
+        }
+
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        async function addCharacter() {
+            const name = document.getElementById('charName').value;
+            const desc = document.getElementById('charDesc').value;
+            const emotion = document.getElementById('charEmotion')?.value || 'neutral';
+            const refFiles = document.getElementById('charNewRefs')?.files || [];
+
+            if (!name || !desc) { showToast('İsim ve açıklama gerekli!', 'error'); return; }
+            
+            try {
+                const res = await fetch('/characters/add', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, description: desc, emotion })
+                });
+                const result = await res.json();
+
+                if (result.success) {
+                    const charId = result.id;
+
+                    // Eğer dosya seçilmişse onları da yükle
+                    if (refFiles.length > 0) {
+                        for (const file of refFiles) {
+                            const formData = new FormData();
+                            formData.append('id', charId);
+                            formData.append('file', file);
+                            await fetch('/characters/reference/upload', { method: 'POST', body: formData });
+                        }
+                    }
+
+                    document.getElementById('charName').value = '';
+                    document.getElementById('charDesc').value = '';
+                    if (document.getElementById('charNewRefs')) document.getElementById('charNewRefs').value = '';
+                    
+                    loadCharacters();
+                    showToast('Karakter ve referanslar eklendi!', 'success');
+                } else {
+                    showToast(result.error || 'Hata oluştu', 'error');
+                }
+            } catch (err) {
+                showToast('Hata: ' + err.message, 'error');
+            }
+        }
+
+
+        async function setCharacterEmotion(id, emotion) {
+            const res = await fetch('/characters/emotion', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ id, emotion })
+            });
+            const data = await res.json();
+            if (data.success) {
+                loadCharacters();
+                showToast(`Duygu güncellendi: ${EMOTION_EMOJI[emotion] || ''} ${emotion}`, 'success');
+            } else {
+                showToast(data.error || 'Duygu güncellenemedi!', 'error');
+            }
+        }
+
+        async function deleteCharacter(id) {
+            await fetch('/characters/delete', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) });
+            loadCharacters();
+            showToast('Karakter silindi!', 'success');
+        }
+
+        async function generateAvatar(id) {
+            showToast('Avatar oluşturuluyor...', 'info');
+            const res = await fetch('/characters/avatar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id }) });
+            const data = await res.json();
+            if (data.success) { loadCharacters(); showToast('Avatar hazır!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        async function enhanceNewCharacter() {
+            const name = document.getElementById('charName').value;
+            const desc = document.getElementById('charDesc').value;
+            if (!name) { showToast('İsim gerekli!', 'error'); return; }
+            showToast('Zenginleştiriliyor...', 'info');
+            const res = await fetch('/characters/enhance', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name, description: desc }) });
+            const data = await res.json();
+            if (data.name) { document.getElementById('charName').value = data.name; document.getElementById('charDesc').value = data.description; showToast('Zenginleştirildi!', 'success'); }
+            else showToast('Hata!', 'error');
+        }
+
+        // Mentions
+        function updateHighlights() {
+            const input = document.getElementById('storyInput');
+            const highlights = document.getElementById('storyInputHighlights');
+            if (!input || !highlights) return;
+
+            let text = input.value;
+            text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+            if (characters && characters.length > 0) {
+                const escapedNames = characters.map(c => c.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+                escapedNames.sort((a, b) => b.length - a.length);
+                const regex = new RegExp(`@(${escapedNames.join('|')})`, 'g');
+                text = text.replace(regex, '<mark class="mention-mark">$&</mark>');
+            }
+            
+            // Satır sonu fix
+            text = text.replace(/\n$/g, '\n\n');
+            highlights.innerHTML = text;
+        }
+
+        function setupMentions() {
+            const input = document.getElementById('storyInput');
+            const highlights = document.getElementById('storyInputHighlights');
+            
+            if (input && highlights) {
+                input.addEventListener('scroll', () => {
+                    highlights.scrollTop = input.scrollTop;
+                    highlights.scrollLeft = input.scrollLeft;
+                });
+            }
+
+            input.addEventListener('input', e => {
+                updateHighlights();
+                const val = e.target.value;
+                const cursorPos = input.selectionStart;
+                const textBeforeCursor = val.substring(0, cursorPos);
+                const words = textBeforeCursor.split(/\s/);
+                const lastWord = words[words.length - 1];
+
+                if (lastWord.startsWith('@')) {
+                    const query = lastWord.slice(1).toLowerCase();
+                    let matches;
+                    if (query.length === 0) {
+                        matches = characters;
+                    } else {
+                        matches = characters.filter(c => c.name.toLowerCase().includes(query));
+                    }
+                    if (matches.length > 0) {
+                        showMentionSuggestions(matches);
+                    } else {
+                        hideMentionSuggestions();
+                    }
+                } else {
+                    hideMentionSuggestions();
+                }
+            });
+
+            // Dışarı tıklandığında kapat
+            document.addEventListener('click', e => {
+                if (!e.target.closest('#storyInput') && !e.target.closest('#mentionSuggestions')) {
+                    hideMentionSuggestions();
+                }
+            });
+        }
+
+        function showMentionSuggestions(matches) {
+            const box = document.getElementById('mentionSuggestions');
+            box.innerHTML = matches.map((c, index) => `
+                <div class="mention-item" data-index="${index}">
+                    ${c.avatar ? `<img src="/${c.avatar}" class="mention-avatar">` : '<span class="mention-avatar-placeholder">👤</span>'}
+                    <span>${c.name}</span>
+                </div>
+            `).join('');
+
+            box.querySelectorAll('.mention-item').forEach((item, index) => {
+                item.addEventListener('click', () => insertMention(matches[index].name));
+            });
+
+            box.classList.remove('hidden');
+        }
+
+        function hideMentionSuggestions() {
+            document.getElementById('mentionSuggestions').classList.add('hidden');
+        }
+
+        function insertMention(name) {
+            const input = document.getElementById('storyInput');
+            const cursorPos = input.selectionStart;
+            const val = input.value;
+            const textBeforeCursor = val.substring(0, cursorPos);
+            const textAfterCursor = val.substring(cursorPos);
+
+            const lastAtIndex = textBeforeCursor.lastIndexOf('@');
+            const newText = textBeforeCursor.substring(0, lastAtIndex) + '@' + name + ' ' + textAfterCursor;
+
+            input.value = newText;
+            updateHighlights();
+            hideMentionSuggestions();
+            input.focus();
+
+            const newCursorPos = lastAtIndex + name.length + 2;
+            input.setSelectionRange(newCursorPos, newCursorPos);
+        }
+
+        // Templates
+        async function loadTemplates() {
+            const res = await fetch('/templates');
+            const templates = await res.json();
+            const list = document.getElementById('templatesList');
+            list.innerHTML = templates.map(t => `
+        <div class="history-item" onclick="useTemplate('${t.id}')" style="cursor:pointer">
+            <h4>${t.name}</h4>
+            <p style="color:var(--text-secondary)">${t.prompt}</p>
+        </div>
+    `).join('');
+        }
+
+        async function useTemplate(id) {
+            const res = await fetch('/templates/' + id);
+            const t = await res.json();
+            document.getElementById('storyInput').value = t.prompt;
+            if (t.settings) {
+                if (t.settings.art_style) document.getElementById('artStyle').value = t.settings.art_style;
+                if (t.settings.mood_style) document.getElementById('moodStyle').value = t.settings.mood_style;
+                if (t.settings.scene_count) document.getElementById('sceneCount').value = t.settings.scene_count;
+            }
+            closeModal('templatesModal');
+            showToast('Şablon uygulandı!', 'success');
+        }
+
+        // Settings
+        const defaultAudioConfig = {
+            musicVolume: 70,
+            voiceVolume: 100,
+            duckingLevel: -10,
+            duckingFade: 0.5,
+            voiceDelay: 0.3,
+            musicFadeOut: 2
+        };
+
+        async function loadSettings() {
+            const res = await fetch('/settings');
+            const data = await res.json();
+            document.getElementById('systemPrompt').value = data.system_prompt || '';
+            document.getElementById('settingsApiKey').value = data.api_key || '';
+
+            // Ses ayarlarını localStorage'dan yükle
+            loadAudioSettings();
+        }
+
+        function loadAudioSettings() {
+            const saved = localStorage.getItem('audioSettings');
+            const settings = saved ? JSON.parse(saved) : defaultAudioConfig;
+
+            document.getElementById('settingsMusicVolume').value = settings.musicVolume;
+            document.getElementById('settingsVoiceVolume').value = settings.voiceVolume;
+            document.getElementById('settingsDuckingLevel').value = settings.duckingLevel;
+            document.getElementById('settingsDuckingFade').value = settings.duckingFade;
+            document.getElementById('settingsVoiceDelay').value = settings.voiceDelay;
+            document.getElementById('settingsMusicFadeOut').value = settings.musicFadeOut;
+
+            // Etiketleri güncelle
+            updateSettingsSlider('settingsMusicVolume', '%');
+            updateSettingsSlider('settingsVoiceVolume', '%');
+            updateSettingsSlider('settingsDuckingLevel', ' dB');
+            updateSettingsSlider('settingsDuckingFade', 's');
+            updateSettingsSlider('settingsVoiceDelay', 's');
+            updateSettingsSlider('settingsMusicFadeOut', 's');
+        }
+
+        function updateSettingsSlider(id, suffix) {
+            const slider = document.getElementById(id);
+            const label = document.getElementById(id + 'Label');
+            if (slider && label) {
+                label.textContent = slider.value + suffix;
+                // Otomatik kaydet
+                saveAudioSettingsToLocal();
+            }
+        }
+
+        function saveAudioSettingsToLocal() {
+            const settings = {
+                musicVolume: parseInt(document.getElementById('settingsMusicVolume').value),
+                voiceVolume: parseInt(document.getElementById('settingsVoiceVolume').value),
+                duckingLevel: parseInt(document.getElementById('settingsDuckingLevel').value),
+                duckingFade: parseFloat(document.getElementById('settingsDuckingFade').value),
+                voiceDelay: parseFloat(document.getElementById('settingsVoiceDelay').value),
+                musicFadeOut: parseFloat(document.getElementById('settingsMusicFadeOut').value)
+            };
+            localStorage.setItem('audioSettings', JSON.stringify(settings));
+        }
+
+        function getAudioSettings() {
+            const saved = localStorage.getItem('audioSettings');
+            const settings = saved ? JSON.parse(saved) : defaultAudioConfig;
+            return {
+                musicVolume: settings.musicVolume / 100,
+                voiceVolume: settings.voiceVolume / 100,
+                duckingLevel: settings.duckingLevel,
+                duckingFade: settings.duckingFade,
+                voiceDelay: settings.voiceDelay,
+                musicFadeOut: settings.musicFadeOut
+            };
+        }
+
+        function resetAudioSettingsToDefault() {
+            localStorage.setItem('audioSettings', JSON.stringify(defaultAudioConfig));
+            loadAudioSettings();
+            showToast('Varsayılan ses ayarları yüklendi', 'info');
+        }
+
+        function switchSettingsTab(tab) {
+            // Sekmeleri güncelle
+            document.querySelectorAll('.settings-tab').forEach(t => t.classList.remove('active'));
+            event.target.closest('.settings-tab').classList.add('active');
+
+            // İçerikleri güncelle
+            document.getElementById('settingsTabGeneral').classList.add('hidden');
+            document.getElementById('settingsTabAudio').classList.add('hidden');
+
+            if (tab === 'general') {
+                document.getElementById('settingsTabGeneral').classList.remove('hidden');
+            } else if (tab === 'audio') {
+                document.getElementById('settingsTabAudio').classList.remove('hidden');
+            }
+        }
+
+        async function saveSettings() {
+            const prompt = document.getElementById('systemPrompt').value;
+            const apiKey = document.getElementById('settingsApiKey').value.trim();
+            await fetch('/settings', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ system_prompt: prompt, api_key: apiKey }) });
+            saveAudioSettingsToLocal();
+            closeModal('settingsModal');
+            showToast('Ayarlar kaydedildi!', 'success');
+        }
+
+        // Stil eşleştirmeli yeniden oluştur
+        async function regenerateMatchStyle(idx) {
+            showToast('Stil eşleştirmeli yeniden oluşturuluyor...', 'info');
+            const res = await fetch('/regenerate_match_style', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx }) });
+            const data = await res.json();
+            if (data.success) { currentResult.images[idx] = data.new_path; displayResults(currentResult); showToast('Sahne stil eşleştirmeli yenilendi!', 'success'); }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // Seslendirmeyi yeniden oluştur
+        async function regenerateSceneAudio(idx) {
+            showToast('Seslendirme yeniden oluşturuluyor...', 'info');
+            const res = await fetch('/regenerate_audio', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ timestamp: currentResult.timestamp, index: idx }) });
+            const data = await res.json();
+            if (data.success) {
+                if (!currentResult.audios) currentResult.audios = [];
+                currentResult.audios[idx] = data.new_audio_path;
+                displayResults(currentResult);
+                showToast('Seslendirme yenilendi!', 'success');
+            }
+            else showToast(data.error || 'Hata!', 'error');
+        }
+
+        // Stats
+        async function loadStats() {
+            const res = await fetch('/stats');
+            const data = await res.json();
+            document.getElementById('statsContent').innerHTML = `
+        <p><i class="fas fa-book"></i> Toplam Hikaye: <strong>${data.total_stories || 0}</strong></p>
+        <p><i class="fas fa-image"></i> Toplam Görsel: <strong>${data.total_generated_images || 0}</strong></p>
+        <p><i class="fas fa-video"></i> Toplam Video: <strong>${data.total_generated_videos || 0}</strong></p>
+        <p><i class="fas fa-users"></i> Karakter Sayısı: <strong>${data.total_characters || 0}</strong></p>
+        <p><i class="fas fa-check-circle"></i> Başarılı İstek: <strong>${data.successful_requests || 0}</strong></p>
+    `;
+        }
+
+        // Tutorial
+        function checkTutorial() {
+            if (!localStorage.getItem('tutorialSeen')) {
+                showToast('Hoş geldiniz! Hikaye yazın ve Oluştur butonuna tıklayın.', 'info');
+                localStorage.setItem('tutorialSeen', 'true');
+            }
+        }
+
+        // Keyboard Shortcuts
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') { document.querySelectorAll('.modal:not(.hidden)').forEach(m => m.classList.add('hidden')); closeLightbox(); stopMusicPreview(); }
+            if (e.ctrlKey && e.key === 'Enter') generateStory();
+        });
+
+        // ========================
+        // MÜZİK YÖNETİMİ
+        // ========================
+
+        // Müzik listesini yükle
+        async function loadMusicList() {
+            try {
+                const res = await fetch('/music');
+                musicList = await res.json();
+                renderMusicList();
+                updateVideoMusicSelect();
+            } catch (e) {
+                console.error('Müzik listesi yüklenemedi:', e);
+            }
+        }
+
+        // Müzik listesini render et
+        function renderMusicList() {
+            const list = document.getElementById('musicList');
+            if (!musicList.length) {
+                list.innerHTML = '<p style="color:var(--text-muted)">Henüz müzik yok. Yüklemek için aşağıdaki formu kullanın.</p>';
+                return;
+            }
+
+            list.innerHTML = musicList.map(m => `
+                <div class="music-item" data-filename="${m.filename}">
+                    <div class="music-info">
+                        <span class="music-icon"><i class="fas fa-music"></i></span>
+                        <div class="music-details">
+                            <span class="music-name" id="name-${m.filename}">${m.name}</span>
+                            <span class="music-meta">${m.extension.toUpperCase()} • ${m.size_mb} MB</span>
+                        </div>
+                    </div>
+                    <div class="music-actions">
+                        <button class="btn-sm secondary-btn" onclick="playMusicInModal('${m.filename}')" title="Dinle"><i class="fas fa-play"></i></button>
+                        <button class="btn-sm secondary-btn" onclick="startRenameMusic('${m.filename}')" title="Yeniden Adlandır"><i class="fas fa-edit"></i></button>
+                        <button class="btn-sm btn-danger" onclick="deleteMusic('${m.filename}')" title="Sil"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Video müzik seçicisini güncelle
+        function updateVideoMusicSelect() {
+            const select = document.getElementById('videoMusicSelect');
+            // İlk option'ı koru (Müzik Yok)
+            select.innerHTML = '<option value="">Müzik Yok</option>';
+
+            musicList.forEach(m => {
+                const option = document.createElement('option');
+                option.value = m.filename;
+                option.textContent = m.name;
+                select.appendChild(option);
+            });
+        }
+
+        // Modal içinde müzik çal
+        let currentPlayingInModal = null;
+        function playMusicInModal(filename) {
+            // Başka müzik çalıyorsa durdur
+            if (currentPlayingInModal) {
+                currentPlayingInModal.pause();
+                currentPlayingInModal = null;
+            }
+
+            const audio = new Audio(`/music/play/${filename}`);
+            audio.play();
+            currentPlayingInModal = audio;
+
+            showToast('Müzik çalıyor... (Durdur: ESC)', 'info');
+
+            audio.onended = () => {
+                currentPlayingInModal = null;
+            };
+        }
+
+        // Video sayfasında müzik önizle
+        function previewMusic() {
+            const select = document.getElementById('videoMusicSelect');
+            const player = document.getElementById('musicPreviewPlayer');
+            const btn = document.getElementById('previewMusicBtn');
+
+            if (!select.value) {
+                showToast('Lütfen bir müzik seçin', 'warning');
+                return;
+            }
+
+            if (!player.paused) {
+                // Çalıyorsa durdur
+                player.pause();
+                btn.innerHTML = '<i class="fas fa-play"></i>';
+                return;
+            }
+
+            player.src = `/music/play/${select.value}`;
+            player.play();
+            btn.innerHTML = '<i class="fas fa-pause"></i>';
+
+            player.onended = () => {
+                btn.innerHTML = '<i class="fas fa-play"></i>';
+            };
+        }
+
+        // Müzik önizlemesini durdur
+        function stopMusicPreview() {
+            const player = document.getElementById('musicPreviewPlayer');
+            const btn = document.getElementById('previewMusicBtn');
+            if (player) {
+                player.pause();
+                if (btn) btn.innerHTML = '<i class="fas fa-play"></i>';
+            }
+            if (currentPlayingInModal) {
+                currentPlayingInModal.pause();
+                currentPlayingInModal = null;
+            }
+        }
+
+        // Müzik yeniden adlandırma başlat
+        function startRenameMusic(filename) {
+            const item = document.querySelector(`.music-item[data-filename="${filename}"]`);
+            const nameSpan = document.getElementById(`name-${filename}`);
+            const currentName = nameSpan.textContent;
+
+            nameSpan.outerHTML = `
+                <input type="text" class="config-input music-rename-input" id="rename-${filename}" 
+                       value="${currentName}" style="padding:4px 8px;font-size:0.9rem;">
+            `;
+
+            const input = document.getElementById(`rename-${filename}`);
+            input.focus();
+            input.select();
+
+            // Enter veya blur ile kaydet
+            input.addEventListener('keydown', async (e) => {
+                if (e.key === 'Enter') {
+                    await saveRenameMusic(filename, input.value);
+                } else if (e.key === 'Escape') {
+                    loadMusicList(); // İptal, listeyi yeniden yükle
+                }
+            });
+
+            input.addEventListener('blur', async () => {
+                await saveRenameMusic(filename, input.value);
+            });
+        }
+
+        // Müzik yeniden adlandırmayı kaydet
+        async function saveRenameMusic(oldFilename, newName) {
+            if (!newName.trim()) {
+                loadMusicList();
+                return;
+            }
+
+            try {
+                const res = await fetch('/music/rename', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ old_name: oldFilename, new_name: newName.trim() })
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    showToast('Müzik yeniden adlandırıldı!', 'success');
+                    loadMusicList();
+                } else {
+                    showToast(data.error || 'Hata!', 'error');
+                    loadMusicList();
+                }
+            } catch (e) {
+                showToast('Hata oluştu!', 'error');
+                loadMusicList();
+            }
+        }
+
+        // Müzik yükle
+        async function uploadMusic() {
+            const fileInput = document.getElementById('musicFileInput');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                showToast('Lütfen bir dosya seçin', 'warning');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            showToast('Yükleniyor...', 'info');
+
+            try {
+                const res = await fetch('/music/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    showToast('Müzik yüklendi!', 'success');
+                    fileInput.value = '';
+                    loadMusicList();
+                } else {
+                    showToast(data.error || 'Yükleme başarısız!', 'error');
+                }
+            } catch (e) {
+                showToast('Yükleme hatası!', 'error');
+            }
+        }
+
+        // Müzik sil
+        async function deleteMusic(filename) {
+            if (!confirm(`"${filename}" müziğini silmek istediğinize emin misiniz?`)) return;
+
+            try {
+                const res = await fetch('/music/delete', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename })
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    showToast('Müzik silindi!', 'success');
+                    loadMusicList();
+                } else {
+                    showToast(data.error || 'Silme başarısız!', 'error');
+                }
+            } catch (e) {
+                showToast('Silme hatası!', 'error');
+            }
+        }
+
+        // Modal açıldığında müzik listesini yükle
+        const originalOpenModal = openModal;
+        openModal = function (id) {
+            originalOpenModal(id);
+            if (id === 'musicModal') {
+                loadMusicList();
+            }
+            if (id === 'mergeModal') {
+                loadMergeHistories();
+                updateMergeMusicSelect();
+            }
+        };
+
+        // ========================
+        // AI HİKAYE ÖNERİLERİ
+        // ========================
+
+        function openSuggestionsModal() {
+            openModal('suggestionsModal');
+            loadSuggestions('all');
+        }
+
+        async function loadSuggestions(category) {
+            document.querySelectorAll('.suggestion-cat').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.cat === category);
+            });
+
+            const list = document.getElementById('suggestionsList');
+            list.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:40px;"><i class="fas fa-spinner fa-spin"></i> Öneriler yükleniyor...</p>';
+
+            try {
+                const res = await fetch(`/story/suggestions?category=${category}&count=5`);
+                const data = await res.json();
+
+                if (data.success && data.suggestions) {
+                    renderSuggestions(data.suggestions);
+                } else {
+                    list.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:40px;">Öneriler yüklenemedi.</p>';
+                }
+            } catch (e) {
+                list.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:40px;">Bağlantı hatası!</p>';
+            }
+        }
+
+        function renderSuggestions(suggestions) {
+            const list = document.getElementById('suggestionsList');
+
+            list.innerHTML = suggestions.map((s, i) => `
+                <div class="suggestion-item" style="padding:16px;margin-bottom:12px;background:var(--card-bg);border-radius:8px;cursor:pointer;border:1px solid var(--border-color);" onclick="useSuggestion(${i})">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                        <h4 style="margin:0;">${s.title || 'Öneri ' + (i + 1)}</h4>
+                        <span style="background:var(--primary);color:white;padding:2px 8px;border-radius:4px;font-size:0.8rem;">${s.style || 'realistic'}</span>
+                    </div>
+                    <p style="color:var(--text-muted);margin:0 0 8px 0;font-size:0.9rem;">${s.description || ''}</p>
+                    <div style="display:flex;gap:4px;flex-wrap:wrap;">
+                        ${(s.tags || []).map(t => `<span style="background:var(--bg-secondary);padding:2px 6px;border-radius:4px;font-size:0.75rem;">${t}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            window.currentSuggestions = suggestions;
+        }
+
+        function useSuggestion(index) {
+            if (!window.currentSuggestions || !window.currentSuggestions[index]) return;
+
+            const suggestion = window.currentSuggestions[index];
+            document.getElementById('storyInput').value = suggestion.prompt || suggestion.description || '';
+            if (typeof updateHighlights === 'function') updateHighlights();
+
+            if (suggestion.style) {
+                const styleMap = { 'realistic': 'realistic', 'anime': 'anime', 'comic': 'comic', 'noir': 'noir', 'watercolor': 'watercolor', '3d': '3d' };
+                document.getElementById('artStyle').value = styleMap[suggestion.style] || 'realistic';
+            }
+
+            closeModal('suggestionsModal');
+            showToast('Öneri uygulandı!', 'success');
+        }
+
+        async function enhanceCurrentPrompt() {
+            const input = document.getElementById('storyInput');
+            const prompt = input.value.trim();
+
+            if (!prompt || prompt.length < 10) {
+                showToast('Önce bir hikaye fikri yazın!', 'warning');
+                return;
+            }
+
+            showToast('Prompt zenginleştiriliyor...', 'info');
+
+            try {
+                const res = await fetch('/story/enhance', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt, style: document.getElementById('artStyle').value })
+                });
+
+                const data = await res.json();
+
+                if (data.success && data.enhanced_prompt) {
+                    input.value = data.enhanced_prompt;
+                    if (typeof updateHighlights === 'function') updateHighlights();
+                    showToast('Prompt zenginleştirildi!', 'success');
+                } else {
+                    showToast(data.error || 'Zenginleştirme başarısız!', 'error');
+                }
+            } catch (e) {
+                showToast('Bağlantı hatası!', 'error');
+            }
+        }
+
+        // ========================
+        // HİKAYELERİ BİRLEŞTİRME
+        // ========================
+
+        let mergeQueue = [];
+        let mergeHistories = [];
+
+        async function loadMergeHistories() {
+            const res = await fetch('/history');
+            mergeHistories = await res.json();
+            renderMergeAvailable();
+            renderMergeQueue();
+        }
+
+        function renderMergeAvailable() {
+            const list = document.getElementById('mergeAvailableList');
+            // Queue'da olmayan hikayeleri göster
+            const available = mergeHistories.filter(h => !mergeQueue.find(q => q.timestamp === h.timestamp));
+
+            if (!available.length) {
+                list.innerHTML = '<p style="color:var(--text-muted);padding:12px;">Tüm hikayeler seçildi veya geçmiş boş.</p>';
+                return;
+            }
+
+            list.innerHTML = available.map((h, index) => {
+                const imgCount = (h.images || []).filter(i => i).length;
+                const hasAudio = h.audios && h.audios.some(a => a);
+                const date = new Date(h.timestamp * 1000).toLocaleDateString('tr-TR');
+                const firstImg = (h.images || []).find(i => i);
+
+                return `
+                <div class="merge-item" data-timestamp="${h.timestamp}" onclick="toggleMergeSelect(this, 'available')">
+                    ${firstImg ? `<img src="/${firstImg}" class="merge-thumb">` : '<div class="merge-thumb-placeholder"><i class="fas fa-image"></i></div>'}
+                    <div class="merge-item-info">
+                        <strong>${escapeHtml(h.prompt || 'Adsız Hikaye')}</strong>
+                        <span>${imgCount} görsel ${hasAudio ? '🔊' : ''} • ${date}</span>
+                    </div>
+                </div>
+            `;
+            }).join('');
+        }
+
+        function renderMergeQueue() {
+            const list = document.getElementById('mergeQueueList');
+
+            if (!mergeQueue.length) {
+                list.innerHTML = '<p style="color:var(--text-muted);padding:12px;">Henüz hikaye seçilmedi.</p>';
+                updateMergePreview();
+                return;
+            }
+
+            list.innerHTML = mergeQueue.map((h, index) => {
+                const imgCount = (h.images || []).filter(i => i).length;
+                const hasAudio = h.audios && h.audios.some(a => a);
+                const firstImg = (h.images || []).find(i => i);
+
+                return `
+                <div class="merge-item merge-queue-item" data-timestamp="${h.timestamp}" data-index="${index}" onclick="toggleMergeSelect(this, 'queue')">
+                    <span class="merge-order-badge">${index + 1}</span>
+                    ${firstImg ? `<img src="/${firstImg}" class="merge-thumb">` : '<div class="merge-thumb-placeholder"><i class="fas fa-image"></i></div>'}
+                    <div class="merge-item-info">
+                        <strong>${escapeHtml(h.prompt || 'Adsız Hikaye')}</strong>
+                        <span>${imgCount} görsel ${hasAudio ? '🔊' : ''}</span>
+                    </div>
+                </div>
+            `;
+            }).join('');
+
+            updateMergePreview();
+        }
+
+        function toggleMergeSelect(element, listType) {
+            // Çoklu seçim için ctrl/cmd tuşu gerekebilir
+            const list = listType === 'available' ? document.getElementById('mergeAvailableList') : document.getElementById('mergeQueueList');
+
+            if (!event.ctrlKey && !event.metaKey) {
+                // Tek seçim modu
+                list.querySelectorAll('.merge-item').forEach(item => item.classList.remove('selected'));
+            }
+
+            element.classList.toggle('selected');
+        }
+
+        function addToMergeQueue() {
+            const selected = document.querySelectorAll('#mergeAvailableList .merge-item.selected');
+
+            selected.forEach(item => {
+                const timestamp = parseInt(item.dataset.timestamp);
+                const history = mergeHistories.find(h => h.timestamp === timestamp);
+                if (history && !mergeQueue.find(q => q.timestamp === timestamp)) {
+                    mergeQueue.push(history);
+                }
+            });
+
+            renderMergeAvailable();
+            renderMergeQueue();
+        }
+
+        function removeFromMergeQueue() {
+            const selected = document.querySelectorAll('#mergeQueueList .merge-item.selected');
+
+            selected.forEach(item => {
+                const timestamp = parseInt(item.dataset.timestamp);
+                mergeQueue = mergeQueue.filter(q => q.timestamp !== timestamp);
+            });
+
+            renderMergeAvailable();
+            renderMergeQueue();
+        }
+
+        function moveMergeItem(direction) {
+            const selected = document.querySelector('#mergeQueueList .merge-item.selected');
+            if (!selected) {
+                showToast('Önce bir hikaye seçin', 'warning');
+                return;
+            }
+
+            const index = parseInt(selected.dataset.index);
+
+            if (direction === 'up' && index > 0) {
+                [mergeQueue[index], mergeQueue[index - 1]] = [mergeQueue[index - 1], mergeQueue[index]];
+            } else if (direction === 'down' && index < mergeQueue.length - 1) {
+                [mergeQueue[index], mergeQueue[index + 1]] = [mergeQueue[index + 1], mergeQueue[index]];
+            }
+
+            renderMergeQueue();
+        }
+
+        function updateMergePreview() {
+            const previewDiv = document.getElementById('mergePreviewImages');
+            const statsDiv = document.getElementById('mergePreviewStats');
+
+            if (!mergeQueue.length) {
+                previewDiv.innerHTML = '<p style="color:var(--text-muted);">Hikaye seçilmedi</p>';
+                statsDiv.textContent = '';
+                return;
+            }
+
+            // Tüm görselleri topla
+            let allImages = [];
+            let totalAudios = 0;
+
+            mergeQueue.forEach((h, hIndex) => {
+                const images = (h.images || []).filter(i => i);
+                images.forEach((img, imgIndex) => {
+                    const hasAudio = h.audios && h.audios[imgIndex];
+                    allImages.push({
+                        src: img,
+                        storyIndex: hIndex + 1,
+                        hasAudio: hasAudio
+                    });
+                    if (hasAudio) totalAudios++;
+                });
+            });
+
+            // İlk 10 görseli göster
+            const displayImages = allImages.slice(0, 10);
+            previewDiv.innerHTML = displayImages.map(img => `
+                <div class="merge-preview-item" title="Hikaye ${img.storyIndex}">
+                    <img src="/${img.src}">
+                    <span class="merge-preview-badge">H${img.storyIndex}</span>
+                    ${img.hasAudio ? '<span class="merge-preview-audio">🔊</span>' : ''}
+                </div>
+            `).join('') + (allImages.length > 10 ? `<div class="merge-preview-more">+${allImages.length - 10}</div>` : '');
+
+            statsDiv.textContent = `Toplam: ${mergeQueue.length} hikaye, ${allImages.length} görsel, ${totalAudios} seslendirme`;
+        }
+
+        function updateMergeMusicSelect() {
+            const select = document.getElementById('mergeMusicSelect');
+            select.innerHTML = '<option value="">Müzik Yok</option>';
+
+            // musicList global değişkeninden müzikleri al
+            if (typeof musicList !== 'undefined' && musicList.length) {
+                musicList.forEach(m => {
+                    select.innerHTML += `<option value="${m.filename}">${m.filename}</option>`;
+                });
+            }
+        }
+
+        async function createMergedVideo() {
+            if (mergeQueue.length < 2) {
+                showToast('En az 2 hikaye seçmelisiniz!', 'error');
+                return;
+            }
+
+            const btn = document.getElementById('createMergeBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<div class="btn-loader"></div> Oluşturuluyor...';
+
+            try {
+                const timestamps = mergeQueue.map(h => h.timestamp);
+                const musicFile = document.getElementById('mergeMusicSelect').value || null;
+                const videoName = document.getElementById('mergeVideoName').value || 'Birleşik Hikaye';
+                const audioSettings = getAudioSettings();
+
+                const res = await fetch('/merge_stories', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        timestamps: timestamps,
+                        music_file: musicFile,
+                        video_name: videoName,
+                        audio_settings: audioSettings
+                    })
+                });
+
+                const data = await res.json();
+
+                if (data.success) {
+                    showToast('Birleşik video oluşturuldu!', 'success');
+                    closeModal('mergeModal');
+
+                    // Video'yu göster
+                    document.getElementById('resultVideo').src = '/' + data.video_path;
+                    document.getElementById('resultVideo').classList.remove('hidden');
+                    document.getElementById('videoPlaceholder').classList.add('hidden');
+                    document.getElementById('resultsSection').classList.remove('hidden');
+
+                    // Queue'u temizle
+                    mergeQueue = [];
+                } else {
+                    showToast(data.error || 'Video oluşturulamadı!', 'error');
+                }
+            } catch (e) {
+                showToast('Bağlantı hatası!', 'error');
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fas fa-video"></i> Birleşik Video Oluştur';
+        }
+
+        // ========================
+        // TİMELİNE ÖNİZLEME
+        // ========================
+
+        let timelineAnimationFrame = null;
+        let timelinePlaying = false;
+        let timelineStartTime = null;
+
+        function openTimelineModal() {
+            if (!currentResult || !currentResult.images) {
+                showToast('Önce bir hikaye oluşturun!', 'warning');
+                return;
+            }
+
+            openModal('timelineModal');
+            renderTimeline();
+        }
+
+        function renderTimeline() {
+            const track = document.getElementById('timelineTrack');
+            const markers = document.getElementById('timelineMarkers');
+            const details = document.getElementById('timelineSceneDetails');
+
+            if (!currentResult || !currentResult.images) return;
+
+            const images = currentResult.images.filter(i => i);
+            const frameDuration = currentResult.frame_duration || 5;
+            const totalDuration = images.length * frameDuration;
+
+            // Frame duration select'i güncelle
+            document.getElementById('timelineFrameDuration').value = frameDuration;
+
+            // Timeline track oluştur
+            track.innerHTML = images.map((img, i) => {
+                const hasAudio = currentResult.audios && currentResult.audios[i];
+                const widthPercent = (frameDuration / totalDuration) * 100;
+                const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899'];
+                const color = colors[i % colors.length];
+
+                return `
+                    <div class="timeline-scene" style="width:${widthPercent}%;background:${color};" 
+                         title="Sahne ${i + 1} (${frameDuration}s)" onclick="highlightTimelineScene(${i})">
+                        <img src="/${img}" style="width:100%;height:100%;object-fit:cover;opacity:0.7;">
+                        <span class="timeline-scene-label">${i + 1}</span>
+                        ${hasAudio ? '<i class="fas fa-volume-up timeline-audio-icon"></i>' : ''}
+                    </div>
+                `;
+            }).join('');
+
+            // Zaman işaretleri
+            const markerCount = Math.min(10, Math.ceil(totalDuration / 5));
+            const markerInterval = totalDuration / markerCount;
+            markers.innerHTML = '';
+            for (let i = 0; i <= markerCount; i++) {
+                const time = i * markerInterval;
+                const leftPercent = (time / totalDuration) * 100;
+                markers.innerHTML += `<span style="left:${leftPercent}%;">${formatTimelineTime(time)}</span>`;
+            }
+
+            // Bilgileri güncelle
+            document.getElementById('timelineTotalDuration').textContent = formatTimelineTime(totalDuration);
+            document.getElementById('timelineSceneCount').textContent = images.length;
+            document.getElementById('timelinePerScene').textContent = frameDuration + 's';
+
+            // Sahne detayları
+            details.innerHTML = images.map((img, i) => {
+                const hasAudio = currentResult.audios && currentResult.audios[i];
+                const prompt = currentResult.prompts_generated?.[i] || '';
+                const promptText = typeof prompt === 'object' ? (prompt.prompt || '') : prompt;
+                const shortPrompt = promptText.substring(0, 100) + (promptText.length > 100 ? '...' : '');
+
+                return `
+                    <div class="timeline-detail-item" onclick="highlightTimelineScene(${i})">
+                        <img src="/${img}" style="width:50px;height:50px;object-fit:cover;border-radius:4px;">
+                        <div style="flex:1;">
+                            <strong>Sahne ${i + 1}</strong> ${hasAudio ? '🔊' : ''}
+                            <p style="font-size:0.8rem;color:var(--text-muted);margin:0;">${shortPrompt}</p>
+                        </div>
+                        <span style="color:var(--text-muted);">${frameDuration}s</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function formatTimelineTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function highlightTimelineScene(index) {
+            const scenes = document.querySelectorAll('.timeline-scene');
+            scenes.forEach((s, i) => {
+                s.classList.toggle('highlighted', i === index);
+            });
+
+            const details = document.querySelectorAll('.timeline-detail-item');
+            details.forEach((d, i) => {
+                d.classList.toggle('highlighted', i === index);
+            });
+        }
+
+        function updateTimelinePreview() {
+            const newDuration = parseInt(document.getElementById('timelineFrameDuration').value);
+            if (currentResult) {
+                currentResult.frame_duration = newDuration;
+                renderTimeline();
+            }
+        }
+
+        function playTimelinePreview() {
+            if (timelinePlaying) {
+                stopTimelinePreview();
+                return;
+            }
+
+            if (!currentResult || !currentResult.images) return;
+
+            const images = currentResult.images.filter(i => i);
+            const frameDuration = currentResult.frame_duration || 5;
+            const totalDuration = images.length * frameDuration;
+
+            timelinePlaying = true;
+            timelineStartTime = Date.now();
+
+            document.getElementById('timelinePlayBtn').innerHTML = '<i class="fas fa-pause"></i> Duraklat';
+
+            function animate() {
+                if (!timelinePlaying) return;
+
+                const elapsed = (Date.now() - timelineStartTime) / 1000;
+                const progress = Math.min(elapsed / totalDuration, 1);
+
+                // Playhead pozisyonu
+                const playhead = document.getElementById('timelinePlayhead');
+                playhead.style.left = (progress * 100) + '%';
+
+                // Aktif sahneyi vurgula
+                const currentSceneIdx = Math.floor(elapsed / frameDuration);
+                highlightTimelineScene(Math.min(currentSceneIdx, images.length - 1));
+
+                if (progress < 1) {
+                    timelineAnimationFrame = requestAnimationFrame(animate);
+                } else {
+                    stopTimelinePreview();
+                }
+            }
+
+            animate();
+        }
+
+        function stopTimelinePreview() {
+            timelinePlaying = false;
+            if (timelineAnimationFrame) {
+                cancelAnimationFrame(timelineAnimationFrame);
+                timelineAnimationFrame = null;
+            }
+
+            document.getElementById('timelinePlayBtn').innerHTML = '<i class="fas fa-play"></i> Önizle';
+            document.getElementById('timelinePlayhead').style.left = '0';
+        }
+
+        // ========================
+        // KLAVYE KISAYOLLARI
+        // ========================
+
+        let currentSceneIndex = 0;
+        let keyboardShortcutsEnabled = true;
+
+        document.addEventListener('keydown', function (e) {
+            // Input/textarea içindeyken devre dışı bırak
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') {
+                // Sadece Escape çalışsın
+                if (e.key === 'Escape') {
+                    closeAllModals();
+                }
+                return;
+            }
+
+            if (!keyboardShortcutsEnabled) return;
+
+            const key = e.key.toLowerCase();
+            const ctrl = e.ctrlKey || e.metaKey;
+            const shift = e.shiftKey;
+
+            // Ctrl+Enter: Hikaye oluştur
+            if (ctrl && e.key === 'Enter') {
+                e.preventDefault();
+                generateStory();
+                return;
+            }
+
+            // Ctrl+Z: Geri Al
+            if (ctrl && key === 'z' && !shift) {
+                e.preventDefault();
+                undo();
+                return;
+            }
+
+            // Ctrl+Y veya Ctrl+Shift+Z: İleri Al
+            if ((ctrl && key === 'y') || (ctrl && shift && key === 'z')) {
+                e.preventDefault();
+                redo();
+                return;
+            }
+
+            // Escape: Modal kapat
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeAllModals();
+                closeLightbox();
+                return;
+            }
+
+            // Sahne navigasyonu (sonuçlar görünürse)
+            const resultsSection = document.getElementById('resultsSection');
+            if (resultsSection && !resultsSection.classList.contains('hidden')) {
+                const scenes = document.querySelectorAll('.gallery-grid .scene-card');
+
+                // Sol ok: Önceki sahne
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    if (currentSceneIndex > 0) {
+                        currentSceneIndex--;
+                        highlightScene(currentSceneIndex);
+                    }
+                    return;
+                }
+
+                // Sağ ok: Sonraki sahne
+                if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    if (currentSceneIndex < scenes.length - 1) {
+                        currentSceneIndex++;
+                        highlightScene(currentSceneIndex);
+                    }
+                    return;
+                }
+
+                // Enter: Seçili sahneyi büyüt
+                if (e.key === 'Enter' && !ctrl) {
+                    e.preventDefault();
+                    const scenes = document.querySelectorAll('.gallery-grid .scene-card img');
+                    if (scenes[currentSceneIndex]) {
+                        openLightbox(scenes[currentSceneIndex].src);
+                    }
+                    return;
+                }
+
+                // R: Seçili sahneyi yeniden oluştur
+                if (key === 'r' && !ctrl) {
+                    e.preventDefault();
+                    if (typeof currentHistoryTimestamp !== 'undefined' && currentHistoryTimestamp) {
+                        regenerateScene(currentHistoryTimestamp, currentSceneIndex);
+                    }
+                    return;
+                }
+
+                // V: Video oluştur
+                if (key === 'v' && !ctrl) {
+                    e.preventDefault();
+                    createVideo();
+                    return;
+                }
+
+                // D: Sahne sil (Shift+D)
+                if (key === 'd' && shift) {
+                    e.preventDefault();
+                    if (typeof currentHistoryTimestamp !== 'undefined' && currentHistoryTimestamp) {
+                        if (confirm(`Sahne ${currentSceneIndex + 1} silinsin mi?`)) {
+                            deleteScene(currentHistoryTimestamp, currentSceneIndex);
+                        }
+                    }
+                    return;
+                }
+            }
+
+            // H: Geçmiş modal
+            if (key === 'h' && !ctrl) {
+                e.preventDefault();
+                openModal('historyModal');
+                return;
+            }
+
+            // C: Karakterler modal
+            if (key === 'c' && !ctrl) {
+                e.preventDefault();
+                openModal('charactersModal');
+                return;
+            }
+
+            // M: Müzik modal
+            if (key === 'm' && !ctrl) {
+                e.preventDefault();
+                openModal('musicModal');
+                return;
+            }
+
+            // S: Ayarlar modal
+            if (key === 's' && !ctrl) {
+                e.preventDefault();
+                openModal('settingsModal');
+                return;
+            }
+
+            // T: Şablonlar modal
+            if (key === 't' && !ctrl) {
+                e.preventDefault();
+                openModal('templatesModal');
+                return;
+            }
+
+            // ?: Kısayol yardımı
+            if (key === '?' || (shift && key === '/')) {
+                e.preventDefault();
+                showKeyboardShortcutsHelp();
+                return;
+            }
+        });
+
+        function highlightScene(index) {
+            const scenes = document.querySelectorAll('.gallery-grid .scene-card');
+            scenes.forEach((s, i) => {
+                s.classList.remove('keyboard-selected');
+                if (i === index) {
+                    s.classList.add('keyboard-selected');
+                    s.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            });
+        }
+
+        function closeAllModals() {
+            document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden'));
+        }
+
+        function showKeyboardShortcutsHelp() {
+            const helpHtml = `
+                <div style="text-align:left;max-width:400px;margin:0 auto;">
+                    <h3 style="margin-bottom:16px;"><i class="fas fa-keyboard"></i> Klavye Kısayolları</h3>
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>Ctrl+Enter</kbd></td><td>Hikaye oluştur</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>Escape</kbd></td><td>Modal/Lightbox kapat</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>←</kbd> <kbd>→</kbd></td><td>Sahne navigasyonu</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>Enter</kbd></td><td>Sahneyi büyüt</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>R</kbd></td><td>Sahneyi yeniden oluştur</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>V</kbd></td><td>Video oluştur</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>Shift+D</kbd></td><td>Sahne sil</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>H</kbd></td><td>Geçmiş</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>C</kbd></td><td>Karakterler</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>M</kbd></td><td>Müzik</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>S</kbd></td><td>Ayarlar</td></tr>
+                        <tr><td style="padding:8px;border-bottom:1px solid var(--border-color);"><kbd>T</kbd></td><td>Şablonlar</td></tr>
+                        <tr><td style="padding:8px;"><kbd>?</kbd></td><td>Bu yardımı göster</td></tr>
+                    </table>
+                </div>
+            `;
+
+            // Basit bir modal göster
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.id = 'keyboardHelpModal';
+            modal.innerHTML = `
+                <div class="modal-content" style="max-width:500px;">
+                    <span class="close-btn" onclick="this.parentElement.parentElement.remove()">×</span>
+                    ${helpHtml}
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            // Escape ile kapat
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) modal.remove();
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+# Web Framework
+flask>=3.0.0
+flask-cors>=4.0.0
+flask-wtf>=1.2.0
+
+# Google AI
+google-genai>=1.0.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Video Processing
+moviepy>=2.0.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Utilities
+requests>=2.31.0
+
+# PDF Export
+reportlab>=4.0.0
+
+# Security
+bleach>=6.0.0
+
+# Development (optional)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# flake8>=6.1.0

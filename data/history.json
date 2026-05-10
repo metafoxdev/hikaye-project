@@ -1,0 +1,442 @@
+[
+    {
+        "timestamp": 1770155020,
+        "prompt": "Genç bir arkeolog, dedesinden kalan antik haritayla Amazon ormanlarının derinliklerinde kayıp bir Maya şehrini arıyor. Tehlikeli tuzaklar ve gizemli koruyucularla karşılaşıyor.",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 32,
+        "art_style": "realistic",
+        "mood_style": "dynamic",
+        "camera_style": "balanced",
+        "dialogue_style": "short",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "character_consistency": "strict",
+        "video_transition": "fade",
+        "prompts_generated": [
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, holding a crumbling ancient parchment map in the dense Amazon rainforest. Sunlight filters through the thick canopy above. Determination on her face. Cinematic lighting with god rays. Speech bubble saying in Turkish: 'Dede'min haritası... Beni buraya kadar getirdi.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, using a machete to cut through thick green vines and giant tropical leaves. Sweat glistening on her forehead. Intense focus expression. Vibrant jungle greens and bright sunlight. Speech bubble saying in Turkish: 'Bitki örtüsü çok sık, ama yolun sonuna yaklaştım.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, kneeling beside an ancient moss-covered stone totem shaped like a jaguar head. She is brushing dirt off the stone. Look of discovery and excitement. Dappled forest lighting. Speech bubble saying in Turkish: 'Bu Jaguar Tanrısı sembolü... Giriş yakın olmalı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, diving mid-air to dodge a swinging log trap triggered from the trees. Dynamic action pose, debris flying, blurred background due to speed. Shocked and alert expression. High contrast dramatic lighting. Speech bubble saying in Turkish: 'Lanet olsun! Tuzaklar hala çalışıyor!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, standing her ground against a shadowy, large spiritual Jaguar guardian with glowing eyes blocking the path. Maya looks brave but cautious. Mystical blue and purple lighting mixing with jungle green. Speech bubble saying in Turkish: 'Geçmeme izin ver! Sadece gerçeği arıyorum.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, standing on a cliff edge, overlooking a magnificent golden ancient Mayan city hidden in a valley below. Wide angle shot, epic scale. Face illuminated by the golden reflection of the city. Speech bubble saying in Turkish: 'Sonunda... Kayıp Şehir Xibalba!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female archaeologist, long wavy brown hair, piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, holding a glowing jade artifact inside the central temple. The artifact emits a magical green light illuminating her face. A smile of triumph and relief. Atmospheric temple interior lighting. Speech bubble saying in Turkish: 'Bunu başardım dede. Mirasın güvende.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Sahne 8: Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, looks up in sudden alarm as the ancient temple begins to tremble violently. Dust and small stone debris are falling from the high stone ceiling, blurring the air around her. She clutches the glowing jade artifact tightly to her chest with both hands. The atmospheric green light of the temple shifts to an ominous, unstable flickering shadow. The walls covered in hieroglyphs seem to be cracking. Speech bubble in Turkish: 'Hayır! Tapınak çöküyor! Tuzak mekanizmasını tetikledim!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, motion lines, borderless, full frame, no white borders.",
+            "Sahne 9: Dynamic action shot of Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, sprinting through a narrow stone corridor. Her hair is whipping back as she runs towards the camera. Behind her, massive stone blocks are crashing down, creating a cloud of dust and destruction. She holds the glowing jade artifact in one hand while using the other to balance. The lighting is high contrast, with beams of light cutting through the rising dust. Sweat glistens on her forehead. Speech bubble in Turkish: 'Çıkışa ulaşmalıyım! Acele et Maya!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, intense action blur, borderless, full frame, no white borders.",
+            "Sahne 10: Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, skids to a halt as spectral, shadowy Mayan jaguar warriors materialize from the walls, blocking her path. Their eyes glow with a menacing red energy. Maya stands in a defensive combat stance, holding the jade artifact forward like a shield, its green light clashing with the red eyes of the guardians. The environment is dark and claustrophobic. Detailed texture on the spectral forms and Maya's determined expression. Speech bubble in Turkish: 'Koruyucular... Efsaneler gerçekmiş!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, supernatural elements, borderless, full frame, no white borders.",
+            "Sahne 11: A breathtaking wide angle shot of Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, leaping across a deep chasm that has opened up in the temple floor. The pit below is filled with sharp obsidian spikes. She is mid-air, arms outstretched, reaching for a vine hanging from the crumbling ceiling. The jade artifact is secured in a pouch at her hip, glowing faintly. The perspective is from above, looking down into the danger, emphasizing the height and risk. Debris falls into the pit alongside her. Speech bubble in Turkish: 'Tutunmam lazım... Şimdi!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, extreme perspective, borderless, full frame, no white borders.",
+            "Sahne 12: Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, bursting out of the temple entrance into the blinding sunlight of the Amazon jungle. She lands on her knees in the tall grass, gasping for breath, looking back as the temple entrance seals itself with a loud thud of stone against stone. Her clothes are covered in dust and grime, but she is safe. The jungle is lush and vibrant green around her. She holds the jade artifact up, looking at it with a mix of exhaustion and victory. Speech bubble in Turkish: 'Güvendeyim... Ama bu sadece başlangıçtı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, strong contrast between dark temple and bright nature, borderless, full frame, no white borders.",
+            "Sahne 13: A close-up, intimate shot of Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants covered in temple dust, sitting on a mossy log in the dense Amazon jungle. She has pulled an old, weathered paper map from her pocket and is holding the glowing green jade artifact over a specific section of it. The sunlight filters through the canopy in dappled patterns, illuminating the map where the artifact touches it, revealing hidden UV ink lines connecting geographical points. Maya's expression is one of sudden realization and awe as she deciphers the clue. Speech bubble in Turkish: 'Dede... Haklıydın. Bu taş sadece bir hazine değil, haritanın eksik parçası!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, soft bokeh background, borderless, full frame, no white borders.",
+            "Sahne 14: A tense, medium shot showing Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, suddenly freezing in place. In the blurred background behind her, three menacing, armed mercenaries in dark tactical gear emerge from the thick ferns, spotting her. The atmosphere shifts from discovery to immediate danger. Maya's head is turned slightly, her blue eyes wide with alert, clutching the map and artifact tight to her chest. The jungle around them is dense with vines and tropical flowers. Speech bubble in Turkish: 'Takip ediliyorum... Gölge Şirketi beni nasıl buldu?' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, suspenseful atmosphere, borderless, full frame, no white borders.",
+            "Sahne 15: An action-packed dynamic angle shot of Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, sprinting through the dense undergrowth. She is vaulting over a massive fallen tree trunk with athletic precision, her hair flowing wildly behind her. The mercenaries are visible in the distance, chasing her, hacking through the foliage with machetes. The perspective is low to the ground, emphasizing her speed and agility. Leaves and dirt fly up around her boots. The jade artifact is securely tucked in her belt pouch. Speech bubble in Turkish: 'Onlara bunu kaptıramam! Nehir yolunu kullanmalıyım.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, motion blur effects, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Sahne 16: A stealthy scene showing Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, hiding inside the hollow of a gigantic ancient Banyan tree. She is pressing her back against the wood, breathing heavily but silently. The lighting is dim and moody, with only narrow shafts of light piercing the darkness. In her hands, the jade artifact is pulsing with a rhythmic green light, acting like a compass, pointing deeper into the dark forest away from her pursuers. Her face is illuminated by the ghostly green glow of the stone. Speech bubble in Turkish: 'Işık zayıflıyor... Ama yolu gösteriyor. Şelalenin arkasında olmalı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, high contrast chiaroscuro lighting, mystical atmosphere, borderless, full frame, no white borders.",
+            "Sahne 17: A majestic wide-angle landscape shot featuring Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, standing at the edge of a high rocky cliff overlooking a massive waterfall. The sun is setting, casting a golden hour glow over the scene. Through the mist of the waterfall, the silhouette of a massive, golden Maya pyramid is barely visible, hidden from the naked eye but revealed by the angle of the light. Maya stands triumphant, wind blowing through her hair, looking out at the destination she finally found. Speech bubble in Turkish: 'Kayıp Şehir... Bunca zaman gözümüzün önündeymiş.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, epic scale, dramatic cinematic lighting, atmospheric perspective, borderless, full frame, no white borders.",
+            "Sahne 18: High-angle action shot looking down a slippery rope as Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, rappels down the side of the cliff towards the base of the thundering waterfall. Her hair is whipping in the wind and her clothes are dampened by the mist. The setting sun casts deep orange and purple shadows across the wet rocks. The massive silhouette of the pyramid is looming closer through the water spray. She looks focused and determined. Speech bubble in Turkish: 'Sadece biraz daha aşağıya... Giriş tam şelalenin kalbinde.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dynamic perspective, motion blur, borderless, full frame, no white borders.",
+            "Sahne 19: Atmospheric medium shot showing Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, standing on a narrow, mossy ledge behind the curtain of the massive waterfall. The roar of the water is visually represented by vibration lines. It is dark and damp, but the jade artifact in her hand is glowing intensely bright green, illuminating a wall of ancient, vine-covered stone blocking her path. Her hair is wet and slicked back. Speech bubble in Turkish: 'Taş çıldırmış gibi titriyor... Kapı burada olmalı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, high contrast, mystical lighting, wet texture rendering, borderless, full frame, no white borders.",
+            "Sahne 20: Close-up detail shot focusing on Maya's hands and face. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, places the glowing jade artifact into a perfectly shaped indentation in the center of a circular stone mechanism carved with terrified Mayan faces. The stone door is beginning to crack open, releasing stale, ancient air and dust. The green light from the artifact flows like liquid into the carvings of the door. Maya's expression is one of awe. Speech bubble in Turkish: 'Dedemin haritasındaki sembol... Sonunda eşleşti.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, magical glow effects, cinematic composition, borderless, full frame, no white borders.",
+            "Sahne 21: Epic wide-angle shot revealing the interior of the Lost City's antechamber. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, stands silhouetted against the opening door, stepping into a colossal hall. The hall is lit by lines of blue bioluminescent fungi growing on massive pillars. The floor is not solid but consists of floating stone platforms over a dark, bottomless abyss. The architecture is terrifyingly grand. Speech bubble in Turkish: 'Bu mimari... İnsan yapımı gibi durmuyor.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, atmospheric perspective, deep shadows, scale contrast, borderless, full frame, no white borders.",
+            "Sahne 22: Tense over-the-shoulder shot looking past Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants. She has frozen in her tracks on the first stone platform. Deep in the shadows of the temple columns, pairs of glowing yellow eyes are appearing, accompanied by the silhouettes of Jaguar warriors wielding obsidian blades. The atmosphere shifts from wonder to immediate danger. Maya reaches for her belt, ready to run or fight. Speech bubble in Turkish: 'Koruyucular... Efsaneler gerçekmiş.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, chiaroscuro lighting, suspenseful atmosphere, borderless, full frame, no white borders.",
+            "Sahne 23: Dynamic low-angle action shot capturing the immediate explosion of violence. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, is captured mid-motion, diving to her right. A Jaguar warrior, muscular and adorned with feathers and jade, slashes down with a jagged obsidian sword exactly where she stood a second ago. Sparks fly where the blade hits the stone platform. The background is a blur of blue bioluminescence and dark stone. Maya's face shows fierce determination mixed with adrenaline. Speech bubble in Turkish: 'Sayıları çok fazla! Savaşarak kazanamam!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, motion lines, diagonal composition, dramatic lighting, borderless, full frame.",
+            "Sahne 24: Wide shot emphasizing the perilous environment. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, is sprinting across the floating stone platforms suspended over the endless black abyss. The platforms are disjointed, forcing her to leap dangerously. Behind her, three silhouettes of Jaguar warriors are pursuing with supernatural speed, their yellow eyes leaving trails in the dark. The cavern is immense, filled with glowing blue fungi that highlight the dust kicked up by the chase. Speech bubble in Turkish: 'Köprü yıkılmış... Karşıya atlamam gerek!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, atmospheric perspective, cinematic wide angle, borderless, full frame.",
+            "Sahne 25: Intense close-up on Maya's hands and belt area as she runs. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, fumbles to pull a red emergency flare from her tactical belt. The background is a rushing blur of ancient stone textures. In the periphery, a spear whizzes past her arm, tearing a small piece of her khaki sleeve. The lighting is a mix of the ambient cool blue and the warm anticipation of the flare. Speech bubble in Turkish: 'Belki ateş onları yavaşlatır.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, shallow depth of field, action focus, borderless, full frame.",
+            "Sahne 26: A visually striking scene of contrast. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, holds the ignited red flare high above her head. The harsh red light cuts through the blue bioluminescent atmosphere, creating dramatic purple shadows. The Jaguar warriors recoil, shielding their sensitive eyes, hissing in the darkness. Maya stands momentarily triumphant on a central platform, looking back at her pursuers. Speech bubble in Turkish: 'Işıktan korkuyorlar! Bu bana zaman kazandırır.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, chiaroscuro, heavy contrast, dramatic pose, borderless, full frame.",
+            "Sahne 27: Point-of-view shot looking past Maya's shoulder towards a massive destination. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, is panting heavily. Ahead of her, at the end of the floating platforms, stands a colossal circular stone door covered in rotating glyph rings. The door is sealed shut. The scale of the door dwarfs her, making the task seem impossible. The flare in her hand smokes, casting drifting shadows. Speech bubble in Turkish: 'İşte orada... İç Tapınağın kapısı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, grand scale, epic composition, borderless, full frame.",
+            "Sahne 28: Close-up detail shot of the puzzle mechanism. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, is frantically spinning a heavy stone ring on the door. Her face is beaded with sweat, illuminated by the dying red light of the flare she has stuck into a crack nearby. Her blue eyes scan the ancient Mayan glyphs rapidly. Behind her, out of focus, the warriors are recovering and approaching again. Speech bubble in Turkish: 'Güneş, Jaguar, Yılan... Büyükbabanın notları... Neydi o sıralama?' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, texture focus, suspenseful atmosphere, borderless, full frame.",
+            "Sahne 29: High-tension action shot. A Jaguar warrior has leaped onto the final platform, just inches behind Maya. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, screams as she uses her whole body weight to turn the final stone mechanism. The warrior raises his obsidian macuahuitl (club) for a killing blow. The stone door begins to grind and rumble, emitting a golden light from the seams. Speech bubble in Turkish: 'Hadi! Açıl artık!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dynamic posing, imminent danger, heavy shadows, borderless, full frame.",
+            "Sahne 30: A spectacular scene of release and escape. The circular door rolls open, releasing a blinding golden light that blasts outward. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, dives through the opening gap near the floor. The blast of light knocks the Jaguar warrior backward into the abyss. The contrast between the dark blue/red outside and the pure gold inside is stark. Speech bubble in Turkish: 'Şimdi!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, volumetric lighting, motion blur, dramatic impact, borderless, full frame.",
+            "Sahne 31: Interior shot, low angle. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, is lying on a smooth, golden floor, coughing and catching her breath. Behind her, the massive stone door slams shut with a heavy thud, sealing the darkness out. She is bathed in a warm, ethereal glow coming from the room's ceiling. Her clothes are dusty and slightly torn, but she is safe. Speech bubble in Turkish: 'Son saniyede... Kapandı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, warm color palette, relief atmosphere, borderless, full frame.",
+            "Sahne 32: Wide establishing shot of the new location. Maya, a stunningly beautiful female archaeologist with long wavy brown hair and piercing blue eyes, wearing a fitted khaki explorer shirt and cargo pants, slowly stands up, looking around in awe. She is in the 'Hall of Stars,' a vast chamber where the ceiling is embedded with glittering crystals mimicking the night sky. In the center sits a pristine emerald altar. The atmosphere is peaceful, silent, and ancient, a sharp contrast to the chaos outside. Speech bubble in Turkish: 'Burası... Haritada bile yoktu. Yıldızlar Salonu.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, magical atmosphere, grand architecture, wondrous tone, borderless, full frame."
+        ],
+        "images": [
+            "static/output/1770154902_1_Genç_bir_arkeolog_de.png",
+            "static/output/1770154905_2_Genç_bir_arkeolog_de.png",
+            "static/output/1770154912_3_Genç_bir_arkeolog_de.png",
+            "static/output/1770154907_4_Genç_bir_arkeolog_de.png",
+            "static/output/1770154903_5_Genç_bir_arkeolog_de.png",
+            "static/output/1770154930_6_Genç_bir_arkeolog_de.png",
+            "static/output/1770154948_7_Genç_bir_arkeolog_de.png",
+            "static/output/1770157923_1_Genç_bir_arkeolog_de.png",
+            "static/output/1770157921_2_Genç_bir_arkeolog_de.png",
+            "static/output/1770157928_3_Genç_bir_arkeolog_de.png",
+            "static/output/1770157927_4_Genç_bir_arkeolog_de.png",
+            "static/output/1770157929_5_Genç_bir_arkeolog_de.png",
+            "static/output/1770207477_1_Genç_bir_arkeolog_de.png",
+            "static/output/1770207474_2_Genç_bir_arkeolog_de.png",
+            "static/output/1770207479_3_Genç_bir_arkeolog_de.png",
+            "static/output/1770207479_4_Genç_bir_arkeolog_de.png",
+            "static/output/1770207476_5_Genç_bir_arkeolog_de.png",
+            "static/output/1770207667_1_Genç_bir_arkeolog_de.png",
+            "static/output/1770207668_2_Genç_bir_arkeolog_de.png",
+            "static/output/1770207669_3_Genç_bir_arkeolog_de.png",
+            "static/output/1770207671_4_Genç_bir_arkeolog_de.png",
+            "static/output/1770207664_5_Genç_bir_arkeolog_de.png",
+            "static/output/1770209110_1_Genç_bir_arkeolog_de.png",
+            "static/output/1770209111_2_Genç_bir_arkeolog_de.png",
+            "static/output/1770209116_3_Genç_bir_arkeolog_de.png",
+            "static/output/1770209106_4_Genç_bir_arkeolog_de.png",
+            "static/output/1770209109_5_Genç_bir_arkeolog_de.png",
+            "static/output/1770209144_6_Genç_bir_arkeolog_de.png",
+            "static/output/1770209141_7_Genç_bir_arkeolog_de.png",
+            "static/output/1770209138_8_Genç_bir_arkeolog_de.png",
+            "static/output/1770209139_9_Genç_bir_arkeolog_de.png",
+            "static/output/1770209145_10_Genç_bir_arkeolog_de.png"
+        ],
+        "audios": [
+            "static/output/Genç_bir_arkeolog_de_scene_1_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_2_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_3_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_4_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_5_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_6_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_7_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_8_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_9_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_10_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_11_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_12_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_13_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_14_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_15_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_16_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_17_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_18_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_19_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_20_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_21_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_22_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_23_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_24_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_25_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_26_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_27_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_28_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_29_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_30_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_31_audio.wav",
+            "static/output/Genç_bir_arkeolog_de_scene_32_audio.wav"
+        ],
+        "generate_audio": true,
+        "video": "static/output/1770209647_Genç_bir_arkeolog_de.mp4",
+        "frame_duration": 5.0,
+        "created_at": "2026-02-04 00:43:40",
+        "video_music": "gizem.mp3"
+    },
+    {
+        "timestamp": 1770150769,
+        "prompt": "İki kişi tesadüfen bir kafede karşılaşır. Göz göze gelirler ve aralarında bir çekim başlar.",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 7,
+        "art_style": "realistic",
+        "mood_style": "warm",
+        "camera_style": "balanced",
+        "dialogue_style": "short",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "character_consistency": "strict",
+        "video_transition": "fade",
+        "prompts_generated": [
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, sitting alone at a cozy cafe table near a large window. She holds a steaming cup of coffee, looking exhausted but elegant. Soft golden sunset light floods the scene. Speech bubble saying in Turkish: 'Nihayet bir mola verebildim.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, entering the cafe with a confident stride. He scans the room with a serious expression. Warm ambient lighting mixes with the sunset glow. Speech bubble saying in Turkish: 'Sakin bir kahve lazım.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, sitting at a wooden table across the room. He pauses as he notices someone. The atmosphere is warm and romantic with dust motes dancing in the light. No speech bubble. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, glancing up from her coffee. Her expression shifts from fatigue to curiosity as she looks across the room. Golden hour lighting highlights her face. Speech bubble saying in Turkish: 'O da kim?' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Close-up of Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt. His intense gaze softens slightly as he locks eyes with Maya. Background is blurred with warm bokeh lights. Speech bubble saying in Turkish: 'Daha önce böyle birini görmedim.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Wide angle shot showing the interior of the cafe. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, are sitting at separate tables but looking directly at each other. An invisible magnetic tension connects them. Warm sunset atmosphere. No speech bubble. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, tilting her head slightly with a faint, inviting smile. The lighting is soft and romantic, emphasizing the blue of her eyes. Speech bubble saying in Turkish: 'Merhaba...' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders, epic cinematic realism, 8k."
+        ],
+        "images": [
+            "static/output/1770150671_1_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150674_2_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150684_3_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150672_4_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150672_5_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150698_6_İki_kişi_tesadüfen_b.png",
+            "static/output/1770150714_7_İki_kişi_tesadüfen_b.png"
+        ],
+        "audios": [
+            "static/output/İki_kişi_tesadüfen_b_scene_1_audio.wav",
+            "static/output/İki_kişi_tesadüfen_b_scene_2_audio.wav",
+            null,
+            "static/output/İki_kişi_tesadüfen_b_scene_4_audio.wav",
+            "static/output/İki_kişi_tesadüfen_b_scene_5_audio.wav",
+            null,
+            "static/output/İki_kişi_tesadüfen_b_scene_7_audio.wav"
+        ],
+        "generate_audio": true,
+        "video": "static/output/1770150924_İki_kişi_tesadüfen_b.mp4",
+        "frame_duration": 5.0,
+        "created_at": "2026-02-03 23:32:49",
+        "video_music": "hüzünlü.mp3"
+    },
+    {
+        "timestamp": 1769884320,
+        "prompt": "@Doktor Maya  bir sabah spor yapmaya çıkarken @Emre 'The Wall' Koruma  karşına  çıkar  yengeye nereye gidiyorsun der. sonra @Doktor Maya  telaşla ondna a kaçar.",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 3,
+        "art_style": "comic",
+        "mood_style": "dynamic",
+        "camera_style": "balanced",
+        "dialogue_style": "short",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "character_consistency": "strict",
+        "video_transition": "fade",
+        "prompts_generated": [
+            "Maya, a stunningly beautiful woman with long wavy brown hair and piercing blue eyes, wearing a tight blue athletic jogging outfit suitable for morning sports. She is jogging through a lush green city park with determination. Action: Running rhythmically on the path. Facial expression: Focused and calm, taking deep breaths. Lighting: Bright golden morning sunlight filtering through trees, creating a fresh atmosphere. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Emre 'The Wall' Koruma, a towering middle-aged man with an imposing heavy-set physique, stern weather-beaten face, deep facial lines, wearing a high-end tailored matte black suit, white dress shirt and black silk tie, suddenly steps in front of Maya. Maya, a stunningly beautiful woman with long wavy brown hair and piercing blue eyes in a blue athletic outfit, freezes in her tracks. Action: Emre blocks the way menacingly like a wall. Facial expression: Emre has a perpetual scowl and intimidating look, Maya looks shocked and scared. Lighting: Shadows cast by Emre looming over her, high contrast. Speech bubble saying in Turkish: 'Yenge nereye gidiyorsun?'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful woman with long wavy brown hair and piercing blue eyes in a blue athletic jogging outfit. Action: She turns around and sprints away in the opposite direction in terror, hair flying in the wind. Facial expression: Panic-stricken, mouth slightly open in a gasp, eyes wide with fear. Lighting: Dynamic action lines and motion blur to suggest high speed escape. Speech bubble saying in Turkish: 'İmdat!'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+        ],
+        "images": [
+            "static/output/1769884222_1_Doktor_Maya__bir_sab.png",
+            "static/output/1769884265_2_Doktor_Maya__bir_sab.png",
+            "static/output/1769884312_3_Doktor_Maya__bir_sab.png"
+        ],
+        "audios": [
+            null,
+            "static/output/Doktor_Maya__bir_sab_scene_2_audio.wav",
+            "static/output/Doktor_Maya__bir_sab_scene_3_audio.wav"
+        ],
+        "generate_audio": true,
+        "video": "static/output/1769884418_Doktor_Maya__bir_sab.mp4",
+        "frame_duration": 3.0,
+        "created_at": "2026-01-31 21:32:00",
+        "video_music": "gizem.mp3"
+    },
+    {
+        "timestamp": 1769880432,
+        "prompt": "@Yaman (Mafya Babası) doktoru sessiz bir ormanın içindeki bir villaya götürdü @Doktor Maya korktu beni öldürürmü diye ama içeri girdikten sonra anlar gerçekten yaralı biri olduğunu @Doktor Maya yarayı tedavi eder yaralı olan @emre dir.",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 5,
+        "art_style": "comic",
+        "mood_style": "dynamic",
+        "camera_style": "balanced",
+        "dialogue_style": "short",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "character_consistency": "strict",
+        "video_transition": "fade",
+        "prompts_generated": [
+            "Yaman (massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt) and Maya (stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse) standing outside a luxurious modern villa deep within a dark, silent forest at night. Mist swirls around their feet, illuminated by car headlights. Maya looks terrified, clutching her medical bag, eyes wide with fear looking at the isolated house. Yaman looks stern and impatient. Speech bubble saying in Turkish: 'Beni buraya neden getirdi? Öldürecek mi?'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Yaman (massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt) walking down a dimly lit, expensive hallway inside the villa, gesturing for Maya to follow. Maya (stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse) follows him hesitantly, sweating, looking around nervously at the shadows. The atmosphere is tense and ominous. Speech bubble saying in Turkish: 'İçeri geç doktor. Fazla zamanımız yok.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya (stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse) stands frozen in a large living room, looking down. On a leather sofa lies Emre (a towering middle-aged man with an imposing, heavy-set physique, stern weather-beaten face, deep facial lines, scowl, dressed in a high-end tailored matte black suit and white dress shirt stained with blood). Maya's expression shifts from fear to shock and realization. Yaman stands in the background watching. Speech bubble saying in Turkish: 'Aman Tanrım... Gerçekten yaralı biri var!'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Mid-shot close-up of Maya (stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse) kneeling beside the sofa, pressing a gauze pad onto the wound of Emre (a towering middle-aged man, stern weather-beaten face, sharp jawline, wearing a bloodied white dress shirt, tie loosened). Emre looks in pain but remains stoic and tough. Maya looks professionally focused, her fear replaced by duty. Dramatic lighting highlights the blood and medical tools. Speech bubble saying in Turkish: 'Derin bir kesik. Hemen müdahale etmeliyim.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya (stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse) carefully bandaging the torso of Emre (a towering middle-aged man, stern face, sitting up slightly, shirtless with suit jacket off). Yaman (massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt) leans against the wall in the background, arms crossed, looking relieved but still intimidating. The room is warm but tense. Speech bubble saying in Turkish: 'Tamamdır. Sadece dinlenmesi gerek.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+        ],
+        "images": [
+            "static/output/1769885691_1_Yaman_Mafya_Babası_d.png",
+            "static/output/1769885721_2_Yaman_Mafya_Babası_d.png",
+            "static/output/1769885758_3_Yaman_Mafya_Babası_d.png",
+            "static/output/1769885786_4_Yaman_Mafya_Babası_d.png",
+            "static/output/1769885814_5_Yaman_Mafya_Babası_d.png"
+        ],
+        "audios": [
+            "static/output/Yaman_Mafya_Babası_d_scene_1_audio.wav",
+            "static/output/Yaman_Mafya_Babası_d_scene_2_audio.wav",
+            "static/output/Yaman_Mafya_Babası_d_scene_3_audio.wav",
+            "static/output/Yaman_Mafya_Babası_d_scene_4_audio.wav",
+            "static/output/Yaman_Mafya_Babası_d_scene_5_audio.wav"
+        ],
+        "generate_audio": true,
+        "video": "static/output/1769885957_Yaman_Mafya_Babası_d.mp4",
+        "frame_duration": 3.0,
+        "created_at": "2026-01-31 20:27:12",
+        "video_music": "sad2.mp3"
+    },
+    {
+        "timestamp": 1769800075,
+        "prompt": "@Doktor Maya yolda yürürken birden karşısına @Yaman (Mafya Babası)  çıkar ve ona sarkıntılık yapar ",
+        "aspect_ratio": "9:16",
+        "image_size": "4K",
+        "scene_count": 5,
+        "art_style": "comic",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "prompts_generated": [
+            {
+                "scene_number": 1,
+                "prompt": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, walking alone on a busy city sidewalk during the day. She is carrying a medical bag and looking thoughtful. Soft sunlight filtering through trees. Speech bubble saying in Turkish: 'Nöbet nihayet bitti, eve gitme zamanı.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+            },
+            {
+                "scene_number": 2,
+                "prompt": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, suddenly steps out of a dark alleyway to block the path. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, stops abruptly, looking startled. Urban street background. Speech bubble saying in Turkish: 'Hop! Yavaş ol bakalım güzelim.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+            },
+            {
+                "scene_number": 3,
+                "prompt": "Close-up over-the-shoulder shot. Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, leans in close with a predatory grin. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, recoils slightly with a look of disgust and fear. High contrast shadows. Speech bubble saying in Turkish: 'Bu güzellik sokaklarda harcanıyor.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+            },
+            {
+                "scene_number": 4,
+                "prompt": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, stands her ground and points an angry finger at Yaman. Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, looks amused by her resistance. Dynamic angle. Speech bubble saying in Turkish: 'Yolumdan çekil, yoksa polis çağırırım!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+            },
+            {
+                "scene_number": 5,
+                "prompt": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, watching from behind as Maya walks away hurriedly in the distance. Yaman has a dark, obsessive smirk on his face. The city street is bathed in sunset colors. Speech bubble saying in Turkish: 'Hırçın... Tam benlik.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+            }
+        ],
+        "images": [
+            "static/output/1769863175_1_Doktor_Mayayolda_yür.png",
+            "static/output/1769863136_2_Doktor_Mayayolda_yür.png",
+            "static/output/1769874066_3_Doktor_Mayayolda_yür.png",
+            "static/output/1769874134_4_Doktor_Mayayolda_yür.png",
+            "static/output/1769874297_5_Doktor_Mayayolda_yür.png"
+        ],
+        "video": null,
+        "frame_duration": 10.0
+    },
+    {
+        "timestamp": 1769799021,
+        "prompt": "@Doktor Maya bir davete katılıyor @Yaman (Mafya Babası)  @Doktor Maya yı görünce şaşaırıyorlar @Doktor Maya @Yaman (Mafya Babası)  dan sürekli kaçan bir kadın @Yaman (Mafya Babası)  sürekli @Doktor Maya  ile konuşmaka ister ve diyalog halinde kalmak ister",
+        "aspect_ratio": "9:16",
+        "image_size": "4K",
+        "scene_count": 5,
+        "art_style": "comic",
+        "environment": "night/summer/rain",
+        "outfit_style": "auto",
+        "prompts_generated": [
+            {
+                "scene_number": 1,
+                "prompt": "Doctor Maya, a stunningly beautiful female, long wavy brown hair, piercing blue eyes, wearing an elegant blue evening gown, standing at the entrance of a luxurious gala venue. Night time, heavy summer rain pouring down. She looks nervous and anxious, glancing over her shoulder. Wet pavement reflections. Speech bubble saying in Turkish: 'Sadece bir saat görünüp çıkacağım... Umarım o burada değildir.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 2,
+                "prompt": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt. Standing inside a crowded, lavishly decorated party hall. Golden ambient lighting. He freezes, looking shocked and surprised as he spots someone across the room. Rain visible against the large windows in the background. Speech bubble saying in Turkish: 'Gözlerime inanamıyorum... Maya? Bunca zaman sonra...'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 3,
+                "prompt": "Two characters in the frame. Yaman (massive intimidating mafia boss, short dark hair, thick full beard, sharp black unbuttoned dress shirt) intercepts Doctor Maya (stunningly beautiful, long wavy brown hair, piercing blue eyes, elegant blue evening gown) in the middle of the dance floor. Maya looks frightened and turns her body to escape. Yaman looks intense and blocks her path. Cinematic interior party lighting. Speech bubble saying in Turkish: 'Yaman! Lütfen, seninle konuşacak bir şeyim yok. Bırak gideyim.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 4,
+                "prompt": "Yaman (massive intimidating mafia boss, short dark hair, thick full beard, sharp black unbuttoned dress shirt) steps closer, his hand raised in a gesture of pleading but dominant conversation. Doctor Maya (stunningly beautiful, long wavy brown hair, piercing blue eyes, elegant blue evening gown) backs away until she hits a pillar. Background shows the blur of the party and rain outside. Yaman looks desperate to talk. Speech bubble saying in Turkish: 'Sürekli kaçamazsın Doktor. Sadece dinle beni. Tek bir şans ver.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            "Yaman (massive intimidating mafia boss, short dark hair, thick full beard, sharp black unbuttoned dress shirt) steps closer, his hand raised in a gesture of pleading but dominant conversation. Doctor Maya (stunningly beautiful, long wavy brown hair, piercing blue eyes, elegant blue evening gown) backs away until she hits a pillar. Background shows the blur of the party and rain outside. Yaman looks desperate to talk. Speech bubble saying in Turkish: 'Bu Gece Aramızda tüm sorunlaeı Halledeceğiz'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+        ],
+        "images": [
+            "static/output/1769798101_1_Doktor_Mayabir_davet.jpg",
+            "static/output/1769798138_2_Doktor_Mayabir_davet.jpg",
+            "static/output/1769798176_3_Doktor_Mayabir_davet.jpg",
+            "static/output/1769798213_4_Doktor_Mayabir_davet.jpg",
+            "static/output/1769799516_5_Doktor_Mayabir_davet.jpg"
+        ],
+        "video": "static/output/1769798249_Doktor_Mayabir_davet.mp4"
+    },
+    {
+        "timestamp": 1769795136,
+        "prompt": "@Doktor Maya elinde  pazar poşetiyle yolda yürürken karşısısna @Yaman (Mafya Babası)  çıkar ve onu takip  eder. ardından @Doktor Maya  ise korkuyla saklanır @Yaman (Mafya Babası)  kokrutugun fakreidnce gizli  gizli  takip  etmeye devam eder",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 7,
+        "art_style": "comic",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "prompts_generated": [
+            "kız kapının önünde elinde pazar meyve torbaları var",
+            {
+                "scene_number": 2,
+                "image_prompt": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, suddenly steps out onto the sidewalk blocking the path. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, looks up in shock and surprise. Tension in the air. Dramatic shadows. Speech bubble saying in Turkish: 'Doktor Maya, bir dakika bak!'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 3,
+                "image_prompt": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, clutching her grocery bags tightly to her chest, backing away in fear. Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, takes a step forward trying to explain himself. Dynamic angle. Speech bubble saying in Turkish: 'Benden uzak durun!'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 4,
+                "image_prompt": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, turning around and walking away very fast, glancing back over her shoulder with a terrified expression. Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, follows her from a short distance, looking imposing. Motion blur lines. Speech bubble saying in Turkish: 'Lütfen beni takip etmeyin!'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 5,
+                "image_prompt": "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, hiding behind a brick wall corner in an alleyway, breathing heavily, eyes wide with fear, hugging her grocery bags. Close up on her terrified face. Shadowy alley atmosphere. Speech bubble saying in Turkish: 'Umarım beni görmemiştir...'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 6,
+                "image_prompt": "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, standing alone in the street looking at the corner where Maya vanished. He looks regretful and realizes his mistake, hand on his neck. Soft street light. Speech bubble saying in Turkish: 'Kahretsin, kızı çok korkuttum.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            },
+            {
+                "scene_number": 7,
+                "image_prompt": "Wide shot of the street. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, is walking in the distance towards her home. In the foreground shadows, Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, is secretly following her to ensure her safety, blending into the dark. Speech bubble saying in Turkish: 'Sadece eve sağ salim varsın yeter.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+            }
+        ],
+        "images": [
+            "static/output/1769797340_1_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769794860_2_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769794884_3_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769794909_4_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769794938_5_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769794967_6_Doktor_Mayaelinde__p.jpg",
+            "static/output/1769796016_7_Doktor_Mayaelinde__p.jpg"
+        ],
+        "video": "static/output/1769794997_Doktor_Mayaelinde__p.mp4"
+    },
+    {
+        "timestamp": 1769789167,
+        "prompt": "@Doktor Maya bir çiçekçiye gider ve @Yaman (Mafya Babası)  peşine takılır onu rahatsız  eder böyle bir video oluştur",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "scene_count": 15,
+        "art_style": "comic",
+        "environment": "auto/auto/auto",
+        "outfit_style": "auto",
+        "prompts_generated": [
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, entering a vibrant and colorful flower shop filled with roses and tulips. She looks relieved and peaceful after a long shift. Warm, golden hour sunlight streaming through glass windows. Speech bubble saying in Turkish: 'Nihayet nöbet bitti, biraz renk ve huzur lazım.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, smelling a large bouquet of red roses close up. She has a gentle smile on her face. Background is a blur of colorful petals. Bright indoor lighting. Speech bubble saying in Turkish: 'Bunların kokusu harika, salonuma çok yakışacaklar.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "View from inside the shop looking out the window. Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, is standing on the street staring intensely at Maya through the glass. Ominous shadowing on his face. Contrast between bright shop and dark street. Speech bubble saying in Turkish: 'Seni buldum doktor. Benden kaçabileceğini mi sandın?' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, pushing the flower shop door open with a dominant posture. The bell above the door rings. Maya is in the background, turned away, unaware. Tense atmosphere. Speech bubble saying in Turkish: 'Çiçekler mi? Sana daha çok dikenler yakışır Maya.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, turning around sharply, dropping a rose from her hand. Her face is full of shock and fear. Yaman stands looming in the foreground. Dutch angle shot. Speech bubble saying in Turkish: 'Yaman? Sen... Beni nasıl buldun?' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, walking slowly down the narrow aisle of flowers towards the camera. He has a dark, predatory smirk. Maya is visible backing away among the orchids. High contrast lighting. Speech bubble saying in Turkish: 'Benim şehrimde benden saklanamazsın güzellik.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Two-shot of Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt. They are face to face. Yaman leans in uncomfortably close. Maya looks angry and disgusted. Speech bubble saying in Turkish: 'Peşimi bırak Yaman, seninle işim bitti dedim!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, reaching out to touch a lock of Maya's hair. Maya flinches away sharply. Her expression is pure defense. The colorful flowers surround them ironically. Speech bubble saying in Turkish: 'Saçların hala aynı kokuyor. Beni özlemediğini söyleme.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, trying to walk past, but Yaman slams his hand against a shelf, blocking her path. Flower pots shake from the impact. Dynamic action lines. Speech bubble saying in Turkish: 'Bir yere gitmiyorsun. Konuşacaklarımız var.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Close up on Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse. She looks fierce and brave despite the fear in her eyes. She is shouting. Bright light highlights her face. Speech bubble saying in Turkish: 'Çekil önümden yoksa bağırırım! Burası dağ başı değil!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, towering over Maya, looking down with a threatening expression. He grabs her wrist gently but firmly. The flower shop looks claustrophobic now. Speech bubble saying in Turkish: 'Bağır istersen. Kimse benim işime karışmaya cesaret edemez.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, pulling her arm back violently from Yaman's grip. Petals fall around them from the motion. Action lines indicating swift movement. Speech bubble saying in Turkish: 'Dokunma bana! Sen hasta bir adamsın!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, chuckling darkly, adjusting his collar. He looks amused by her resistance. Background filled with blurred colorful flowers. Speech bubble saying in Turkish: 'Hırçınlığın hoşuma gidiyor doktor. Ama sabrımı zorluyorsun.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Doktor Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse, holding her phone up as a weapon, finger hovering over the screen. She is backed against a wall of sunflowers. Panic and determination mixed. Speech bubble saying in Turkish: 'Polisi arıyorum! Defol git buradan!' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality",
+            "Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt, turning his back to walk away, looking over his shoulder with a dark glare. Maya is left trembling in the background holding her phone. Dramatic shadows. Speech bubble saying in Turkish: 'Ara bakalım. Ama unutma, gölgem hep üzerinde olacak Maya.' Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders. Style: Çizgi Roman Stili (Comic Book Style), renkli, konturlu, detaylı, Canlı renkler, enerji dolu, parlak ışıklandırma, Dengeli sinematik açılar (Orta ve Geniş plan karışık), masterpiece, high quality"
+        ],
+        "images": [
+            "static/output/1769788147_1_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788178_2_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788203_3_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788247_4_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788286_5_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788311_6_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788341_7_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788368_8_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788399_9_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788420_10_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788446_11_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788472_12_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788499_13_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788537_14_Doktor_Mayabir_çiçek.jpg",
+            "static/output/1769788586_15_Doktor_Mayabir_çiçek.jpg"
+        ],
+        "video": "static/output/1769788586_Doktor_Mayabir_çiçek.mp4"
+    },
+    {
+        "timestamp": 1769783312,
+        "prompt": "3. bölüm maya yaman anlaşırlar ve evleniyorlar",
+        "aspect_ratio": "9:16",
+        "image_size": "2K",
+        "prompts_generated": [
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt in a luxurious, dimly lit mafia office with leather furniture. They are standing face to face, staring intensely at each other. Serious, determined expressions. Cinematic side lighting, moody atmosphere. Speech bubble saying in Turkish: 'Anlaşmamız basit. Hayatın için benimle evleneceksin.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt in the same luxurious office. Maya extends her hand hesitantly towards Yaman. Maya looks conflicted but resolute, Yaman looks triumphant. Warm ambient lighting highlighting their faces. Speech bubble saying in Turkish: 'Tamam Yaman. Ama bu evlilik sadece kağıt üzerinde kalacak.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt standing before a wedding registrar in a private room. The scene is solemn and quick. Yaman holds Maya's hand firmly. Dramatic spotlight on the couple. Speech bubble saying in Turkish: 'İyi günde, kötü günde... Kabul ediyor musun?'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Close up shot of Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt looking down at Maya. Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse stands close to him. Yaman is putting a diamond ring on Maya's finger. Intense eye contact. Soft, romantic yet tense lighting. Speech bubble saying in Turkish: 'Sonsuza kadar benimsin Doktor.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Close up shot of Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse looking up at Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt. Maya has a mixture of fear and determination in her eyes. The background is blurred. High contrast lighting. Speech bubble saying in Turkish: 'Evet... Kabul ediyorum.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt signing a marriage certificate on a heavy wooden desk. Yaman stands looming over her protectively. The atmosphere is heavy. Golden hour lighting coming from a window. Speech bubble saying in Turkish: 'Artık geri dönüş yok.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders.",
+            "Maya, a stunningly beautiful female doctor, long wavy brown hair, piercing blue eyes, wearing a fitted white medical coat over a blue blouse and Yaman, a massive intimidating mafia boss, tall muscular build, short dark hair, thick full beard, wearing a sharp black unbuttoned dress shirt walking side by side out of the room towards the camera. Yaman has his arm around her waist, possessing her. Maya looks straight ahead. Dynamic angle, epic backlighting. Speech bubble saying in Turkish: 'Eve gidiyoruz, karıcığım.'. Style features: Comic book style, masterpiece, vibrant colors, highly detailed, dramatic cinematic lighting, borderless, full frame, no white borders."
+        ],
+        "images": [
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769782923_s1.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769782958_s2.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769782996_s3.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769783029_s4.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769783055_s5.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769783082_s6.jpg",
+            "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769783108_s7.jpg"
+        ],
+        "video": "output/3_bölüm_maya_yaman_anlaşırlar_ve_evleniyorlar_1769783108_video.mp4"
+    }
+]

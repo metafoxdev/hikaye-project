@@ -1,0 +1,135 @@
+{
+    "app": {
+        "title": "AI Hikaye Resimleyici",
+        "subtitle": "Hikayelerinizi sinematik görsel deneyimlere dönüştürün.",
+        "version": "2.0.0"
+    },
+    "nav": {
+        "history": "Geçmiş",
+        "characters": "Karakterler",
+        "settings": "Ayarlar",
+        "stats": "İstatistik",
+        "templates": "Şablonlar",
+        "help": "Yardım"
+    },
+    "input": {
+        "placeholder": "Hikaye bölümünüzü tarif edin (@ ile karakter ekleyin)...",
+        "generate": "Görselleri Oluştur",
+        "generating": "Oluşturuluyor..."
+    },
+    "settings": {
+        "videoFormat": "Video Formatı",
+        "resolution": "Çözünürlük",
+        "sceneCount": "Sahne Sayısı",
+        "frameDuration": "Kare Süresi",
+        "dialogueStyle": "Diyalog Tarzı",
+        "artStyle": "Sanat Tarzı",
+        "mood": "Atmosfer",
+        "camera": "Kamera",
+        "time": "Zaman",
+        "season": "Mevsim",
+        "weather": "Hava",
+        "outfit": "Kıyafet",
+        "consistency": "Karakter Tutarlılığı",
+        "transition": "Video Geçişi",
+        "music": "Arka Plan Müziği"
+    },
+    "values": {
+        "vertical": "Dikey",
+        "horizontal": "Yatay",
+        "square": "Kare",
+        "economic": "Ekonomik",
+        "standard": "Standart",
+        "ultra": "Ultra",
+        "scenes": "Sahne",
+        "seconds": "Saniye",
+        "short": "Kısa",
+        "detailed": "Detaylı",
+        "none": "Yok",
+        "auto": "Otomatik",
+        "strict": "Katı",
+        "flexible": "Esnek",
+        "sharp": "Keskin",
+        "smooth": "Yumuşak"
+    },
+    "artStyles": {
+        "comic": "Çizgi Roman",
+        "realistic": "Sinematik",
+        "anime": "Anime",
+        "noir": "Film Noir",
+        "watercolor": "Sulu Boya",
+        "3d": "3D Render",
+        "oil": "Yağlı Boya",
+        "pixel": "Pixel Art",
+        "sketch": "Karakalem"
+    },
+    "moods": {
+        "dynamic": "Dinamik",
+        "dark": "Karanlık",
+        "horror": "Korku",
+        "dreamy": "Rüya",
+        "warm": "Sıcak",
+        "cold": "Soğuk",
+        "romantic": "Romantik",
+        "epic": "Epik"
+    },
+    "music": {
+        "none": "Müzik Yok",
+        "romantic": "Romantik",
+        "action": "Aksiyon",
+        "horror": "Korku",
+        "epic": "Epik",
+        "sad": "Duygusal",
+        "happy": "Neşeli",
+        "mystery": "Gizem",
+        "tension": "Gerilim"
+    },
+    "actions": {
+        "regenerate": "Yeniden Oluştur",
+        "editPrompt": "Promptu Değiştir",
+        "matchStyle": "Stil Eşleştir",
+        "download": "İndir",
+        "zoom": "Büyüt",
+        "delete": "Sil",
+        "add": "Ekle",
+        "save": "Kaydet",
+        "cancel": "İptal",
+        "close": "Kapat",
+        "confirm": "Onayla",
+        "createVideo": "Videoyu Oluştur",
+        "newStory": "Yeni Hikaye",
+        "continue": "Devam Et",
+        "export": "Dışa Aktar"
+    },
+    "messages": {
+        "loading": "Yükleniyor...",
+        "generating": "Oluşturuluyor...",
+        "success": "Başarılı!",
+        "error": "Hata oluştu",
+        "saved": "Kaydedildi",
+        "deleted": "Silindi",
+        "copied": "Kopyalandı",
+        "noHistory": "Henüz geçmiş yok.",
+        "noCharacters": "Henüz karakter yok.",
+        "confirmDelete": "Silmek istediğinize emin misiniz?",
+        "requiredField": "Bu alan zorunlu",
+        "invalidInput": "Geçersiz giriş"
+    },
+    "tooltips": {
+        "regenerate": "Bu sahneyi aynı promptla yeniden oluştur",
+        "editPrompt": "Promptu düzenleyip yeniden oluştur",
+        "matchStyle": "Diğer sahnelerin stiline uygun oluştur",
+        "addScene": "Bu konumdan sonra yeni sahne ekle",
+        "deleteScene": "Bu sahneyi sil"
+    },
+    "tutorial": {
+        "welcome": "AI Hikaye Resimleyici'ye Hoş Geldiniz!",
+        "step1": "Hikaye konunuzu yazın",
+        "step2": "@ ile karakter ekleyin",
+        "step3": "Ayarları seçin",
+        "step4": "Oluştur butonuna tıklayın",
+        "step5": "Sahneleri inceleyin ve düzenleyin",
+        "step6": "Videoyu oluşturun",
+        "gotIt": "Anladım!"
+    }
+}

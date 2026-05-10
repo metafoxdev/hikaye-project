@@ -1,0 +1,1690 @@
+2026-01-31 15:10:24,270 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:10:24,270 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:15:05,406 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:15:05,406 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 15:15:05,407 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 15:15:05,407 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 15:15:05,408 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:15:05,644 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:15:05,645 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 15:15:05,646 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 15:15:05,646 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 15:15:05,647 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:15:08,757 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:15:08,758 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:15:08,758 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 15:25:54,185 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:25:54,185 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 15:25:54,186 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 15:25:54,186 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 15:25:54,186 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:26:43,618 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:26:43,618 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 15:26:43,619 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 15:26:43,619 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 15:26:43,620 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:27:03,430 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:27:03,431 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:27:03,431 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 15:33:40,286 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: maya
+2026-01-31 15:33:40,498 - hikaye_resimleyici - WARNING - _make_image_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:33:42,569 - hikaye_resimleyici - WARNING - _make_image_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:33:46,640 - hikaye_resimleyici - ERROR - _make_image_request tüm denemeler başarısız. Son hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:33:46,640 - hikaye_resimleyici - ERROR - Avatar oluşturma hatası: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:35:11,511 - hikaye_resimleyici - INFO - Sahne 1 yeniden oluşturuluyor...
+2026-01-31 15:35:11,511 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 15:35:11,808 - hikaye_resimleyici - WARNING - _make_image_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:35:13,882 - hikaye_resimleyici - WARNING - _make_image_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:35:17,950 - hikaye_resimleyici - ERROR - _make_image_request tüm denemeler başarısız. Son hata: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:35:17,950 - hikaye_resimleyici - ERROR - Sahne 1 oluşturma hatası: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-preview-image-generation is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-31 15:38:00,162 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:38:00,162 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 15:38:00,163 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 15:38:00,163 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 15:38:00,163 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 15:38:13,494 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:38:13,494 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:38:13,494 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 15:38:13,496 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:38:13,496 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:38:13,498 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 15:38:13,498 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 15:38:13,499 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 15:38:13,500 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 15:38:20,183 - hikaye_resimleyici - INFO - Sahne 2 yeniden oluşturuluyor...
+2026-01-31 15:38:20,184 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 15:38:56,544 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769863136_2_Doktor_Mayayolda_yür.png
+2026-01-31 15:39:01,671 - hikaye_resimleyici - INFO - Sahne 1 yeniden oluşturuluyor...
+2026-01-31 15:39:01,680 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 15:39:35,131 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769863175_1_Doktor_Mayayolda_yür.png
+2026-01-31 18:38:49,960 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 18:38:49,960 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 18:38:49,961 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 18:38:49,961 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 18:38:49,961 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 18:38:50,240 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 18:38:50,241 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 18:38:50,241 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 18:38:50,241 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 18:38:50,241 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 18:39:00,920 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 18:39:00,921 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 18:39:00,921 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 18:39:00,928 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 18:39:00,928 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 18:39:00,928 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 18:39:00,932 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 18:39:00,932 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 18:39:00,932 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 18:40:32,904 - hikaye_resimleyici - INFO - Sahne 3 yeniden oluşturuluyor...
+2026-01-31 18:40:32,905 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 18:41:06,552 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769874066_3_Doktor_Mayayolda_yür.png
+2026-01-31 18:41:37,360 - hikaye_resimleyici - INFO - Sahne 4 yeniden oluşturuluyor...
+2026-01-31 18:41:37,368 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 18:42:14,656 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769874134_4_Doktor_Mayayolda_yür.png
+2026-01-31 18:42:32,344 - hikaye_resimleyici - INFO - Sahne 5 yeniden oluşturuluyor...
+2026-01-31 18:42:32,353 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 18:43:12,674 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769874192_5_Doktor_Mayayolda_yür.png
+2026-01-31 18:43:17,353 - hikaye_resimleyici - INFO - Sahne 5 yeniden oluşturuluyor...
+2026-01-31 18:43:17,362 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 18:43:52,841 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769874232_5_Doktor_Mayayolda_yür.png
+2026-01-31 18:44:22,961 - hikaye_resimleyici - INFO - Sahne 5 yeniden oluşturuluyor...
+2026-01-31 18:44:22,971 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 18:44:57,885 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769874297_5_Doktor_Mayayolda_yür.png
+2026-01-31 18:47:26,362 - hikaye_resimleyici - INFO - Proje dışa aktarılıyor: 1769800075 (zip)
+2026-01-31 19:06:17,403 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:06:17,403 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:06:17,404 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:06:17,404 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:06:17,404 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:06:17,653 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:06:17,653 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:06:17,654 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:06:17,654 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:06:17,654 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:06:22,315 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:06:22,315 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:06:22,315 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:06:22,315 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:06:22,316 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:06:22,316 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:06:22,317 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:06:22,319 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:06:22,320 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:08:19,984 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:08:19,984 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:08:19,984 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:08:19,984 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:08:19,984 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:08:20,251 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:08:20,251 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:08:20,251 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:08:20,251 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:08:20,251 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:10:28,857 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: maya
+2026-01-31 19:10:42,264 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_maya_1769875842.png
+2026-01-31 19:11:15,273 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: yaman
+2026-01-31 19:11:29,687 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_yaman_1769875889.png
+2026-01-31 19:20:13,670 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:13,670 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:20:13,670 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:20:13,670 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:20:13,670 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:13,995 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:13,995 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:20:13,996 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:20:13,997 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:20:13,997 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:24,984 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:24,984 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:20:24,985 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:20:24,985 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:20:24,985 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:25,305 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:20:25,306 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:20:25,306 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:20:25,307 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:20:25,307 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:21:13,993 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:21:13,993 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:21:13,993 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:21:13,994 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:21:13,995 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:21:13,996 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:21:14,004 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:21:14,004 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:21:14,006 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:21:26,953 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:21:26,953 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:21:26,954 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:21:26,955 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:21:26,955 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:21:27,446 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:21:27,446 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:21:27,447 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:21:27,447 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:21:27,447 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:20,884 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:20,884 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:22:20,884 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:22:20,884 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:22:20,884 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:21,409 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:21,409 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:22:21,410 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:22:21,410 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:22:21,410 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:42,751 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:42,751 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:22:42,752 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:22:42,752 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:22:42,752 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:43,225 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:43,225 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:22:43,225 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:22:43,225 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:22:43,225 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:59,551 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:22:59,551 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:22:59,551 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:22:59,551 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:22:59,551 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:00,082 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:00,082 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:23:00,083 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:23:00,083 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:23:00,083 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:37,946 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:37,946 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:23:37,947 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:23:37,947 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:23:37,947 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:38,474 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:23:38,475 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:23:38,475 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:23:38,476 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:23:38,476 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:24:29,842 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:24:29,842 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:24:29,843 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:24:29,843 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:24:29,844 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:24:29,845 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:24:29,848 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:24:29,848 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:24:29,850 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:25:48,682 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:25:48,682 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:25:48,682 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:25:48,682 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:25:48,682 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:25:48,932 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:25:48,932 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:25:48,933 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:25:48,933 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:25:48,933 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:26:14,847 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:26:14,848 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:26:14,848 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:26:14,848 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:26:14,848 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:26:15,093 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:26:15,093 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:26:15,093 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:26:15,094 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:26:15,094 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:26:18,193 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:26:18,193 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:26:18,193 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:26:18,193 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:26:18,193 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:26:18,195 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:26:18,203 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:26:18,204 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:26:18,205 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:28:38,080 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:28:38,080 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:28:38,081 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:28:38,081 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:28:38,081 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:28:52,341 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:28:52,341 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:28:52,342 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:28:52,360 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: @Doktor Maya  birgün markete giderken @Yaman (Mafy...
+2026-01-31 19:28:52,361 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: @Doktor Maya  birgün markete giderken @Yaman (Mafy...
+2026-01-31 19:28:52,361 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: @Doktor Maya  birgün markete giderken @Yaman (Mafy... (5 sahne)
+2026-01-31 19:29:16,978 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 5 sahne
+2026-01-31 19:29:16,979 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 19:29:47,456 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769876987_1_Doktor_Maya__birgün_.png
+2026-01-31 19:29:53,292 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Achernar - Eve gitmeden önce biraz alışveriş yapsam iyi olaca...
+2026-01-31 19:29:58,181 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__birgün__scene_1_audio.wav
+2026-01-31 19:29:58,182 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 19:30:30,751 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769877030_2_Doktor_Maya__birgün_.png
+2026-01-31 19:30:37,909 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Benden kaçabileceğini mi sandın doktor?...
+2026-01-31 19:30:42,462 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__birgün__scene_2_audio.wav
+2026-01-31 19:30:42,462 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 19:31:07,958 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769877067_3_Doktor_Maya__birgün_.png
+2026-01-31 19:31:14,393 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Achernar - Birisi beni izliyor... Hissedebiliyorum....
+2026-01-31 19:31:18,610 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__birgün__scene_3_audio.wav
+2026-01-31 19:31:18,610 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 19:31:52,737 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769877112_4_Doktor_Maya__birgün_.png
+2026-01-31 19:31:59,184 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Achernar - Yavaşlayalım bakalım, kimmiş bu?...
+2026-01-31 19:32:03,513 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__birgün__scene_4_audio.wav
+2026-01-31 19:32:03,513 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 19:32:29,124 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769877149_5_Doktor_Maya__birgün_.png
+2026-01-31 19:32:36,185 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Achernar - Olamaz! O adam!...
+2026-01-31 19:32:39,477 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__birgün__scene_5_audio.wav
+2026-01-31 19:32:39,479 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 5/5 görsel
+2026-01-31 19:40:17,310 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:40:17,310 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:40:17,311 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:40:17,311 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:40:17,312 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:40:34,639 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:40:34,639 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:40:34,640 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:40:34,640 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:40:34,640 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:41:09,217 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:41:09,217 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:41:09,218 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:41:09,218 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1769877159 (müzik: gizem.mp3)
+2026-01-31 19:41:09,219 - hikaye_resimleyici - INFO - Video oluşturuluyor (5 görsel, 7.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-01-31 19:41:09,415 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 3.9s
+2026-01-31 19:41:09,544 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 7.3s - 11.0s
+2026-01-31 19:41:09,670 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 14.3s - 17.4s
+2026-01-31 19:41:09,798 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 21.3s - 24.2s
+2026-01-31 19:41:09,921 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 28.3s - 30.7s
+2026-01-31 19:41:10,051 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 5 ses parçası
+2026-01-31 19:41:10,051 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -10dB
+2026-01-31 19:41:10,052 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-01-31 19:41:10,052 - hikaye_resimleyici - INFO - 5 karakter sesi eklendi
+2026-01-31 19:41:10,056 - hikaye_resimleyici - ERROR - Video oluşturma hatası: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2026-01-31 19:41:57,383 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:41:57,383 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:41:57,384 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:41:57,384 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:41:57,384 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:42:14,207 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:42:14,207 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:42:14,208 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:42:14,208 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1769877159 (müzik: gizem.mp3)
+2026-01-31 19:42:14,227 - hikaye_resimleyici - INFO - Video oluşturuluyor (5 görsel, 7.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-01-31 19:42:14,332 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 3.9s
+2026-01-31 19:42:14,454 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 7.3s - 11.0s
+2026-01-31 19:42:14,578 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 14.3s - 17.4s
+2026-01-31 19:42:14,703 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 21.3s - 24.2s
+2026-01-31 19:42:14,836 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 28.3s - 30.7s
+2026-01-31 19:42:14,975 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 5 ses parçası
+2026-01-31 19:42:14,975 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -10dB
+2026-01-31 19:42:14,976 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-01-31 19:42:14,976 - hikaye_resimleyici - INFO - 5 karakter sesi eklendi
+2026-01-31 19:44:42,801 - hikaye_resimleyici - INFO - Video oluşturuldu: 1769877734_Doktor_Maya__birgün_.mp4
+2026-01-31 19:53:09,934 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:53:09,934 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:53:09,934 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:53:09,934 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:53:09,934 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:53:10,180 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:53:10,181 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:53:10,181 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:53:10,182 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:53:10,182 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:53:14,063 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:53:14,064 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:53:14,064 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:53:14,064 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:53:14,065 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:53:14,065 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:53:14,065 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:53:14,067 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:53:14,069 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:58:12,706 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:58:12,706 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:58:12,707 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:58:12,707 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:58:12,707 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:58:14,992 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:58:14,992 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 19:58:14,993 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 19:58:14,993 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 19:58:14,993 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 19:58:29,683 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:58:29,684 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:58:29,684 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 19:58:29,684 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:58:29,685 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:58:29,685 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 19:58:29,685 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:58:29,687 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 19:58:29,689 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 20:04:02,035 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: @Doktor Maya hastanede çalışıyordu çok yoğundu ve ...
+2026-01-31 20:04:02,035 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: @Doktor Maya hastanede çalışıyordu çok yoğundu ve ...
+2026-01-31 20:04:02,036 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: @Doktor Maya hastanede çalışıyordu çok yoğundu ve ... (7 sahne)
+2026-01-31 20:04:26,566 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 7 sahne
+2026-01-31 20:04:26,566 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 20:04:53,938 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769879093_1_Doktor_Maya_hastaned.png
+2026-01-31 20:04:58,998 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Of, bugün acil servis çok yoğun......
+2026-01-31 20:05:05,854 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_1_audio.wav
+2026-01-31 20:05:05,855 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 20:05:33,378 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769879133_2_Doktor_Maya_hastaned.png
+2026-01-31 20:05:39,750 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Doktor! Bana acil doktor lazım!...
+2026-01-31 20:05:45,466 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_2_audio.wav
+2026-01-31 20:05:45,466 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 20:05:46,196 - hikaye_resimleyici - WARNING - _make_image_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 500 INTERNAL. {'error': {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}}
+2026-01-31 20:06:17,044 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769879177_3_Doktor_Maya_hastaned.png
+2026-01-31 20:06:27,138 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Sakin olun. Hastanız nerede? Gelsin....
+2026-01-31 20:06:31,578 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_3_audio.wav
+2026-01-31 20:06:31,578 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 20:06:56,429 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769879216_4_Doktor_Maya_hastaned.png
+2026-01-31 20:07:03,857 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Gelemez. Senin benimle gelmen lazım....
+2026-01-31 20:07:07,743 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_4_audio.wav
+2026-01-31 20:07:07,743 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 20:07:39,808 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769879259_5_Doktor_Maya_hastaned.png
+2026-01-31 20:07:46,455 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Saçmalamayın! Burayı terk edemem, hasta buraya gel...
+2026-01-31 20:07:51,213 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_5_audio.wav
+2026-01-31 20:07:51,214 - hikaye_resimleyici - INFO - Sahne 6 oluşturuluyor...
+2026-01-31 20:08:19,864 - hikaye_resimleyici - INFO - Sahne 6 kaydedildi: 1769879299_6_Doktor_Maya_hastaned.png
+2026-01-31 20:08:26,504 - hikaye_resimleyici - INFO - Sahne 6'de diyalog bulunamadı
+2026-01-31 20:08:26,505 - hikaye_resimleyici - INFO - Sahne 7 oluşturuluyor...
+2026-01-31 20:08:54,947 - hikaye_resimleyici - INFO - Sahne 7 kaydedildi: 1769879334_7_Doktor_Maya_hastaned.png
+2026-01-31 20:09:02,040 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - İtiraz yok. Yürü doktor....
+2026-01-31 20:09:06,155 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya_hastaned_scene_7_audio.wav
+2026-01-31 20:09:06,157 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 7/7 görsel
+2026-01-31 20:10:01,580 - hikaye_resimleyici - INFO - Sahne 4 yeni prompt ile oluşturuluyor...
+2026-01-31 20:10:01,592 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 20:10:01,593 - hikaye_resimleyici - DEBUG - Referans görsel eklendi: C:\Users\user\Desktop\hikaye_olustur\static\output\1769879216_4_Doktor_Maya_hastaned.png
+2026-01-31 20:10:38,516 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769879438_4_Doktor_Maya_hastaned.png
+2026-01-31 20:11:10,060 - hikaye_resimleyici - INFO - Sahne 5 ekleniyor...
+2026-01-31 20:11:10,070 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 20:11:35,925 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769879495_5_Doktor_Maya_hastaned.png
+2026-01-31 20:12:09,509 - hikaye_resimleyici - INFO - Sahne 5 siliniyor...
+2026-01-31 20:12:09,511 - hikaye_resimleyici - INFO - Sahne 5 silindi
+2026-01-31 20:12:53,860 - hikaye_resimleyici - INFO - Sahne 5 ekleniyor...
+2026-01-31 20:12:53,870 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 20:13:05,556 - hikaye_resimleyici - INFO - Sahne 4 yeni prompt ile oluşturuluyor...
+2026-01-31 20:13:05,557 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 20:13:05,558 - hikaye_resimleyici - DEBUG - Referans görsel eklendi: C:\Users\user\Desktop\hikaye_olustur\static\output\1769879438_4_Doktor_Maya_hastaned.png
+2026-01-31 20:13:17,323 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769879597_5_Doktor_Maya_hastaned.png
+2026-01-31 20:13:39,438 - hikaye_resimleyici - INFO - Sahne 5 siliniyor...
+2026-01-31 20:13:39,440 - hikaye_resimleyici - INFO - Sahne 5 silindi
+2026-01-31 20:13:50,279 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769879630_4_Doktor_Maya_hastaned.png
+2026-01-31 20:14:33,717 - hikaye_resimleyici - INFO - Sahne 4 yeni prompt ile oluşturuluyor...
+2026-01-31 20:14:33,727 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 20:14:33,734 - hikaye_resimleyici - DEBUG - Referans görsel eklendi: C:\Users\user\Desktop\hikaye_olustur\static\output\1769879630_4_Doktor_Maya_hastaned.png
+2026-01-31 20:15:14,456 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769879714_4_Doktor_Maya_hastaned.png
+2026-01-31 20:20:04,525 - hikaye_resimleyici - INFO - Karakter zenginleştiriliyor: emre koruma
+2026-01-31 20:20:23,719 - hikaye_resimleyici - INFO - Karakter başarıyla zenginleştirildi
+2026-01-31 20:20:29,104 - hikaye_resimleyici - INFO - Yeni karakter eklendi: Emre 'The Wall' Koruma
+2026-01-31 20:20:35,423 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: 1769880029103
+2026-01-31 20:20:49,811 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_1769880029103_1769880049.png
+2026-01-31 20:22:11,048 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i...
+2026-01-31 20:22:11,048 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i...
+2026-01-31 20:22:11,049 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i... (7 sahne)
+2026-01-31 20:22:27,349 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 20:22:27,349 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 20:22:27,350 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 20:22:27,350 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 20:22:27,350 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 20:22:27,598 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 20:22:27,598 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 20:22:27,599 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 20:22:27,599 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 20:22:27,599 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 20:22:33,288 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 20:22:33,288 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 20:22:33,288 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 20:22:33,291 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 20:22:33,292 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 20:22:33,293 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 20:22:33,293 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 20:22:33,294 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 20:22:33,295 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 20:23:03,824 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i...
+2026-01-31 20:23:03,825 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i...
+2026-01-31 20:23:03,825 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: @Yaman (Mafya Babası) doktoru sessiz bir ormanın i... (5 sahne)
+2026-01-31 20:23:34,859 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 5 sahne
+2026-01-31 20:23:34,859 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 20:23:56,539 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769880236_1_Yaman_Mafya_Babası_d.png
+2026-01-31 20:24:04,558 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Beni buraya neden getirdi? Öldürecek mi?...
+2026-01-31 20:24:44,716 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_1_audio.wav
+2026-01-31 20:24:44,717 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 20:25:12,985 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769880312_2_Yaman_Mafya_Babası_d.png
+2026-01-31 20:25:21,198 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - İçeri geç doktor. Fazla zamanımız yok....
+2026-01-31 20:25:24,991 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_2_audio.wav
+2026-01-31 20:25:24,992 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 20:25:51,786 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769880351_3_Yaman_Mafya_Babası_d.png
+2026-01-31 20:25:58,367 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Aman Tanrım... Gerçekten yaralı biri var!...
+2026-01-31 20:26:03,025 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_3_audio.wav
+2026-01-31 20:26:03,026 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 20:26:27,600 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769880387_4_Yaman_Mafya_Babası_d.png
+2026-01-31 20:26:34,425 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Derin bir kesik. Hemen müdahale etmeliyim....
+2026-01-31 20:26:38,312 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_4_audio.wav
+2026-01-31 20:26:38,312 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 20:27:03,754 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769880423_5_Yaman_Mafya_Babası_d.png
+2026-01-31 20:27:08,248 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Tamamdır. Sadece dinlenmesi gerek....
+2026-01-31 20:27:12,388 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_5_audio.wav
+2026-01-31 20:27:12,390 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 5/5 görsel
+2026-01-31 20:32:33,355 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1769880432 (müzik: sad2.mp3)
+2026-01-31 20:32:33,364 - hikaye_resimleyici - INFO - Video oluşturuluyor (5 görsel, 3.0s/kare, geçiş: fade, müzik: sad2.mp3, sesli sahneler var)
+2026-01-31 20:32:33,469 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 3.3s
+2026-01-31 20:32:33,590 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 3.3s - 6.1s
+2026-01-31 20:32:33,713 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 6.3s - 9.3s
+2026-01-31 20:32:33,836 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 9.3s - 12.6s
+2026-01-31 20:32:33,967 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 12.3s - 15.2s
+2026-01-31 20:32:34,100 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 5 ses parçası
+2026-01-31 20:32:34,101 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -10dB
+2026-01-31 20:32:34,101 - hikaye_resimleyici - INFO - Müzik eklendi: sad2.mp3
+2026-01-31 20:32:34,101 - hikaye_resimleyici - INFO - 5 karakter sesi eklendi
+2026-01-31 20:33:38,193 - hikaye_resimleyici - INFO - Video oluşturuldu: 1769880754_Yaman_Mafya_Babası_d.mp4
+2026-01-31 21:19:38,567 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:19:38,567 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:19:38,568 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:19:38,568 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:19:38,568 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:20:05,574 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:20:05,574 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:20:05,575 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:20:12,195 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:20:12,196 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:20:12,196 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:20:12,197 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:20:12,197 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:20:39,818 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:20:39,818 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:20:39,818 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:20:39,819 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:20:39,819 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:20:39,820 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:20:39,820 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:20:39,822 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:20:39,824 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:22:42,193 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:22:42,193 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:22:42,194 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:22:42,194 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:22:42,194 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:23:10,563 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:23:10,563 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:23:10,564 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:23:10,565 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:23:10,565 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:23:32,913 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:23:32,913 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:23:32,914 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:23:32,914 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:23:32,914 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:23:54,796 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:23:54,796 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:23:54,797 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:23:54,816 - hikaye_resimleyici - INFO - Ayarlar güncellendi
+2026-01-31 21:24:00,471 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:24:00,471 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:24:00,472 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:24:00,472 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:24:00,472 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:24:41,882 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:24:41,882 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:24:41,883 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:24:41,883 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:24:41,883 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:24:52,376 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:24:52,376 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:24:52,376 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:24:52,377 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:24:52,377 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:24:52,379 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:24:52,379 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: yaman
+2026-01-31 21:24:52,379 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: maya
+2026-01-31 21:24:52,827 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: 1769880029103
+2026-01-31 21:25:06,587 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_yaman_1769883906.png
+2026-01-31 21:25:07,241 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_maya_1769883907.png
+2026-01-31 21:25:07,501 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_1769880029103_1769883907.png
+2026-01-31 21:25:28,344 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:25:28,344 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:25:28,344 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:25:28,344 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:25:28,344 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:25:28,599 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:25:28,599 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:25:28,600 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:25:28,600 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:25:28,600 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:25:54,835 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: maya
+2026-01-31 21:26:09,226 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_maya_1769883969.png
+2026-01-31 21:26:12,051 - hikaye_resimleyici - INFO - Karakter avatarı oluşturuluyor: yaman
+2026-01-31 21:26:25,557 - hikaye_resimleyici - INFO - Avatar oluşturuldu: avatar_yaman_1769883985.png
+2026-01-31 21:29:31,429 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: @Doktor Maya  bir sabah spor yapmaya çıkarken @Emr...
+2026-01-31 21:29:31,429 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: @Doktor Maya  bir sabah spor yapmaya çıkarken @Emr...
+2026-01-31 21:29:31,430 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: @Doktor Maya  bir sabah spor yapmaya çıkarken @Emr... (3 sahne)
+2026-01-31 21:29:57,892 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 3 sahne
+2026-01-31 21:29:57,893 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 21:30:22,486 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769884222_1_Doktor_Maya__bir_sab.png
+2026-01-31 21:30:28,142 - hikaye_resimleyici - INFO - Sahne 1'de diyalog bulunamadı
+2026-01-31 21:30:28,142 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 21:31:05,710 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769884265_2_Doktor_Maya__bir_sab.png
+2026-01-31 21:31:14,386 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Yenge nereye gidiyorsun?...
+2026-01-31 21:31:17,383 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__bir_sab_scene_2_audio.wav
+2026-01-31 21:31:17,383 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 21:31:52,006 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769884312_3_Doktor_Maya__bir_sab.png
+2026-01-31 21:31:57,861 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - İmdat!...
+2026-01-31 21:32:00,144 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Doktor_Maya__bir_sab_scene_3_audio.wav
+2026-01-31 21:32:00,146 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 3/3 görsel
+2026-01-31 21:33:38,309 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1769884320 (müzik: gizem.mp3)
+2026-01-31 21:33:38,318 - hikaye_resimleyici - INFO - Video oluşturuluyor (3 görsel, 3.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-01-31 21:33:38,508 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 3.3s - 5.3s
+2026-01-31 21:33:38,629 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 6.3s - 7.4s
+2026-01-31 21:33:38,762 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 2 ses parçası
+2026-01-31 21:33:38,762 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-01-31 21:33:38,763 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-01-31 21:33:38,763 - hikaye_resimleyici - INFO - 2 karakter sesi eklendi
+2026-01-31 21:34:16,439 - hikaye_resimleyici - INFO - Video oluşturuldu: 1769884418_Doktor_Maya__bir_sab.mp4
+2026-01-31 21:43:18,074 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:18,074 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:43:18,074 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:43:18,074 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:43:18,074 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:18,403 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:18,404 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:43:18,404 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:43:18,405 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:43:18,405 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:26,229 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:43:26,229 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:43:26,229 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:43:26,229 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:43:26,230 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:43:26,231 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:43:26,231 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:43:26,233 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:43:26,235 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:43:51,043 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:51,043 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:43:51,044 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:43:51,044 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:43:51,044 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:51,469 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:43:51,469 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:43:51,469 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:43:51,469 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:43:51,469 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:03,703 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:46:03,704 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:46:03,704 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:46:03,707 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:46:03,707 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:46:03,709 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:46:03,712 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:46:03,712 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:46:03,714 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:46:30,243 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:30,244 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:46:30,244 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:46:30,244 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:46:30,244 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:31,194 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:31,195 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:46:31,195 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:46:31,196 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:46:31,196 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:42,522 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:42,523 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:46:42,523 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:46:42,524 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:46:42,524 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:42,573 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:46:42,573 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:46:42,573 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:46:42,573 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:46:42,574 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:47:42,024 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:47:42,024 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:47:42,025 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:47:42,025 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:47:42,026 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:47:42,045 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:47:42,045 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 21:47:42,045 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 21:47:42,045 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 21:47:42,045 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 21:47:58,074 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:47:58,074 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:47:58,074 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 21:47:58,075 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:47:58,075 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:47:58,076 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 21:47:58,076 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:47:58,078 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:47:58,079 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 21:51:21,094 - hikaye_resimleyici - INFO - Geçmiş kaydı silindi: 1769879346
+2026-01-31 21:51:22,974 - hikaye_resimleyici - INFO - Geçmiş kaydı silindi: 1769877159
+2026-01-31 21:54:20,557 - hikaye_resimleyici - INFO - Sahne 1 yeniden oluşturuluyor...
+2026-01-31 21:54:20,558 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-01-31 21:54:35,148 - hikaye_resimleyici - INFO - Sahne 5 seslendirmesi yeniden oluşturuluyor...
+2026-01-31 21:54:42,028 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Tamamdır. Sadece dinlenmesi gerek....
+2026-01-31 21:54:45,684 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_5_audio.wav
+2026-01-31 21:54:51,586 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1769885691_1_Yaman_Mafya_Babası_d.png
+2026-01-31 21:54:51,600 - hikaye_resimleyici - INFO - Sahne 2 yeniden oluşturuluyor...
+2026-01-31 21:54:51,607 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-01-31 21:55:21,734 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1769885721_2_Yaman_Mafya_Babası_d.png
+2026-01-31 21:55:21,739 - hikaye_resimleyici - INFO - Sahne 3 yeniden oluşturuluyor...
+2026-01-31 21:55:21,747 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-01-31 21:55:58,376 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1769885758_3_Yaman_Mafya_Babası_d.png
+2026-01-31 21:55:58,382 - hikaye_resimleyici - INFO - Sahne 4 yeniden oluşturuluyor...
+2026-01-31 21:55:58,394 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-01-31 21:56:26,858 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1769885786_4_Yaman_Mafya_Babası_d.png
+2026-01-31 21:56:26,863 - hikaye_resimleyici - INFO - Sahne 5 yeniden oluşturuluyor...
+2026-01-31 21:56:26,871 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-01-31 21:56:52,285 - hikaye_resimleyici - INFO - Sahne 1 seslendirmesi yeniden oluşturuluyor...
+2026-01-31 21:56:53,301 - hikaye_resimleyici - INFO - Sahne 2 seslendirmesi yeniden oluşturuluyor...
+2026-01-31 21:56:54,959 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1769885814_5_Yaman_Mafya_Babası_d.png
+2026-01-31 21:56:59,280 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Beni buraya neden getirdi? Öldürecek mi?...
+2026-01-31 21:56:59,881 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - İçeri geç doktor. Fazla zamanımız yok....
+2026-01-31 21:57:01,781 - hikaye_resimleyici - INFO - Sahne 4 seslendirmesi yeniden oluşturuluyor...
+2026-01-31 21:57:03,795 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_2_audio.wav
+2026-01-31 21:57:04,305 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_1_audio.wav
+2026-01-31 21:57:07,271 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Derin bir kesik. Hemen müdahale etmeliyim....
+2026-01-31 21:57:11,901 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_4_audio.wav
+2026-01-31 21:58:06,101 - hikaye_resimleyici - INFO - Sahne 3 seslendirmesi yeniden oluşturuluyor...
+2026-01-31 21:58:14,303 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Aman Tanrım... Gerçekten yaralı biri var!...
+2026-01-31 21:58:18,214 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Yaman_Mafya_Babası_d_scene_3_audio.wav
+2026-01-31 21:59:16,782 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1769880432 (müzik: sad2.mp3)
+2026-01-31 21:59:16,791 - hikaye_resimleyici - INFO - Video oluşturuluyor (5 görsel, 3.0s/kare, geçiş: fade, müzik: sad2.mp3, sesli sahneler var)
+2026-01-31 21:59:16,897 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 4.1s
+2026-01-31 21:59:17,018 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 3.3s - 6.2s
+2026-01-31 21:59:17,141 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 6.3s - 9.9s
+2026-01-31 21:59:17,266 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 9.3s - 13.3s
+2026-01-31 21:59:17,393 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 12.3s - 15.2s
+2026-01-31 21:59:17,526 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 5 ses parçası
+2026-01-31 21:59:17,526 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-01-31 21:59:17,526 - hikaye_resimleyici - INFO - Müzik eklendi: sad2.mp3
+2026-01-31 21:59:17,527 - hikaye_resimleyici - INFO - 5 karakter sesi eklendi
+2026-01-31 22:00:21,439 - hikaye_resimleyici - INFO - Video oluşturuldu: 1769885957_Yaman_Mafya_Babası_d.mp4
+2026-01-31 22:10:45,508 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 22:10:45,509 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 22:10:45,509 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 22:10:45,509 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 22:10:45,509 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 22:10:45,583 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 22:10:45,584 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-01-31 22:10:45,584 - hikaye_resimleyici - INFO - Ortam: development
+2026-01-31 22:10:45,584 - hikaye_resimleyici - INFO - Debug: True
+2026-01-31 22:10:45,584 - hikaye_resimleyici - INFO - ==================================================
+2026-01-31 22:12:10,098 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 22:12:10,098 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 22:12:10,098 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-01-31 22:12:10,099 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 22:12:10,099 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 22:12:10,099 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 22:12:10,099 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-01-31 22:12:10,101 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-01-31 22:12:10,102 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:25:03,126 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:03,126 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:25:03,127 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:25:03,127 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:25:03,127 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:03,426 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:03,427 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:25:03,427 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:25:03,427 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:25:03,427 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:12,103 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:25:12,103 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:25:12,103 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:25:12,104 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:25:12,104 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:25:12,104 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:25:12,105 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:25:12,108 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:25:12,111 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:25:16,185 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:16,185 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:25:16,186 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:25:16,186 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:25:16,187 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:21,348 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:25:21,348 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:25:21,349 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:25:25,543 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: İki kişi tesadüfen bir kafede karşılaşır. Göz göze...
+2026-02-03 23:25:25,543 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: İki kişi tesadüfen bir kafede karşılaşır. Göz göze...
+2026-02-03 23:25:25,544 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: İki kişi tesadüfen bir kafede karşılaşır. Göz göze... (7 sahne)
+2026-02-03 23:25:44,972 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:44,972 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:25:44,973 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:25:44,973 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:25:44,973 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:56,292 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:25:56,292 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:25:56,292 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:25:56,292 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:25:56,292 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:10,617 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:10,617 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:26:10,617 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:26:10,618 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:26:10,618 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:17,919 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:17,920 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:26:17,920 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:26:17,921 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:26:17,921 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:33,251 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:26:33,252 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:26:33,252 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:26:33,253 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:26:33,253 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:27:13,655 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:27:13,656 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:27:13,656 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:27:13,656 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:27:13,656 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:27:29,988 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:27:29,989 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:27:29,989 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:27:29,990 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:27:29,990 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:28:25,427 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:28:25,428 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:28:25,428 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:28:25,428 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:28:25,428 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:28:39,759 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:28:39,759 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:28:39,759 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:28:39,760 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:28:39,760 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:29:04,120 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:29:04,121 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:29:04,121 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:29:04,121 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:29:04,121 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:29:32,489 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:29:32,489 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:29:32,490 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:29:32,490 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:29:32,490 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:30:23,616 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:30:23,617 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:30:23,617 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:30:23,617 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: İki kişi tesadüfen bir kafede karşılaşır. Göz göze...
+2026-02-03 23:30:23,638 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: İki kişi tesadüfen bir kafede karşılaşır. Göz göze...
+2026-02-03 23:30:23,638 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: İki kişi tesadüfen bir kafede karşılaşır. Göz göze... (7 sahne)
+2026-02-03 23:30:45,133 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 7 sahne
+2026-02-03 23:30:45,136 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 7 sahne, 5 worker
+2026-02-03 23:30:45,136 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-03 23:30:45,138 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-03 23:30:45,138 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-03 23:30:45,139 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-03 23:30:45,140 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-03 23:31:11,371 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770150671_1_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:11,371 - hikaye_resimleyici - INFO - Sahne 6 oluşturuluyor...
+2026-02-03 23:31:12,233 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770150672_5_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:12,233 - hikaye_resimleyici - INFO - Sahne 7 oluşturuluyor...
+2026-02-03 23:31:12,824 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770150672_4_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:14,425 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770150674_2_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:24,063 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770150684_3_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:38,458 - hikaye_resimleyici - INFO - Sahne 6 kaydedildi: 1770150698_6_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:54,041 - hikaye_resimleyici - INFO - Sahne 7 kaydedildi: 1770150714_7_İki_kişi_tesadüfen_b.png
+2026-02-03 23:31:54,041 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 7/7 başarılı
+2026-02-03 23:32:00,098 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Nihayet bir mola verebildim....
+2026-02-03 23:32:03,244 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\İki_kişi_tesadüfen_b_scene_1_audio.wav
+2026-02-03 23:32:08,807 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Sakin bir kahve lazım....
+2026-02-03 23:32:11,730 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\İki_kişi_tesadüfen_b_scene_2_audio.wav
+2026-02-03 23:32:17,782 - hikaye_resimleyici - INFO - Sahne 3'de diyalog bulunamadı
+2026-02-03 23:32:23,686 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - O da kim?...
+2026-02-03 23:32:25,685 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\İki_kişi_tesadüfen_b_scene_4_audio.wav
+2026-02-03 23:32:32,827 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Enceladus - Daha önce böyle birini görmedim....
+2026-02-03 23:32:35,758 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\İki_kişi_tesadüfen_b_scene_5_audio.wav
+2026-02-03 23:32:41,461 - hikaye_resimleyici - INFO - Sahne 6'de diyalog bulunamadı
+2026-02-03 23:32:47,522 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Merhaba......
+2026-02-03 23:32:49,313 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\İki_kişi_tesadüfen_b_scene_7_audio.wav
+2026-02-03 23:32:49,315 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 7/7 görsel
+2026-02-03 23:34:27,993 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:34:27,993 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:34:27,994 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:34:27,994 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:34:27,995 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:34:44,337 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:34:44,337 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-03 23:34:44,338 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-03 23:34:44,338 - hikaye_resimleyici - INFO - Debug: True
+2026-02-03 23:34:44,338 - hikaye_resimleyici - INFO - ==================================================
+2026-02-03 23:34:53,888 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-03 23:34:53,889 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-03 23:34:53,889 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-03 23:35:23,567 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770150769 (müzik: hüzünlü.mp3)
+2026-02-03 23:35:23,568 - hikaye_resimleyici - INFO - Video oluşturuluyor (7 görsel, 5.0s/kare, geçiş: fade, müzik: hüzünlü.mp3, sesli sahneler var)
+2026-02-03 23:35:23,745 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 2.6s
+2026-02-03 23:35:23,871 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 5.3s - 7.3s
+2026-02-03 23:35:24,047 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 16.4s
+2026-02-03 23:35:24,177 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.3s - 22.5s
+2026-02-03 23:35:24,367 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 30.3s - 31.3s
+2026-02-03 23:35:24,504 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 5 ses parçası
+2026-02-03 23:35:24,504 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-02-03 23:35:24,505 - hikaye_resimleyici - INFO - Müzik eklendi: hüzünlü.mp3
+2026-02-03 23:35:24,505 - hikaye_resimleyici - INFO - 5 karakter sesi eklendi
+2026-02-03 23:37:52,434 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770150924_İki_kişi_tesadüfen_b.mp4
+2026-02-04 00:00:30,043 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:00:30,043 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:00:30,043 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:00:30,043 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:00:30,043 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:00:44,375 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:00:44,376 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:00:44,376 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:00:44,376 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:00:44,376 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:10:21,382 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:10:21,382 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:10:21,382 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:10:21,383 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:10:21,383 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:10:34,869 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:10:34,870 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:10:34,870 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:10:38,903 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:10:38,904 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:10:38,904 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:10:38,904 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:10:38,904 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:02,260 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:02,261 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:11:02,261 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:11:02,261 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:11:02,261 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:18,625 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:18,625 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:11:18,626 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:11:18,626 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:11:18,626 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:49,010 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:11:49,010 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:11:49,010 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:11:49,010 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:11:49,010 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:12:05,363 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:12:05,364 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:12:05,364 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:12:05,364 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:12:05,364 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:12:22,709 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:12:22,709 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:12:22,709 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:12:22,710 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:12:22,710 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:13:09,461 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:13:09,462 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:13:09,462 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:13:09,470 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:13:09,470 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:13:09,470 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:13:09,470 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:13:09,472 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:13:09,474 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:14:08,537 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:14:08,537 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:14:08,537 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:14:08,538 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:14:08,538 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:14:26,895 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:14:26,895 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:14:26,895 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:14:26,896 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:14:26,896 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:14:54,112 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:14:54,112 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:14:54,113 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:14:54,116 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:14:54,116 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:14:54,117 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:14:54,126 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:14:54,126 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:14:54,128 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:15:00,480 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:15:00,480 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:15:00,481 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:15:00,481 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:15:00,481 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:15:25,848 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:15:25,849 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:15:25,849 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:15:25,849 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:15:25,849 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:15:32,786 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:15:32,786 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:15:32,786 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:15:44,415 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:15:44,416 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:15:44,416 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:15:44,416 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:15:44,416 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:09,786 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:09,786 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:16:09,786 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:16:09,787 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:16:09,787 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:33,148 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:33,148 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:16:33,149 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:16:33,149 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:16:33,150 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:46,480 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:46,480 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:16:46,481 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:16:46,482 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:16:46,482 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:58,815 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:16:58,815 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:16:58,816 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:16:58,816 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:16:58,816 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:20:30,771 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:20:30,771 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:20:30,772 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:20:30,772 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:20:30,773 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:21:07,171 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:21:07,171 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:21:07,172 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:21:07,172 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:21:07,172 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:22:47,018 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:22:47,019 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:22:47,019 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:22:47,020 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:22:47,020 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:22:47,022 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:22:47,032 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:22:47,032 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:22:47,034 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:23:29,626 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:23:29,626 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:23:29,626 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:23:29,626 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:23:29,627 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:23:29,877 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:23:29,878 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:23:29,878 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:23:29,878 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:23:29,878 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:23:32,900 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:23:32,900 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:23:32,901 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:23:32,901 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:23:32,901 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:23:32,903 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:23:32,910 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:23:32,910 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:23:32,912 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:26:20,985 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:26:20,985 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:26:20,986 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:26:20,986 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:26:20,986 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:26:37,324 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:26:37,324 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:26:37,325 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:26:37,325 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:26:37,325 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:29:51,507 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:29:51,508 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:29:51,508 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:29:51,511 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:29:51,512 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:29:51,513 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:29:51,513 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:29:51,514 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:29:51,516 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:31:00,449 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:31:00,449 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:31:00,449 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:31:00,449 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:31:00,449 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:31:00,704 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:31:00,704 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:31:00,704 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:31:00,704 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:31:00,704 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:31:04,277 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:31:04,278 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:31:04,278 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:31:04,279 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:31:04,279 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:31:04,279 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:31:04,280 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:31:04,281 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:31:04,283 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:31:04,287 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:31:04,287 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:31:04,289 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:34:59,155 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:34:59,155 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:34:59,155 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:34:59,155 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:34:59,156 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:34:59,425 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:34:59,425 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:34:59,425 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:34:59,425 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:34:59,425 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:35:05,134 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:35:05,134 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:35:05,135 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:35:05,135 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:35:05,135 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:35:05,137 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:35:05,137 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:35:05,138 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:35:05,138 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:35:40,302 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: all, 5 adet
+2026-02-04 00:35:41,161 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: romance, 5 adet
+2026-02-04 00:36:13,671 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: horror, 5 adet
+2026-02-04 00:37:11,423 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:37:11,423 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:37:11,423 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:37:11,423 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:37:11,423 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:37:19,753 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:37:19,754 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:37:19,754 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:37:19,754 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:37:19,754 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:38:03,209 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:38:03,209 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 00:38:03,209 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 00:38:03,209 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 00:38:03,209 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 00:38:53,927 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:38:53,928 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:38:53,928 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:38:53,932 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:38:53,932 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:38:53,934 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:38:53,936 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 00:38:53,936 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 00:38:53,938 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 00:38:57,319 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: all, 5 adet
+2026-02-04 00:39:25,260 - hikaye_resimleyici - WARNING - API önerileri alınamadı, statik öneriler kullanılıyor
+2026-02-04 00:39:32,911 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: adventure, 5 adet
+2026-02-04 00:40:01,448 - hikaye_resimleyici - WARNING - API önerileri alınamadı, statik öneriler kullanılıyor
+2026-02-04 00:40:44,608 - hikaye_resimleyici - INFO - Hikaye oluşturma başlatıldı: Genç bir arkeolog, dedesinden kalan antik haritayl...
+2026-02-04 00:40:44,609 - hikaye_resimleyici - INFO - Tam hikaye akışı başlatıldı: Genç bir arkeolog, dedesinden kalan antik haritayl...
+2026-02-04 00:40:44,609 - hikaye_resimleyici - INFO - Senaryo oluşturuluyor: Genç bir arkeolog, dedesinden kalan antik haritayl... (7 sahne)
+2026-02-04 00:41:17,146 - hikaye_resimleyici - INFO - Senaryo oluşturuldu: 7 sahne
+2026-02-04 00:41:17,146 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 7 sahne, 5 worker
+2026-02-04 00:41:17,147 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-04 00:41:17,149 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-04 00:41:17,150 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-04 00:41:17,151 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-04 00:41:17,151 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-04 00:41:42,457 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770154902_1_Genç_bir_arkeolog_de.png
+2026-02-04 00:41:42,457 - hikaye_resimleyici - INFO - Sahne 6 oluşturuluyor...
+2026-02-04 00:41:43,404 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770154903_5_Genç_bir_arkeolog_de.png
+2026-02-04 00:41:43,404 - hikaye_resimleyici - INFO - Sahne 7 oluşturuluyor...
+2026-02-04 00:41:45,790 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770154905_2_Genç_bir_arkeolog_de.png
+2026-02-04 00:41:47,246 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770154907_4_Genç_bir_arkeolog_de.png
+2026-02-04 00:41:52,761 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770154912_3_Genç_bir_arkeolog_de.png
+2026-02-04 00:42:10,171 - hikaye_resimleyici - INFO - Sahne 6 kaydedildi: 1770154930_6_Genç_bir_arkeolog_de.png
+2026-02-04 00:42:28,579 - hikaye_resimleyici - INFO - Sahne 7 kaydedildi: 1770154948_7_Genç_bir_arkeolog_de.png
+2026-02-04 00:42:28,580 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 7/7 başarılı
+2026-02-04 00:42:33,923 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Dede'min haritası... Beni buraya kadar getirdi....
+2026-02-04 00:42:38,412 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_1_audio.wav
+2026-02-04 00:42:45,163 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Bitki örtüsü çok sık, ama yolun sonuna yaklaştım....
+2026-02-04 00:42:49,517 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_2_audio.wav
+2026-02-04 00:42:55,062 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Bu Jaguar Tanrısı sembolü... Giriş yakın olmalı....
+2026-02-04 00:42:59,741 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_3_audio.wav
+2026-02-04 00:43:06,503 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Lanet olsun! Tuzaklar hala çalışıyor!...
+2026-02-04 00:43:10,610 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_4_audio.wav
+2026-02-04 00:43:17,206 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Geçmeme izin ver! Sadece gerçeği arıyorum....
+2026-02-04 00:43:21,323 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_5_audio.wav
+2026-02-04 00:43:26,567 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Sonunda... Kayıp Şehir Xibalba!...
+2026-02-04 00:43:30,304 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_6_audio.wav
+2026-02-04 00:43:36,128 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Bunu başardım dede. Mirasın güvende....
+2026-02-04 00:43:40,147 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_7_audio.wav
+2026-02-04 00:43:40,149 - hikaye_resimleyici - INFO - Hikaye akışı tamamlandı: 7/7 görsel
+2026-02-04 01:24:52,753 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 01:25:18,804 - hikaye_resimleyici - ERROR - Hikaye devam hatası: 'list' object has no attribute 'get'
+2026-02-04 01:26:40,193 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:26:40,193 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:26:40,193 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:26:40,193 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:26:40,193 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:27:25,256 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:27:25,256 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:27:25,257 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:27:25,257 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 01:27:47,208 - hikaye_resimleyici - ERROR - Hikaye devam hatası: 'list' object has no attribute 'get'
+2026-02-04 01:28:05,072 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:28:05,072 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:28:05,072 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:28:05,072 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:28:05,072 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:28:41,499 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:28:41,499 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:28:41,499 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:28:41,499 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:28:41,499 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:28:57,116 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:28:57,117 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:28:57,117 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:28:57,119 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:28:57,120 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:28:57,121 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:28:57,122 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:28:57,123 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:28:57,124 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:29:02,586 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 01:29:52,601 - hikaye_resimleyici - ERROR - Hikaye devam hatası: StoryGenerator.generate_images_parallel() got an unexpected keyword argument 'reference_images'
+2026-02-04 01:30:28,379 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:30:28,379 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:30:28,379 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:30:28,379 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:30:28,379 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:30:47,607 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:30:47,607 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:30:47,607 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:30:47,607 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:30:47,607 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:30:47,609 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:30:47,617 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:30:47,617 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:30:47,619 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:30:50,714 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 01:31:36,355 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 5 sahne, 5 worker
+2026-02-04 01:31:36,355 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-04 01:31:36,356 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-04 01:31:36,359 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-04 01:31:36,360 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-04 01:31:36,361 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-04 01:32:01,141 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770157921_2_Genç_bir_arkeolog_de.png
+2026-02-04 01:32:03,758 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770157923_1_Genç_bir_arkeolog_de.png
+2026-02-04 01:32:07,208 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770157927_4_Genç_bir_arkeolog_de.png
+2026-02-04 01:32:08,293 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770157928_3_Genç_bir_arkeolog_de.png
+2026-02-04 01:32:09,824 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770157929_5_Genç_bir_arkeolog_de.png
+2026-02-04 01:32:09,824 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 5/5 başarılı
+2026-02-04 01:32:09,827 - hikaye_resimleyici - INFO - Hikaye devamı eklendi: 5 yeni sahne (karakter tutarlılığı korundu)
+2026-02-04 01:35:05,946 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:35:05,946 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:35:05,947 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:35:05,947 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:35:05,947 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:35:31,331 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:35:31,331 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 01:35:31,331 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 01:35:31,331 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 01:35:31,331 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 01:35:54,593 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:35:54,594 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:35:54,594 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:35:54,602 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:35:54,602 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:35:54,604 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:35:54,604 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 01:35:54,604 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 01:35:54,606 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 01:39:53,731 - hikaye_resimleyici - INFO - Sahne 8 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 01:39:59,605 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Hayır! Tapınak çöküyor! Tuzak mekanizmasını tetikl...
+2026-02-04 01:40:04,997 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_8_audio.wav
+2026-02-04 01:40:05,001 - hikaye_resimleyici - INFO - Sahne 9 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 01:40:10,630 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Çıkışa ulaşmalıyım! Acele et Maya!...
+2026-02-04 01:40:14,379 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_9_audio.wav
+2026-02-04 01:40:14,382 - hikaye_resimleyici - INFO - Sahne 10 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 01:40:20,588 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Koruyucular... Efsaneler gerçekmiş!...
+2026-02-04 01:40:24,830 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_10_audio.wav
+2026-02-04 01:40:24,834 - hikaye_resimleyici - INFO - Sahne 11 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 01:40:30,243 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Tutunmam lazım... Şimdi!...
+2026-02-04 01:40:32,842 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_11_audio.wav
+2026-02-04 01:40:32,846 - hikaye_resimleyici - INFO - Sahne 12 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 01:40:39,479 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Güvendeyim... Ama bu sadece başlangıçtı....
+2026-02-04 01:40:43,126 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_12_audio.wav
+2026-02-04 01:55:32,157 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020 (müzik: gizem.mp3)
+2026-02-04 01:55:32,158 - hikaye_resimleyici - INFO - Video oluşturuluyor (12 görsel, 5.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-02-04 01:55:32,270 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 4.0s
+2026-02-04 01:55:32,400 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 5.3s - 9.2s
+2026-02-04 01:55:32,531 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.3s - 14.6s
+2026-02-04 01:55:32,654 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 18.8s
+2026-02-04 01:55:32,779 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.3s - 24.3s
+2026-02-04 01:55:32,900 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 28.8s
+2026-02-04 01:55:33,022 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 30.3s - 34.2s
+2026-02-04 01:55:33,159 - hikaye_resimleyici - DEBUG - Sahne 8 sesi eklendi: 35.3s - 40.5s
+2026-02-04 01:55:33,278 - hikaye_resimleyici - INFO - Sahne 9: Ses üst üste binmemesi için geciktirildi (40.3s -> 40.7s)
+2026-02-04 01:55:33,279 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.7s - 43.4s
+2026-02-04 01:55:33,398 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 49.1s
+2026-02-04 01:55:33,518 - hikaye_resimleyici - DEBUG - Sahne 11 sesi eklendi: 50.3s - 52.3s
+2026-02-04 01:55:33,643 - hikaye_resimleyici - DEBUG - Sahne 12 sesi eklendi: 55.3s - 58.8s
+2026-02-04 01:55:33,766 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 12 ses parçası
+2026-02-04 01:55:33,766 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-02-04 01:55:33,766 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-02-04 01:55:33,766 - hikaye_resimleyici - INFO - 12 karakter sesi eklendi
+2026-02-04 02:00:00,551 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770159333_Genç_bir_arkeolog_de.mp4
+2026-02-04 15:15:40,605 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:15:40,606 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 15:15:40,606 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 15:15:40,606 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 15:15:40,606 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:15:40,906 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:15:40,906 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 15:15:40,907 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 15:15:40,907 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 15:15:40,907 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:15:54,219 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:15:54,219 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:15:54,219 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:15:54,224 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:15:54,224 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:15:54,224 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:15:54,225 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:15:54,225 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:15:54,226 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:16:33,688 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 15:17:28,717 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 5 sahne, 5 worker
+2026-02-04 15:17:28,718 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-04 15:17:28,719 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-04 15:17:28,720 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-04 15:17:28,721 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-04 15:17:28,722 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-04 15:17:54,229 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770207474_2_Genç_bir_arkeolog_de.png
+2026-02-04 15:17:56,325 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770207476_5_Genç_bir_arkeolog_de.png
+2026-02-04 15:17:57,545 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770207477_1_Genç_bir_arkeolog_de.png
+2026-02-04 15:17:59,263 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770207479_3_Genç_bir_arkeolog_de.png
+2026-02-04 15:17:59,656 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770207479_4_Genç_bir_arkeolog_de.png
+2026-02-04 15:17:59,657 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 5/5 başarılı
+2026-02-04 15:18:06,999 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Dede... Haklıydın. Bu taş sadece bir hazine değil,...
+2026-02-04 15:18:14,670 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_13_audio.wav
+2026-02-04 15:18:14,670 - hikaye_resimleyici - INFO - Devam sahnesi 13 seslendirmesi oluşturuldu
+2026-02-04 15:18:23,296 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Takip ediliyorum... Gölge Şirketi beni nasıl buldu...
+2026-02-04 15:18:27,763 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_14_audio.wav
+2026-02-04 15:18:27,763 - hikaye_resimleyici - INFO - Devam sahnesi 14 seslendirmesi oluşturuldu
+2026-02-04 15:18:40,163 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Onlara bunu kaptıramam! Nehir yolunu kullanmalıyım...
+2026-02-04 15:18:45,313 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_15_audio.wav
+2026-02-04 15:18:45,313 - hikaye_resimleyici - INFO - Devam sahnesi 15 seslendirmesi oluşturuldu
+2026-02-04 15:18:51,594 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Işık zayıflıyor... Ama yolu gösteriyor. Şelalenin ...
+2026-02-04 15:18:56,932 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_16_audio.wav
+2026-02-04 15:18:56,932 - hikaye_resimleyici - INFO - Devam sahnesi 16 seslendirmesi oluşturuldu
+2026-02-04 15:19:02,724 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Kayıp Şehir... Bunca zaman gözümüzün önündeymiş....
+2026-02-04 15:19:07,259 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_17_audio.wav
+2026-02-04 15:19:07,259 - hikaye_resimleyici - INFO - Devam sahnesi 17 seslendirmesi oluşturuldu
+2026-02-04 15:19:07,271 - hikaye_resimleyici - INFO - Hikaye devamı eklendi: 5 yeni sahne, 5 seslendirme
+2026-02-04 15:19:38,344 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 15:20:38,141 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 5 sahne, 5 worker
+2026-02-04 15:20:38,142 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-04 15:20:38,142 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-04 15:20:38,165 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-04 15:20:38,165 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-04 15:20:38,167 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-04 15:21:04,752 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770207664_5_Genç_bir_arkeolog_de.png
+2026-02-04 15:21:07,661 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770207667_1_Genç_bir_arkeolog_de.png
+2026-02-04 15:21:08,432 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770207668_2_Genç_bir_arkeolog_de.png
+2026-02-04 15:21:09,360 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770207669_3_Genç_bir_arkeolog_de.png
+2026-02-04 15:21:11,350 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770207671_4_Genç_bir_arkeolog_de.png
+2026-02-04 15:21:11,351 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 5/5 başarılı
+2026-02-04 15:21:19,725 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Sadece biraz daha aşağıya... Giriş tam şelalenin k...
+2026-02-04 15:21:25,307 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_18_audio.wav
+2026-02-04 15:21:25,307 - hikaye_resimleyici - INFO - Devam sahnesi 18 seslendirmesi oluşturuldu
+2026-02-04 15:21:32,298 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Taş çıldırmış gibi titriyor... Kapı burada olmalı....
+2026-02-04 15:21:36,338 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_19_audio.wav
+2026-02-04 15:21:36,338 - hikaye_resimleyici - INFO - Devam sahnesi 19 seslendirmesi oluşturuldu
+2026-02-04 15:21:42,714 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Dedemin haritasındaki sembol... Sonunda eşleşti....
+2026-02-04 15:21:47,013 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_20_audio.wav
+2026-02-04 15:21:47,014 - hikaye_resimleyici - INFO - Devam sahnesi 20 seslendirmesi oluşturuldu
+2026-02-04 15:21:53,176 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Bu mimari... İnsan yapımı gibi durmuyor....
+2026-02-04 15:22:11,409 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_21_audio.wav
+2026-02-04 15:22:11,410 - hikaye_resimleyici - INFO - Devam sahnesi 21 seslendirmesi oluşturuldu
+2026-02-04 15:22:18,930 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Koruyucular... Efsaneler gerçekmiş....
+2026-02-04 15:22:23,208 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_22_audio.wav
+2026-02-04 15:22:23,208 - hikaye_resimleyici - INFO - Devam sahnesi 22 seslendirmesi oluşturuldu
+2026-02-04 15:22:23,211 - hikaye_resimleyici - INFO - Hikaye devamı eklendi: 5 yeni sahne, 5 seslendirme
+2026-02-04 15:23:04,233 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020
+2026-02-04 15:23:04,234 - hikaye_resimleyici - INFO - Video oluşturuluyor (22 görsel, 5.0s/kare, geçiş: fade, sesli sahneler var)
+2026-02-04 15:23:04,734 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 4.0s
+2026-02-04 15:23:04,869 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 5.3s - 9.2s
+2026-02-04 15:23:04,999 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.3s - 14.6s
+2026-02-04 15:23:05,128 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 18.8s
+2026-02-04 15:23:05,259 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.3s - 24.3s
+2026-02-04 15:23:05,401 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 28.8s
+2026-02-04 15:23:05,531 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 30.3s - 34.2s
+2026-02-04 15:23:05,661 - hikaye_resimleyici - DEBUG - Sahne 8 sesi eklendi: 35.3s - 40.5s
+2026-02-04 15:23:05,790 - hikaye_resimleyici - INFO - Sahne 9: Ses üst üste binmemesi için geciktirildi (40.3s -> 40.7s)
+2026-02-04 15:23:05,790 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.7s - 43.4s
+2026-02-04 15:23:05,920 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 49.1s
+2026-02-04 15:23:06,048 - hikaye_resimleyici - DEBUG - Sahne 11 sesi eklendi: 50.3s - 52.3s
+2026-02-04 15:23:06,173 - hikaye_resimleyici - DEBUG - Sahne 12 sesi eklendi: 55.3s - 58.8s
+2026-02-04 15:23:06,301 - hikaye_resimleyici - DEBUG - Sahne 13 sesi eklendi: 60.3s - 66.7s
+2026-02-04 15:23:06,441 - hikaye_resimleyici - INFO - Sahne 14: Ses üst üste binmemesi için geciktirildi (65.3s -> 66.9s)
+2026-02-04 15:23:06,441 - hikaye_resimleyici - DEBUG - Sahne 14 sesi eklendi: 66.9s - 70.4s
+2026-02-04 15:23:06,564 - hikaye_resimleyici - INFO - Sahne 15: Ses üst üste binmemesi için geciktirildi (70.3s -> 70.6s)
+2026-02-04 15:23:06,564 - hikaye_resimleyici - DEBUG - Sahne 15 sesi eklendi: 70.6s - 74.5s
+2026-02-04 15:23:06,682 - hikaye_resimleyici - DEBUG - Sahne 16 sesi eklendi: 75.3s - 80.3s
+2026-02-04 15:23:06,803 - hikaye_resimleyici - INFO - Sahne 17: Ses üst üste binmemesi için geciktirildi (80.3s -> 80.5s)
+2026-02-04 15:23:06,803 - hikaye_resimleyici - DEBUG - Sahne 17 sesi eklendi: 80.5s - 84.4s
+2026-02-04 15:23:06,939 - hikaye_resimleyici - DEBUG - Sahne 18 sesi eklendi: 85.3s - 90.5s
+2026-02-04 15:23:07,076 - hikaye_resimleyici - INFO - Sahne 19: Ses üst üste binmemesi için geciktirildi (90.3s -> 90.7s)
+2026-02-04 15:23:07,076 - hikaye_resimleyici - DEBUG - Sahne 19 sesi eklendi: 90.7s - 94.1s
+2026-02-04 15:23:07,213 - hikaye_resimleyici - DEBUG - Sahne 20 sesi eklendi: 95.3s - 99.0s
+2026-02-04 15:23:07,353 - hikaye_resimleyici - DEBUG - Sahne 21 sesi eklendi: 100.3s - 104.2s
+2026-02-04 15:23:07,478 - hikaye_resimleyici - DEBUG - Sahne 22 sesi eklendi: 105.3s - 108.7s
+2026-02-04 15:23:07,552 - hikaye_resimleyici - INFO - 22 karakter sesi eklendi
+2026-02-04 15:28:09,891 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:28:09,891 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 15:28:09,892 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 15:28:09,892 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 15:28:09,892 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:28:39,333 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:28:39,333 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-02-04 15:28:39,333 - hikaye_resimleyici - INFO - Ortam: development
+2026-02-04 15:28:39,334 - hikaye_resimleyici - INFO - Debug: True
+2026-02-04 15:28:39,334 - hikaye_resimleyici - INFO - ==================================================
+2026-02-04 15:30:03,135 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:30:03,135 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:30:03,135 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-02-04 15:30:03,135 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:30:03,136 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:30:03,136 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:30:03,136 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-02-04 15:30:03,138 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:30:03,139 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-02-04 15:31:03,482 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020 (10 sahne seçildi)
+2026-02-04 15:31:03,483 - hikaye_resimleyici - INFO - Video oluşturuluyor (10 görsel, 5.0s/kare, geçiş: fade, sesli sahneler var)
+2026-02-04 15:31:03,592 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 6.7s
+2026-02-04 15:31:03,716 - hikaye_resimleyici - INFO - Sahne 2: Ses üst üste binmemesi için geciktirildi (5.3s -> 6.9s)
+2026-02-04 15:31:03,716 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 6.9s - 10.4s
+2026-02-04 15:31:03,842 - hikaye_resimleyici - INFO - Sahne 3: Ses üst üste binmemesi için geciktirildi (10.3s -> 10.6s)
+2026-02-04 15:31:03,842 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.6s - 14.5s
+2026-02-04 15:31:03,965 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 20.3s
+2026-02-04 15:31:04,087 - hikaye_resimleyici - INFO - Sahne 5: Ses üst üste binmemesi için geciktirildi (20.3s -> 20.5s)
+2026-02-04 15:31:04,088 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.5s - 24.4s
+2026-02-04 15:31:04,213 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 30.5s
+2026-02-04 15:31:04,340 - hikaye_resimleyici - INFO - Sahne 7: Ses üst üste binmemesi için geciktirildi (30.3s -> 30.7s)
+2026-02-04 15:31:04,341 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 30.7s - 34.1s
+2026-02-04 15:31:04,465 - hikaye_resimleyici - DEBUG - Sahne 8 sesi eklendi: 35.3s - 39.0s
+2026-02-04 15:31:04,613 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.3s - 44.2s
+2026-02-04 15:31:04,736 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 48.7s
+2026-02-04 15:31:04,804 - hikaye_resimleyici - INFO - 10 karakter sesi eklendi
+2026-02-04 15:34:39,496 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770208264_Genç_bir_arkeolog_de.mp4
+2026-02-04 15:38:24,595 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020 (müzik: gizem.mp3) (10 sahne seçildi)
+2026-02-04 15:38:24,608 - hikaye_resimleyici - INFO - Video oluşturuluyor (10 görsel, 5.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-02-04 15:38:24,703 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 6.7s
+2026-02-04 15:38:24,825 - hikaye_resimleyici - INFO - Sahne 2: Ses üst üste binmemesi için geciktirildi (5.3s -> 6.9s)
+2026-02-04 15:38:24,825 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 6.9s - 10.4s
+2026-02-04 15:38:24,949 - hikaye_resimleyici - INFO - Sahne 3: Ses üst üste binmemesi için geciktirildi (10.3s -> 10.6s)
+2026-02-04 15:38:24,949 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.6s - 14.5s
+2026-02-04 15:38:25,068 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 20.3s
+2026-02-04 15:38:25,188 - hikaye_resimleyici - INFO - Sahne 5: Ses üst üste binmemesi için geciktirildi (20.3s -> 20.5s)
+2026-02-04 15:38:25,188 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.5s - 24.4s
+2026-02-04 15:38:25,310 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 30.5s
+2026-02-04 15:38:25,434 - hikaye_resimleyici - INFO - Sahne 7: Ses üst üste binmemesi için geciktirildi (30.3s -> 30.7s)
+2026-02-04 15:38:25,434 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 30.7s - 34.1s
+2026-02-04 15:38:25,553 - hikaye_resimleyici - DEBUG - Sahne 8 sesi eklendi: 35.3s - 39.0s
+2026-02-04 15:38:25,677 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.3s - 44.2s
+2026-02-04 15:38:25,813 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 48.7s
+2026-02-04 15:38:25,935 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 10 ses parçası
+2026-02-04 15:38:25,936 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-02-04 15:38:25,936 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-02-04 15:38:25,937 - hikaye_resimleyici - INFO - 10 karakter sesi eklendi
+2026-02-04 15:41:59,416 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770208705_Genç_bir_arkeolog_de.mp4
+2026-02-04 15:43:18,347 - hikaye_resimleyici - INFO - Hikaye devam ettiriliyor...
+2026-02-04 15:44:23,626 - hikaye_resimleyici - INFO - Paralel görsel oluşturma başlatıldı: 10 sahne, 5 worker
+2026-02-04 15:44:23,627 - hikaye_resimleyici - INFO - Sahne 1 oluşturuluyor...
+2026-02-04 15:44:23,627 - hikaye_resimleyici - INFO - Sahne 2 oluşturuluyor...
+2026-02-04 15:44:23,628 - hikaye_resimleyici - INFO - Sahne 3 oluşturuluyor...
+2026-02-04 15:44:23,630 - hikaye_resimleyici - INFO - Sahne 4 oluşturuluyor...
+2026-02-04 15:44:23,631 - hikaye_resimleyici - INFO - Sahne 5 oluşturuluyor...
+2026-02-04 15:45:06,243 - hikaye_resimleyici - INFO - Sahne 4 kaydedildi: 1770209106_4_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:06,244 - hikaye_resimleyici - INFO - Sahne 6 oluşturuluyor...
+2026-02-04 15:45:09,197 - hikaye_resimleyici - INFO - Sahne 5 kaydedildi: 1770209109_5_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:09,197 - hikaye_resimleyici - INFO - Sahne 7 oluşturuluyor...
+2026-02-04 15:45:10,312 - hikaye_resimleyici - INFO - Sahne 1 kaydedildi: 1770209110_1_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:10,312 - hikaye_resimleyici - INFO - Sahne 8 oluşturuluyor...
+2026-02-04 15:45:11,025 - hikaye_resimleyici - INFO - Sahne 2 kaydedildi: 1770209111_2_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:11,025 - hikaye_resimleyici - INFO - Sahne 9 oluşturuluyor...
+2026-02-04 15:45:16,223 - hikaye_resimleyici - INFO - Sahne 3 kaydedildi: 1770209116_3_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:16,223 - hikaye_resimleyici - INFO - Sahne 10 oluşturuluyor...
+2026-02-04 15:45:38,639 - hikaye_resimleyici - INFO - Sahne 8 kaydedildi: 1770209138_8_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:39,881 - hikaye_resimleyici - INFO - Sahne 9 kaydedildi: 1770209139_9_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:41,512 - hikaye_resimleyici - INFO - Sahne 7 kaydedildi: 1770209141_7_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:44,719 - hikaye_resimleyici - INFO - Sahne 6 kaydedildi: 1770209144_6_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:45,262 - hikaye_resimleyici - INFO - Sahne 10 kaydedildi: 1770209145_10_Genç_bir_arkeolog_de.png
+2026-02-04 15:45:45,262 - hikaye_resimleyici - INFO - Paralel görsel oluşturma tamamlandı: 10/10 başarılı
+2026-02-04 15:45:51,488 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Sayıları çok fazla! Savaşarak kazanamam!...
+2026-02-04 15:45:55,870 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_23_audio.wav
+2026-02-04 15:45:55,870 - hikaye_resimleyici - INFO - Devam sahnesi 23 seslendirmesi oluşturuldu
+2026-02-04 15:46:03,536 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Köprü yıkılmış... Karşıya atlamam gerek!...
+2026-02-04 15:46:08,016 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_24_audio.wav
+2026-02-04 15:46:08,017 - hikaye_resimleyici - INFO - Devam sahnesi 24 seslendirmesi oluşturuldu
+2026-02-04 15:46:15,329 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Belki ateş onları yavaşlatır....
+2026-02-04 15:46:18,748 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_25_audio.wav
+2026-02-04 15:46:18,748 - hikaye_resimleyici - INFO - Devam sahnesi 25 seslendirmesi oluşturuldu
+2026-02-04 15:46:24,640 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Işıktan korkuyorlar! Bu bana zaman kazandırır....
+2026-02-04 15:46:28,931 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_26_audio.wav
+2026-02-04 15:46:28,932 - hikaye_resimleyici - INFO - Devam sahnesi 26 seslendirmesi oluşturuldu
+2026-02-04 15:46:34,877 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - İşte orada... İç Tapınağın kapısı....
+2026-02-04 15:46:38,471 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_27_audio.wav
+2026-02-04 15:46:38,471 - hikaye_resimleyici - INFO - Devam sahnesi 27 seslendirmesi oluşturuldu
+2026-02-04 15:46:46,365 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Güneş, Jaguar, Yılan... Büyükbabanın notları... Ne...
+2026-02-04 15:46:52,951 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_28_audio.wav
+2026-02-04 15:46:52,951 - hikaye_resimleyici - INFO - Devam sahnesi 28 seslendirmesi oluşturuldu
+2026-02-04 15:46:59,518 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Hadi! Açıl artık!...
+2026-02-04 15:47:02,316 - hikaye_resimleyici - WARNING - Ses verisi oluşturulamadı
+2026-02-04 15:47:09,131 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Şimdi!...
+2026-02-04 15:47:10,906 - hikaye_resimleyici - WARNING - Ses verisi oluşturulamadı
+2026-02-04 15:47:18,593 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Son saniyede... Kapandı....
+2026-02-04 15:47:22,364 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_31_audio.wav
+2026-02-04 15:47:22,364 - hikaye_resimleyici - INFO - Devam sahnesi 31 seslendirmesi oluşturuldu
+2026-02-04 15:47:28,804 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Burası... Haritada bile yoktu. Yıldızlar Salonu....
+2026-02-04 15:47:34,025 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_32_audio.wav
+2026-02-04 15:47:34,026 - hikaye_resimleyici - INFO - Devam sahnesi 32 seslendirmesi oluşturuldu
+2026-02-04 15:47:34,028 - hikaye_resimleyici - INFO - Hikaye devamı eklendi: 10 yeni sahne, 8 seslendirme
+2026-02-04 15:48:06,308 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020 (müzik: gizem.mp3) (10 sahne seçildi)
+2026-02-04 15:48:06,309 - hikaye_resimleyici - INFO - Video oluşturuluyor (10 görsel, 5.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-02-04 15:48:06,403 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 3.9s
+2026-02-04 15:48:06,526 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 5.3s - 8.6s
+2026-02-04 15:48:06,644 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.3s - 13.1s
+2026-02-04 15:48:06,768 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 18.8s
+2026-02-04 15:48:06,893 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.3s - 22.9s
+2026-02-04 15:48:07,016 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 31.9s
+2026-02-04 15:48:07,298 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.3s - 43.0s
+2026-02-04 15:48:07,424 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 50.0s
+2026-02-04 15:48:07,547 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 8 ses parçası
+2026-02-04 15:48:07,547 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-02-04 15:48:07,548 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-02-04 15:48:07,548 - hikaye_resimleyici - INFO - 8 karakter sesi eklendi
+2026-02-04 15:51:42,759 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770209287_Genç_bir_arkeolog_de.mp4
+2026-02-04 15:52:51,501 - hikaye_resimleyici - INFO - Sahne 29 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 15:52:58,371 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Hadi! Açıl artık!...
+2026-02-04 15:53:01,426 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_29_audio.wav
+2026-02-04 15:53:01,431 - hikaye_resimleyici - INFO - Sahne 30 seslendirmesi yeniden oluşturuluyor...
+2026-02-04 15:53:09,150 - hikaye_resimleyici - INFO - Seslendirme oluşturuluyor: Leda - Şimdi!...
+2026-02-04 15:53:12,068 - hikaye_resimleyici - INFO - Ses dosyası kaydedildi: C:\Users\user\Desktop\hikaye_olustur\static\output\Genç_bir_arkeolog_de_scene_30_audio.wav
+2026-02-04 15:54:05,941 - hikaye_resimleyici - INFO - Geçmişten video oluşturuluyor: 1770155020 (müzik: gizem.mp3) (10 sahne seçildi)
+2026-02-04 15:54:05,953 - hikaye_resimleyici - INFO - Video oluşturuluyor (10 görsel, 5.0s/kare, geçiş: fade, müzik: gizem.mp3, sesli sahneler var)
+2026-02-04 15:54:06,045 - hikaye_resimleyici - DEBUG - Sahne 1 sesi eklendi: 0.3s - 3.9s
+2026-02-04 15:54:06,165 - hikaye_resimleyici - DEBUG - Sahne 2 sesi eklendi: 5.3s - 8.6s
+2026-02-04 15:54:06,281 - hikaye_resimleyici - DEBUG - Sahne 3 sesi eklendi: 10.3s - 13.1s
+2026-02-04 15:54:06,400 - hikaye_resimleyici - DEBUG - Sahne 4 sesi eklendi: 15.3s - 18.8s
+2026-02-04 15:54:06,521 - hikaye_resimleyici - DEBUG - Sahne 5 sesi eklendi: 20.3s - 22.9s
+2026-02-04 15:54:06,638 - hikaye_resimleyici - DEBUG - Sahne 6 sesi eklendi: 25.3s - 31.9s
+2026-02-04 15:54:06,778 - hikaye_resimleyici - INFO - Sahne 7: Ses üst üste binmemesi için geciktirildi (30.3s -> 32.1s)
+2026-02-04 15:54:06,779 - hikaye_resimleyici - DEBUG - Sahne 7 sesi eklendi: 32.1s - 34.3s
+2026-02-04 15:54:06,898 - hikaye_resimleyici - DEBUG - Sahne 8 sesi eklendi: 35.3s - 36.8s
+2026-02-04 15:54:07,016 - hikaye_resimleyici - DEBUG - Sahne 9 sesi eklendi: 40.3s - 43.0s
+2026-02-04 15:54:07,136 - hikaye_resimleyici - DEBUG - Sahne 10 sesi eklendi: 45.3s - 50.0s
+2026-02-04 15:54:07,254 - hikaye_resimleyici - INFO - Audio ducking uygulanıyor: 10 ses parçası
+2026-02-04 15:54:07,254 - hikaye_resimleyici - INFO - Audio ducking uygulandı: konuşmalarda müzik -17.0dB
+2026-02-04 15:54:07,255 - hikaye_resimleyici - INFO - Müzik eklendi: gizem.mp3
+2026-02-04 15:54:07,255 - hikaye_resimleyici - INFO - 10 karakter sesi eklendi
+2026-02-04 15:57:39,007 - hikaye_resimleyici - INFO - Video oluşturuldu: 1770209647_Genç_bir_arkeolog_de.mp4
+2026-04-30 23:32:27,036 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:32:27,037 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:32:27,037 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:32:27,037 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:32:27,037 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:32:27,310 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:32:27,310 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:32:27,310 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:32:27,310 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:32:27,310 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:33:26,960 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:33:26,960 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:33:26,960 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:33:26,960 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:33:26,960 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:33:27,233 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:33:27,233 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:33:27,233 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:33:27,234 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:33:27,234 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:33:38,730 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:33:38,730 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:33:38,731 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:33:38,753 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:33:38,754 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:33:38,756 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:33:38,757 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:33:38,757 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:33:38,757 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:35:47,065 - hikaye_resimleyici - INFO - Sahne 1 seslendirmesi yeniden oluşturuluyor...
+2026-04-30 23:35:47,266 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:35:49,355 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:35:53,428 - hikaye_resimleyici - ERROR - _make_text_request tüm denemeler başarısız. Son hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:35:53,428 - hikaye_resimleyici - ERROR - Diyalog çıkarma hatası: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:35:53,429 - hikaye_resimleyici - INFO - Sahne 1'de diyalog bulunamadı
+2026-04-30 23:48:14,223 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:48:14,223 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:48:14,224 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:48:14,224 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:48:14,224 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:48:33,663 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:48:33,663 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-04-30 23:48:33,664 - hikaye_resimleyici - INFO - Ortam: development
+2026-04-30 23:48:33,664 - hikaye_resimleyici - INFO - Debug: True
+2026-04-30 23:48:33,664 - hikaye_resimleyici - INFO - ==================================================
+2026-04-30 23:51:43,422 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:51:43,422 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:51:43,422 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:51:43,430 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:51:43,431 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:51:43,433 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:51:43,433 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-04-30 23:51:43,433 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-04-30 23:51:43,436 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-04-30 23:51:49,189 - hikaye_resimleyici - INFO - Gemini API client yeni anahtar ile güncellendi
+2026-04-30 23:51:49,189 - hikaye_resimleyici - INFO - Ayarlar güncellendi
+2026-04-30 23:52:00,211 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: all, 5 adet
+2026-04-30 23:52:00,366 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:52:02,445 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:52:06,520 - hikaye_resimleyici - ERROR - _make_text_request tüm denemeler başarısız. Son hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:52:06,521 - hikaye_resimleyici - ERROR - Hikaye önerileri hatası: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:55:18,843 - hikaye_resimleyici - INFO - Prompt zenginleştiriliyor: Bir kasaba, 50 yıl önce gömülen zaman kapsülünü aç...
+2026-04-30 23:55:18,986 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:55:21,061 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:55:25,137 - hikaye_resimleyici - ERROR - _make_text_request tüm denemeler başarısız. Son hata: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-04-30 23:55:25,137 - hikaye_resimleyici - ERROR - Prompt zenginleştirme hatası: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key expired. Please renew the API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key expired. Please renew the API key.'}]}}
+2026-05-01 17:47:05,631 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 17:47:05,632 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 17:47:05,632 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 17:47:05,633 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 17:47:05,633 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 17:47:05,935 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 17:47:05,935 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 17:47:05,935 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 17:47:05,937 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 17:47:05,937 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:04:56,955 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:04:56,956 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:04:56,956 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:04:56,956 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:04:56,956 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:05:13,408 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:05:13,408 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:05:13,408 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:05:13,411 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:05:13,411 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:05:45,942 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:05:45,942 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:05:45,943 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:05:45,943 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:05:45,943 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:09:02,391 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:09:02,391 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:09:02,391 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:09:02,391 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:09:02,391 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:09:02,676 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:09:02,676 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:09:02,676 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:09:02,681 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:09:02,681 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:11:41,868 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:11:41,870 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:11:41,870 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:11:41,870 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:11:41,870 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:11:42,132 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:11:42,132 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:11:42,132 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:11:42,132 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:11:42,132 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:19:54,873 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:19:54,873 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:19:54,875 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:19:54,875 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:19:54,876 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:19:55,151 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:19:55,151 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:19:55,152 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:19:55,152 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:19:55,152 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:20:00,833 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:20:00,836 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:20:00,836 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 18:20:00,870 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:20:00,872 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:20:00,875 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 18:20:00,876 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:20:00,876 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:20:00,879 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 18:40:48,699 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:48,699 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:40:48,699 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:40:48,701 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:40:48,701 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:48,968 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:48,968 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:40:48,968 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:40:48,968 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:40:48,968 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:51,252 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:51,255 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:40:51,255 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:40:51,255 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:40:51,256 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:51,519 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:51,519 - hikaye_resimleyici - INFO - AI Hikaye Resimleyici başlatılıyor...
+2026-05-01 18:40:51,519 - hikaye_resimleyici - INFO - Ortam: development
+2026-05-01 18:40:51,519 - hikaye_resimleyici - INFO - Debug: True
+2026-05-01 18:40:51,522 - hikaye_resimleyici - INFO - ==================================================
+2026-05-01 18:40:54,825 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:40:54,825 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:40:54,825 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 18:40:54,838 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:40:54,838 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:40:54,843 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 18:40:54,843 - hikaye_resimleyici - INFO - Gemini API client başarıyla oluşturuldu
+2026-05-01 18:40:54,844 - hikaye_resimleyici - INFO - StoryGenerator başlatıldı
+2026-05-01 18:40:54,846 - hikaye_resimleyici - INFO - StoryGenerator başarıyla yüklendi
+2026-05-01 19:21:16,808 - hikaye_resimleyici - INFO - Gemini API client yeni anahtar ile güncellendi
+2026-05-01 19:21:16,811 - hikaye_resimleyici - INFO - Ayarlar güncellendi
+2026-05-01 19:26:03,200 - hikaye_resimleyici - INFO - Hikaye önerileri alınıyor: all, 5 adet
+2026-05-01 19:26:03,632 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:05,826 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:10,043 - hikaye_resimleyici - ERROR - _make_text_request tüm denemeler başarısız. Son hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:10,044 - hikaye_resimleyici - ERROR - Hikaye önerileri hatası: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:31,272 - hikaye_resimleyici - INFO - Sahne 1 seslendirmesi yeniden oluşturuluyor...
+2026-05-01 19:26:31,530 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 1/3). 2.0s sonra tekrar denenecek. Hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:33,836 - hikaye_resimleyici - WARNING - _make_text_request başarısız (deneme 2/3). 4.0s sonra tekrar denenecek. Hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:38,123 - hikaye_resimleyici - ERROR - _make_text_request tüm denemeler başarısız. Son hata: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:38,124 - hikaye_resimleyici - ERROR - Diyalog çıkarma hatası: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}
+2026-05-01 19:26:38,124 - hikaye_resimleyici - INFO - Sahne 1'de diyalog bulunamadı
+2026-05-01 19:26:46,461 - hikaye_resimleyici - INFO - Gemini API client yeni anahtar ile güncellendi
+2026-05-01 19:26:46,463 - hikaye_resimleyici - INFO - Ayarlar güncellendi

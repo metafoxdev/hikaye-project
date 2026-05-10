@@ -1,0 +1,3 @@
+- karakterlerin duygu yönetimi..
+- aynı anda hem 16:9 hemde 9:16 video üretimi.. bu yönetimi checkbox ile açıp kapatma
+- bide kaliteyi biz selectboxtan seçelim "1k" "2k" "4k" bu seçtigimz kalite göre görsleleri oluşturacak..
