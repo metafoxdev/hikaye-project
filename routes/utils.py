@@ -1,3 +1,5 @@
+import logging
+logger = logging.getLogger("hikaye_resimleyici")
 import json
 from functools import wraps
 from flask import request, jsonify

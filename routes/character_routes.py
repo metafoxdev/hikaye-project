@@ -1,3 +1,5 @@
+import logging
+logger = logging.getLogger("hikaye_resimleyici")
 import os
 import json
 import uuid

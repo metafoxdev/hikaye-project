@@ -471,7 +471,10 @@
             <div id="settingsTabGeneral" class="settings-tab-content">
                 <div class="setting-group" style="margin-bottom: 16px;">
                     <label><i class="fas fa-key"></i> Gemini API Anahtarı</label>
-                    <input type="password" id="settingsApiKey" class="config-input" placeholder="AI-xxxxxxxxxxxxxxxxxxxxxx (Boş bırakılırsa varsayılan kullanılır)">
+                    <div style="position: relative; display: flex; align-items: center;">
+                        <input type="password" id="settingsApiKey" class="config-input" placeholder="AI-xxxxxxxxxxxxxxxxxxxxxx (Boş bırakılırsa varsayılan kullanılır)" style="padding-right: 40px; width: 100%;">
+                        <i class="fas fa-eye" id="toggleApiKeyVisibility" style="position: absolute; right: 10px; cursor: pointer; color: var(--text-muted);" onclick="const inp = document.getElementById('settingsApiKey'); if(inp.type === 'password'){inp.type='text'; this.classList.remove('fa-eye'); this.classList.add('fa-eye-slash');}else{inp.type='password'; this.classList.remove('fa-eye-slash'); this.classList.add('fa-eye');}"></i>
+                    </div>
                     <small style="color:var(--text-muted);display:block;margin-top:6px;">Kendi API anahtarınızı girerek limiti kaldırabilirsiniz. Silmek için kutuyu boşaltıp kaydedin.</small>
                 </div>
                 

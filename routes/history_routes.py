@@ -1,3 +1,5 @@
+import logging
+logger = logging.getLogger("hikaye_resimleyici")
 import os
 import json
 from flask import Blueprint, render_template, request, jsonify, stream_with_context, Response, send_from_directory, abort, current_app, send_file
